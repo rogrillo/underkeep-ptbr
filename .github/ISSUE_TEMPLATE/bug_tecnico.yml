@@ -1,0 +1,58 @@
+name: Bug técnico
+description: Falha ao instalar, desinstalar ou carregar o jogo com a tradução.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por relatar! **Não anexe** saves, arquivos do jogo, pastas `mods` nem dados pessoais.
+  - type: input
+    id: versao_jogo
+    attributes:
+      label: Versão do jogo
+      description: Build da Steam (Propriedades > Atualizações) ou data da última atualização.
+      placeholder: "ex.: build 26592006"
+    validations:
+      required: true
+  - type: input
+    id: versao_traducao
+    attributes:
+      label: Versão da tradução
+      placeholder: "ex.: 0.1.0-beta.2"
+    validations:
+      required: true
+  - type: input
+    id: sistema
+    attributes:
+      label: Sistema operacional
+      placeholder: "ex.: Windows 11 64 bits, ou Steam Deck (SteamOS 3.x, Proton x.y)"
+    validations:
+      required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição
+      description: O que aconteceu? Copie as mensagens exibidas pelo instalador.
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1. Executei o instalador...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado e resultado observado
+    validations:
+      required: true
+  - type: textarea
+    id: evidencias
+    attributes:
+      label: Evidências (opcional)
+      description: Capturas de tela ou trechos de mensagens. Remova caminhos com seu nome de usuário, se preferir.

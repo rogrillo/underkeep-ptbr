@@ -1,0 +1,22 @@
+name: Sugestão de melhoria
+description: Ideias para a tradução, a documentação ou as ferramentas.
+title: "[Sugestão] "
+labels: ["melhoria"]
+body:
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Proposta
+    validations:
+      required: true
+  - type: textarea
+    id: motivacao
+    attributes:
+      label: Motivação
+      description: Que problema isso resolve?
+    validations:
+      required: true
+  - type: textarea
+    id: beneficio
+    attributes:
+      label: Benefício esperado

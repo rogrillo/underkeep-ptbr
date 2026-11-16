@@ -1,0 +1,45 @@
+name: Problema de tradução
+description: Erro, frase pouco natural, termo inconsistente ou texto cortado.
+title: "[Tradução] "
+labels: ["tradução"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cite só o trecho necessário. Não cole listas grandes de textos originais do jogo.
+  - type: textarea
+    id: texto
+    attributes:
+      label: Texto apresentado
+      description: Copie o texto em português como aparece no jogo.
+    validations:
+      required: true
+  - type: input
+    id: local
+    attributes:
+      label: Onde aparece
+      description: Área, personagem, missão, item, menu...
+      placeholder: "ex.: conversa com Torren no portal; descrição do item X"
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema identificado
+      description: Erro de sentido, gramática, gênero/número, termo diferente do glossário, texto cortado...
+    validations:
+      required: true
+  - type: textarea
+    id: sugestao
+    attributes:
+      label: Tradução sugerida
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto e captura (opcional)
+      description: Escolhas feitas antes, classe dos personagens, captura de tela.
+  - type: input
+    id: versao
+    attributes:
+      label: Versão da tradução
+      placeholder: "ex.: 0.1.0-beta.2"

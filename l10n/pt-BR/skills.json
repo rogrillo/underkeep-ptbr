@@ -1,0 +1,2551 @@
+{
+ "category": "skills",
+ "entries": {
+  "item_skill_doomhowl": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "fa407e09936bd9ee9b6912daf8ca8701ba92d7c90706a7bd9a4c25c57a9cab0d",
+   "text": "Pulso do vazio",
+   "translation_status": "translated"
+  },
+  "item_skill_doomhowl_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ba5701709c0e50014fe312be0f947632da6336d0175e16001c6e5f966f41be75",
+   "text": "Uma força imparável do Vazio empurra o alvo um passo para trás.",
+   "translation_status": "translated"
+  },
+  "item_skill_fireball": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "cc173df6702cba90cfae123f149085dc44e3f6c660816c528f063c75083e5a9e",
+   "text": "Bola de fogo",
+   "translation_status": "translated"
+  },
+  "item_skill_fireball_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "59562227396ff85b57e180b512109c3077bfaa7368114fae98906a1a9be22508",
+   "text": "{color_fire}Dano de fogo{a:right}{skill_damage}",
+   "translation_status": "translated"
+  },
+  "item_skill_fireball_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "570081f35a4e82b66867ede1925adb7035c9daac4f8e957e0e36956f159d3d27",
+   "text": "Chance de queimar{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "item_skill_fireball_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "adaf587b821fdff0bec0ccc706c0bb47a9ab70e4fb6478f0cd9dd5c821c2a357",
+   "text": "{color_item_skill}Dispara uma bola de fogo que explode em um pequeno raio.",
+   "translation_status": "translated"
+  },
+  "item_skill_ice_shard": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "f27b54c6fd877ab04c4b9483707125eede0e022d8803a3ac9baa76f7a7bd7ba1",
+   "text": "Estilhaço de gelo",
+   "translation_status": "translated"
+  },
+  "item_skill_ice_shard_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "b743f54b99bdff26f0c48f84dd4f64f756abf6b819437b76cb8828a6d48353a1",
+   "text": "{color_ice}Dano de gelo{a:right}{skill_damage}",
+   "translation_status": "translated"
+  },
+  "item_skill_ice_shard_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "9f89d50cf0b0dfce609df1f221fc13093ff34beb2245cea62e0f9ca410eacc4e",
+   "text": "Chance de congelar{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "item_skill_ice_shard_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "5580b2887e8a6ac0351771da7e11b42e2b6875ff8db717c3bba559fdb1e44b82",
+   "text": "Dispara um estilhaço de gelo encantado, afiado como navalha.",
+   "translation_status": "translated"
+  },
+  "item_skill_lightning": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "41e68f2cdb3806bb899cb2f3c3d80a2171f37c85b60e8e486742234e4e5f5738",
+   "text": "Raio",
+   "translation_status": "translated"
+  },
+  "item_skill_lightning_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "b8288c5a1a0e323e1b344b93c17cce336ef2156f1b6b61857051f7cba757e415",
+   "text": "{color_lightning}Dano de raio{a:right}{skill_damage}",
+   "translation_status": "translated"
+  },
+  "item_skill_lightning_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "4c397aecc9a65a959e666ae44db6212e66b5a4d6446e411b2f2330de42ac2518",
+   "text": "{color_item_skill}Agora você pode, de vez em quando, lançar um raio contra seus inimigos.",
+   "translation_status": "translated"
+  },
+  "item_skill_magic_runeguard": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "319a51b00dbfb21a36193b7b46ff7be78c1f650a37ae2c3b121c362494e2d8f7",
+   "text": "Barreira protetora",
+   "translation_status": "translated"
+  },
+  "item_skill_magic_runeguard_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "789bc69d3cf029db294b626b9dc5e2aaaefc90be9e71da7bfc52d299e7e66b3e",
+   "text": "Dano absorvido{a:right}{skill_status_power}",
+   "translation_status": "translated"
+  },
+  "item_skill_magic_runeguard_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "a20f09ff78431386db79acd141b5d8ee2f490d3e5b996d1738091e8184dca68e",
+   "text": "{color_text}Duração{a:right}{color_value}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "item_skill_magic_runeguard_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ed4fb0cba584f7e9f41598dffeb610b0ce064b8a18e2ab26012a2f941cef8d64",
+   "text": "Envolve o conjurador em uma barreira protetora por {skill_status_duration} rodadas, bloqueando até {skill_status_power} de dano de qualquer tipo.",
+   "translation_status": "translated"
+  },
+  "item_skill_void_mend": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "e173f661af0463811845b13cfc1213c0e19553356cd3ed3e407a13ce3c15ea8f",
+   "text": "Remendo do vazio",
+   "translation_status": "translated"
+  },
+  "item_skill_void_mend_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "f63c48251aad45f12b5131d3943060aa51b6934487d63c24579df64be8f6a14b",
+   "text": "Restaura {skill_heal_amount} pontos de vida de um herói.",
+   "translation_status": "translated"
+  },
+  "item_staff_of_thunder": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "024648b84350c9d4f0a5ba42effc545db1adbd311ab7aac7b3be7479f5ac6a2e",
+   "text": "Cajado do trovão",
+   "translation_status": "translated"
+  },
+  "item_staff_of_thunder_summary": {
+   "context": "Jogo de palavras preservado (em pé / no chão).",
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "780b45ef014b1ff41fc32f3545d7eed8e0badf47db71fdb076ebdab937204381",
+   "text": "Deixa os cabelos em pé e os inimigos no chão.",
+   "translation_status": "translated"
+  },
+  "skill_arcane_flight": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "7270ab854b93a445c420c553ac311e03f19ae670f8bb4215baf42867a43810b1",
+   "text": "Flechas rúnicas",
+   "translation_status": "translated"
+  },
+  "skill_arcane_flight_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "19207967372be908f4ad1495abd783bfda322e67a099494ee374ec1f7c6240e4",
+   "text": "{color:666666}O patrulheiro imbui projéteis simples com uma força rúnica instável. Cada disparo deixa a corda com uma natureza diferente - chama, geada ou tempestade.",
+   "translation_status": "translated"
+  },
+  "skill_arcane_flight_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ff9b938cd35908e7beace9a1dd43add2f0ef7a120bfa7246249204b0fabd5d13",
+   "text": "Dano elemental aleatório{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_arcane_flight_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "9cb40a3f2735b948d7315713195b2eaa284d07a5859cb6eb00fb8bf383f75fac",
+   "text": "Imbui os projéteis disparados com bônus de dano elemental aleatório ({color_fire}fogo{color_text}, {color_ice}gelo{color_text},{color:4a9abf} ou {color_lightning}raio{color:4a9abf}).",
+   "translation_status": "translated"
+  },
+  "skill_arcane_lock": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ba5ef3000ab0a84949df85f31ef31ef370a773f22fd81374ddb73a2982321670",
+   "text": "Trava arcana",
+   "translation_status": "translated"
+  },
+  "skill_arcane_lock_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "fd302b8f74f516fadba85b191582fc48ff14b79b60f1689771be23fe6531a3c2",
+   "text": "{color_text}- Magia à distância\\n- Alvos paralisados ainda podem agir{color:666666}\\n\\nSigilos invisíveis se acendem, prendendo o alvo no lugar com uma força oculta.",
+   "translation_status": "translated"
+  },
+  "skill_arcane_lock_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "852a2b6eca198ad650453d01e3cefdbcfb6150a3d66a6e34b0cfe8114abd5fcf",
+   "text": "Chance de atordoar{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_arcane_lock_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "529bef9e89d5dbb7acf0eb748e0a2f5fbf7307f9a7bc6c775c47ed918c6ab3ac",
+   "text": "Paralisa um inimigo, que não pode se mover por 1 rodada. Tem {skill_status_chance} de chance de também atordoar o alvo.",
+   "translation_status": "translated"
+  },
+  "skill_aura_of_blades": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "8f2ac3e8c8479e0e249924b014e6da6e192d10b7105f9d7c6f33c0d40aecd85f",
+   "text": "Aura de lâminas",
+   "translation_status": "translated"
+  },
+  "skill_aura_of_blades_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "087c2776e7d84e5c18cc2a65296c281f5a6f3a323419796723c37f28184e6cf4",
+   "text": "{color_text}- Só uma aura pode estar ativa por vez\\n- As auras podem ser trocadas sempre que o Invocador do Vazio sobe de nível\\n- Subir o nível de uma aura aumenta também todas as outras\\n\\n{color:666666}A presença do Invocador do Vazio afia todas as armas ao alcance, tecendo a serenidade do vazio em cada golpe. As lâminas zumbem com uma fúria silenciosa, guiadas por uma calma invisível.\\n\\n",
+   "translation_status": "translated"
+  },
+  "skill_aura_of_blades_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "bb35fa90a6ca79805dcac0afdc6be6a3cb41823069e40a9e77ed5af272384b0c",
+   "text": "Bônus de ataque corpo a corpo (grupo){a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_aura_of_blades_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "c8973c84ec07432d14b6ec29bd8e51fe1341c84700d5f0fc3fc97bcdeb7d9353",
+   "text": "Concede um bônus de ataque corpo a corpo a todos os membros do grupo.",
+   "translation_status": "translated"
+  },
+  "skill_aura_of_the_void": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "2e98fb7122b516bada492e945d8835f9adef0ef3bd480cf90a1c307a6b6f06d0",
+   "text": "Aura do vazio",
+   "translation_status": "translated"
+  },
+  "skill_aura_of_the_void_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "9f32854b8cce5021f40df2637e9768a177019c4a82c35c15f06092f352affe7f",
+   "text": "{color_text}- Só uma aura pode estar ativa por vez\\n- As auras podem ser trocadas sempre que o Invocador do Vazio sobe de nível\\n- Subir o nível de uma aura aumenta também todas as outras\\n\\n{color:666666}Um brilho estranho envolve o Invocador do Vazio, fortalecendo todo o grupo com um escudo etéreo. Enquanto o zumbido do vazio persistir, os aliados se mantêm firmes até contra os golpes mais ferozes.",
+   "translation_status": "translated"
+  },
+  "skill_aura_of_the_void_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "551cf87f041f7a3780ad0b575b8651386c20f89323de336cd8bb54fa2e13792c",
+   "text": "Absorção da barreira{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_aura_of_the_void_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "f181c43349ae31f7147750b1577261034fc4a607f40803b49591f760306c6020",
+   "text": "Intervalo de recriação da barreira (rodadas){a:right}{skill_duration}",
+   "translation_status": "translated"
+  },
+  "skill_aura_of_the_void_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "a045d40cd9800e8936e8cd47e960eb783d32b2419c4104cee07c2b28e12fa7ff",
+   "text": "Cria periodicamente uma barreira que absorve o dano recebido.",
+   "translation_status": "translated"
+  },
+  "skill_aura_of_thorns": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "516e6f1614c400be18b10c8ebe666a8ca64b6c1c6369df232ff3e8396ae6816b",
+   "text": "Aura de espinhos",
+   "translation_status": "translated"
+  },
+  "skill_aura_of_thorns_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "2747ec929dabbf72e7646c9c3e0f4613fc41e57e4c0131857e6a93754e7928e3",
+   "text": "{color_text}- Só uma aura pode estar ativa por vez\\n- As auras podem ser trocadas sempre que o Invocador do Vazio sobe de nível\\n- Subir o nível de uma aura aumenta também todas as outras\\n\\n{color:666666}Uma barreira de vazio retributiva envolve o grupo. A misericórdia é concedida, mas a dor é devolvida.",
+   "translation_status": "translated"
+  },
+  "skill_aura_of_thorns_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "142d303cb96273edfc63873816a078bd7fa0ba1462b3eab324e918ca4ade1736",
+   "text": "Dano corpo a corpo refletido{a:right}{skill_bonus}%",
+   "translation_status": "translated"
+  },
+  "skill_aura_of_thorns_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "8e7c5c654cbd1615b03fa747b62d411bf58513824c1bfe5a9db27974b8e15630",
+   "text": "Reflete parte do dano corpo a corpo recebido.",
+   "translation_status": "translated"
+  },
+  "skill_backstab_the_weak": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "f4a1b16209f2782be4750f502249c92b65ea97132b65971b0f3f3ff1d416d83e",
+   "text": "Apunhalar os fracos",
+   "translation_status": "translated"
+  },
+  "skill_backstab_the_weak_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "7b3a6cf95aee2759849f7d6f8d5151dc58f5523bcac8a6d28ae79656c874daae",
+   "text": "{color_text}- Só pode ser usada com adagas{color:666666}\\n\\nUm alvo ferido, assustado ou vacilante é escolhido muito antes de a lâmina ser sacada. Os fracos sempre morrem do mesmo jeito.",
+   "translation_status": "translated"
+  },
+  "skill_backstab_the_weak_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "f4d6077880e2681025ed4f4ad1a8530f7676f7dfd57bf474ca64995b9f374aba",
+   "text": "Chance de crítico base{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_backstab_the_weak_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "9c8de56c64199d006e3e57930b227a3f15fc9e3fac71d8e4f02274d946fbc9ac",
+   "text": "Chance de crítico adicional por traço negativo{a:right}{skill_bonus2}",
+   "translation_status": "translated"
+  },
+  "skill_backstab_the_weak_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "638fe82c08d9cd0382cbbd3ea880589da66e85ec35510764085c3c75411bbd51",
+   "text": "Ataque com adaga com chance de crítico aumentada para cada traço negativo no alvo.",
+   "translation_status": "translated"
+  },
+  "skill_barbed_arrows": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "67135031dc95d14f1b032075cda35a316a81fab00ad076002b687644001ef31a",
+   "text": "Flechas farpadas",
+   "translation_status": "translated"
+  },
+  "skill_barbed_arrows_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "9d47300d3bdc4783b13b5ecef0200a8fd46e2a47c1bbf367de7fcd97898cffc1",
+   "text": "{color_text}- Só pode ser usada com armas à distância{color:666666}\\n\\nO patrulheiro dispara um tiro cruel e dilacerante, feito não só para ferir, mas para continuar ferindo. Depois que as farpas se cravam, cada movimento piora a dor.",
+   "translation_status": "translated"
+  },
+  "skill_barbed_arrows_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ccf6b82c14e766f9f7aad5f29e1345d80bdf7906505239ef6badd2dc13b677cb",
+   "text": "Chance de sangramento{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_barbed_arrows_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "d35e0ae39cd6018363c1fb6e2a14c59dcbd81f30a45a9540699dbdd28418e658",
+   "text": "Dano do sangramento{a:right}{skill_status_power}",
+   "translation_status": "translated"
+  },
+  "skill_barbed_arrows_stat_3": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "16178d2c8e179d8c6eb0d68fe12b9aa1cb8ba236d9f8496f156a4aabc99eae12",
+   "text": "Duração do sangramento{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_barbed_arrows_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "654992f39449f27d7c0ca63a3cc1ab94f9b557b4a10930836f68344718232e47",
+   "text": "Disparo à distância com {skill_status_chance} de chance de causar Sangramento.",
+   "translation_status": "translated"
+  },
+  "skill_battle_roar": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "8dd7efc4a7bad414180235e07e7302eb552b1b09679c27117533d6ab69ff834d",
+   "text": "Rugido de batalha",
+   "translation_status": "translated"
+  },
+  "skill_battle_roar_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "c542fb7c85dd280fc97f66274ba80dc3ee007a0b3ba02e1062bcf4d9205d2db4",
+   "text": "O rugido do guerreiro inflama o coração dos aliados, levando-os a golpear com mais força e a se manter de pé quando a morte se aproxima.",
+   "translation_status": "translated"
+  },
+  "skill_battle_roar_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "04df7c72be4abaa4a01693412d3e451914a6450dfd52730b53214b4324a3856f",
+   "text": "Duração{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_battle_roar_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "097c6d7622729bd95940a6663add0e129775ca480a5ac1ab81857b345da013aa",
+   "text": "Eleva o moral do grupo, melhorando o desempenho em combate por {skill_status_duration} rodadas.",
+   "translation_status": "translated"
+  },
+  "skill_bleeding_dash": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "aaa56b9089d7bf9b550f24cff9c8d6d09dfa654f311ac36b1210c80ff40ecacb",
+   "text": "Investida sangrenta",
+   "translation_status": "translated"
+  },
+  "skill_bleeding_dash_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "581223112fd7e3cc1ea7cf89f9ae0432454b22550f14296adda28df46066c979",
+   "text": "{color_text}- Só pode ser usada com adagas ou espadas\\n\\n{color:666666}O ladrão encurta a distância em um único fôlego. A lâmina encontra a carne e deixa o suficiente para trás. A ferida faz o resto.",
+   "translation_status": "translated"
+  },
+  "skill_bleeding_dash_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ccf6b82c14e766f9f7aad5f29e1345d80bdf7906505239ef6badd2dc13b677cb",
+   "text": "Chance de sangramento{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_bleeding_dash_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "d35e0ae39cd6018363c1fb6e2a14c59dcbd81f30a45a9540699dbdd28418e658",
+   "text": "Dano do sangramento{a:right}{skill_status_power}",
+   "translation_status": "translated"
+  },
+  "skill_bleeding_dash_stat_3": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "16178d2c8e179d8c6eb0d68fe12b9aa1cb8ba236d9f8496f156a4aabc99eae12",
+   "text": "Duração do sangramento{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_bleeding_dash_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "fe4f50164c1cf94e9300d8c592cc06bbcadafdc8e0ad722eee4a7016d5a67168",
+   "text": "Ataque com adaga ou espada com chance de causar Sangramento.",
+   "translation_status": "translated"
+  },
+  "skill_blood_lance": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "5160a49249d3b02198e4b6e7b76093edbdc1fa89e90c6feaaa8ddf1e75f70100",
+   "text": "Lança de sangue",
+   "translation_status": "translated"
+  },
+  "skill_blood_lance_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ba9350179ad16506d9728b141d8fac8588585e747c5c7a874ae646e38167b0ff",
+   "text": "{color_text}- 30% menos eficaz contra mortos-vivos\\n\\n{color_text_darker}O Mago de sangue condensa a própria essência vital em uma lança rígida, afiada apenas pela vontade. Ao ser lançada, voa como um parasita vivo, perfurando tecidos em busca de novos vasos para abrir.",
+   "translation_status": "translated"
+  },
+  "skill_blood_lance_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "c993851af7700026fdddf66dfd0203952144cc9cf8c242ca42dfb6d4229eb1da",
+   "text": "{color_blood_magic}Dano de sangue{a:right}{skill_damage}",
+   "translation_status": "translated"
+  },
+  "skill_blood_lance_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ccf6b82c14e766f9f7aad5f29e1345d80bdf7906505239ef6badd2dc13b677cb",
+   "text": "Chance de sangramento{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_blood_lance_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "3d9ec2991341d2b769d5bef0dd3d96075e4a5a120169b08152027d85653e574d",
+   "text": "Magia de sangue à distância com chance de aplicar Sangramento.",
+   "translation_status": "translated"
+  },
+  "skill_blood_pact": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "64103997f71bf0a5fae7e03fb5569fcfd97d9112376bcc35745171c9f218e6dd",
+   "text": "Pacto de sangue",
+   "translation_status": "translated"
+  },
+  "skill_blood_pact_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "57827a192dc2e1a69e92de3302d4d16534acc87bdb77565b78a56a47bba9cb90",
+   "text": "Um laço carmesim une conjurador e inimigo. Cada ferida aberta pelo vínculo ecoa de volta como tormento compartilhado.",
+   "translation_status": "translated"
+  },
+  "skill_blood_pact_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "7267b17ddc5f982d1f6170a14bbd84d3af1b628788d4f473414e6149ad96fc3f",
+   "text": "Dano refletido{a:right}{skill_status_power}",
+   "translation_status": "translated"
+  },
+  "skill_blood_pact_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "04df7c72be4abaa4a01693412d3e451914a6450dfd52730b53214b4324a3856f",
+   "text": "Duração{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_blood_pact_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "31acef721335e6f891fd0a4f5c0561727f4528aa9ae2325fa1fa71e0c33d0ad9",
+   "text": "Marca um inimigo e reflete nele o dano que você sofre.",
+   "translation_status": "translated"
+  },
+  "skill_bloodfall": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "45605f99b77e58311e4f266bfbb879152da68acecdaa89dc20f70458817c0e83",
+   "text": "Chuva de sangue",
+   "translation_status": "translated"
+  },
+  "skill_bloodfall_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "c05e529350b80716effdf540ba2222c53ffb794c9930f0e51a5ef72ef0111378",
+   "text": "{color_text}- 30% menos eficaz contra mortos-vivos\\n\\n{color:666666}Uma nuvem coagulada se forma sobre o campo de batalha, pulsando como um órgão suspenso. A cada contração, ela se rompe e lança projéteis de sangue comprimido sobre os inimigos.",
+   "translation_status": "translated"
+  },
+  "skill_bloodfall_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "33cba27331e70f2f3fd89c65cdf3a264dee75bbfc63a83672f2c26603a0b0340",
+   "text": "{color_blood_magic}Dano de sangue por acerto{a:right}{skill_damage}",
+   "translation_status": "translated"
+  },
+  "skill_bloodfall_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ccf6b82c14e766f9f7aad5f29e1345d80bdf7906505239ef6badd2dc13b677cb",
+   "text": "Chance de sangramento{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_bloodfall_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "9c7f8011b1474f8db74578262ed7fe384eb334a28d2c61a770ae016458c23b53",
+   "text": "Atinge dois inimigos três vezes, com chance de causar Sangramento.",
+   "translation_status": "translated"
+  },
+  "skill_champions_grip": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "8b173caedb966160a013cc4d89633a8352c12901eedd1003e11ac001ae4a023f",
+   "text": "Firmeza do campeão",
+   "translation_status": "translated"
+  },
+  "skill_champions_grip_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "22ddb7008af4eb7031e8d210988702590b4c810b885b97b1e66024ce0af2ac3e",
+   "text": "{color_text}- Não consome ação\\n\\n{color:666666}Cada golpe carrega o peso do triunfo. Por um breve momento, o guerreiro luta de fato como um campeão.",
+   "translation_status": "translated"
+  },
+  "skill_champions_grip_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "04df7c72be4abaa4a01693412d3e451914a6450dfd52730b53214b4324a3856f",
+   "text": "Duração{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_champions_grip_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "b01fa0e2aeff6abcb44a1f152a3483bdd7b3dc04ca4d0b570878daddeeb03770",
+   "text": "Aumenta o dano físico e concede imunidade a atordoamento por {skill_status_duration} rodadas.",
+   "translation_status": "translated"
+  },
+  "skill_cleave": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "e946abd159c3e001431a6266172cc524d41158117457180e81e85ef7690a4354",
+   "text": "Talho",
+   "translation_status": "translated"
+  },
+  "skill_cleave_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "4cb025631177a017fb66c2c0dd77962828375e947a367decb9bcb0314d9848d0",
+   "text": "{color_text}- Só pode ser usada com arma corpo a corpo de duas mãos{color:666666}\\n\\nO guerreiro gira a arma em um arco selvagem, abrindo um caminho carmesim através de carne e armadura. Nenhuma muralha de corpos resiste ao peso de um verdadeiro talho.",
+   "translation_status": "translated"
+  },
+  "skill_cleave_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "5b14ab7b4f55b666c5061e35334ff178684989ba3d0707319c9c6c1259b10dfc",
+   "text": "Dano do ataque{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_cleave_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "71222a1a490421deac0d57e5c844db225502aa948d5b359d07a2bb36f98b4dd4",
+   "text": "Atinge dois inimigos de uma vez com uma arma de duas mãos, causando {skill_bonus} de dano.",
+   "translation_status": "translated"
+  },
+  "skill_cloak_of_swiftness": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "102801bf3ac061040428cb1f78f90a9fe5dc3927c923b64ba06c175b625ba470",
+   "text": "Manto da agilidade",
+   "translation_status": "translated"
+  },
+  "skill_cloak_of_swiftness_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "f6d01e9016c04c4e8c20c043c7074307c1eb4962d98b0bf8ee72d56547f646eb",
+   "text": "{color:666666}Quando o patrulheiro se move, o vento o acompanha. Lâminas e virotes cortam apenas o ar, enquanto sua forma se borra em uma dança de precisão e graça.",
+   "translation_status": "translated"
+  },
+  "skill_cloak_of_swiftness_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "5213cfb96e751c518fe2f7ea81df53a2e27ae91e7c38c263d182655cade33ee6",
+   "text": "Aumenta a esquiva, a chance de acerto à distância e a chance de crítico à distância do patrulheiro.",
+   "translation_status": "translated"
+  },
+  "skill_cloak_of_swiftness_thief": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "102801bf3ac061040428cb1f78f90a9fe5dc3927c923b64ba06c175b625ba470",
+   "text": "Manto da agilidade",
+   "translation_status": "translated"
+  },
+  "skill_cloak_of_swiftness_thief_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "34c6d042e74852da8d78086554bebb5cbb8cb840a7209742d9f067230cdc6ee1",
+   "text": "O corpo se move antes do pensamento. Você escapa do perigo, e seus golpes seguem o caminho mais curto até o sangue.",
+   "translation_status": "translated"
+  },
+  "skill_cloak_of_swiftness_thief_summary": {
+   "context": "'Aim' (mira à distância) mantido com maiúscula como no original.",
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "1a5b93f14ba6ccfc5e0991c33ed5baa72fbadfb9a8aebea205735caffebc927c",
+   "text": "Aumenta a Esquiva, o dano desarmado, a Mira à distância e a Chance de crítico.",
+   "translation_status": "translated"
+  },
+  "skill_consecrated_ground": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "cf5be580508a093e66055491076e47d5e0072429400b52adf03fe20e79171c0e",
+   "text": "Solo consagrado",
+   "translation_status": "translated"
+  },
+  "skill_consecrated_ground_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ce035294c904e90cb11951b30715425221b3d07bfa2f7a341b87c1a89d0abb69",
+   "text": "{color_text}- Dura {skill_status_duration} rodadas ou até o grupo se mover\\n\\n{color:666666}O paladino santifica o campo de batalha com oração e determinação de ferro. Dentro do solo abençoado, os aliados suportam o que quebraria almas menores.",
+   "translation_status": "translated"
+  },
+  "skill_consecrated_ground_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "04df7c72be4abaa4a01693412d3e451914a6450dfd52730b53214b4324a3856f",
+   "text": "Duração{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_consecrated_ground_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "dab657aec34c06b4ce32cf72e751199b33187f5b310735ced2307907110680b3",
+   "text": "Cria um solo sagrado que fortalece as defesas do grupo enquanto ele permanecer nele.",
+   "translation_status": "translated"
+  },
+  "skill_crimson_renewal": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "4f29ed1497af76cdb0a12f0a524025670f1e156fe0adbe8441ba51e32d9c2ff3",
+   "text": "Renovação carmesim",
+   "translation_status": "translated"
+  },
+  "skill_crimson_renewal_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "a581daa2ec74ed8d0e7c1f59568744ee9c25e7819c78c2b85e450db06653a2c6",
+   "text": "Vida se troca por vida. As veias aceitam o acordo, levando a vitalidade roubada ao aliado escolhido.",
+   "translation_status": "translated"
+  },
+  "skill_crimson_renewal_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "9983a8c90aac1b172245029ea53d1228c657b0f791dbc89a911cd8e479bdda59",
+   "text": "Vida restaurada{a:right}{skill_heal_amount}",
+   "translation_status": "translated"
+  },
+  "skill_crimson_renewal_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "2bb3c148f011b6a71d97f7558a4b547eb9aa92a95e4c0473290f57bb2fb3dc1f",
+   "text": "Sacrifica vida para curar um aliado.",
+   "translation_status": "translated"
+  },
+  "skill_deadly_shot": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "4353b358502191e86f81db310b33378fd958385fd97d5065ddff31b9e0f910c3",
+   "text": "Disparo mortal",
+   "translation_status": "translated"
+  },
+  "skill_deadly_shot_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "39e76a8d460dd7e248e06926dfc5237874aa8380feb2e857f6340d6a7df228a6",
+   "text": "{color:666666}Todo caçador conhece a verdade: um disparo perfeito pode encerrar uma luta. Nenhum movimento desperdiçado, nenhum disparo apressado. Só paciência, distância e o instinto de atacar quando o alvo está mais exposto.",
+   "translation_status": "translated"
+  },
+  "skill_deadly_shot_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "301e09de48d39ea178755d02083a518f8acf4dee5512e6b326987dd11b1c111c",
+   "text": "Aumenta a chance de crítico à distância.",
+   "translation_status": "translated"
+  },
+  "skill_divine_guard": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "fc2cfce30193d205afb41152916693ef0203c9d348a75db56425b3a3f5f8b064",
+   "text": "Guarda divina",
+   "translation_status": "translated"
+  },
+  "skill_divine_guard_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "8462985e9482bc3e76ae6fec83cf68cae70d649ffa08f38bff4ea0a5eeda57c7",
+   "text": "Sempre que o paladino gasta fervor, a proteção divina responde. Por um breve instante, o poder sagrado endurece corpo e espírito contra a ira do inimigo.",
+   "translation_status": "translated"
+  },
+  "skill_divine_guard_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "e382e9ad978b3e404f6e3c1ad3335e53d637c7486b8629e1589b7e6ee58ef6ed",
+   "text": "Armadura{a:right}{color_value}+{skill_status_power}",
+   "translation_status": "translated"
+  },
+  "skill_divine_guard_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "04df7c72be4abaa4a01693412d3e451914a6450dfd52730b53214b4324a3856f",
+   "text": "Duração{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_divine_guard_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "f7309736bd9af398ba6c996c7c5ec9315d81890fde47a096ef18696f59fdbfab",
+   "text": "Gastar Fervor aumenta a Armadura brevemente.",
+   "translation_status": "translated"
+  },
+  "skill_dragon_arcana": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "b56147586d923e67fa963b53a3d1eb9354d5ec17ad6acdcb5396c857221010e3",
+   "text": "Arcana dracônica",
+   "translation_status": "translated"
+  },
+  "skill_dragon_arcana_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "525f35bf98fa616503098ef93ffbd4a4b151f4c14a2d762c200791c1158a327a",
+   "text": "O mago canaliza o legado dos dragões ancestrais, seres nascidos do fogo e da tempestade. Graças à sua sabedoria esquecida, todas as magias elementais ganham nova ferocidade.",
+   "translation_status": "translated"
+  },
+  "skill_dragon_arcana_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "c8ae71aaf005bad1ba13ba3b42bfacb1b1d9623111e691316093e20b2e413a74",
+   "text": "Aumenta o dano de todas as magias elementais e melhora as chances de Queimadura e Congelamento das magias que podem aplicá-las.",
+   "translation_status": "translated"
+  },
+  "skill_evasive_roll": {
+   "exceptions": [
+    {
+     "code": "LENGTH_OVER_SLOT",
+     "justification": "Mesmo nome do efeito no common (exceção já justificada); consistência entre telas."
+    }
+   ],
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "a4eaa4f0d85dfec993c3c169d6aad9f1a30023b547db84b47c2b4e5ee67feec1",
+   "text": "Rolamento evasivo",
+   "translation_status": "translated"
+  },
+  "skill_evasive_roll_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "54a58f6bbb797b841577b467dbfb1cb7e3dca42988bcadb51deb2fd64e4eed25",
+   "text": "{color_text}- Não consome ação\\n- Aumenta a Esquiva máxima em +2% por nível da habilidade{color:666666}\\n\\nUm ladrão que não consegue evitar a morte nunca ganha a chance de causá-la.",
+   "translation_status": "translated"
+  },
+  "skill_evasive_roll_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "1480d18eafadd910996274ab9a4c7d53687b12b6f615cd741e4e05b11004533b",
+   "text": "Manobra rápida que aumenta a esquiva por {skill_status_duration} rodadas e eleva seu limite máximo.",
+   "translation_status": "translated"
+  },
+  "skill_execution_shot": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "7aba0ccb9216ac54bef0a5a92d352746a9043fed91379196d44bfa0fe3881239",
+   "text": "Disparo de execução",
+   "translation_status": "translated"
+  },
+  "skill_execution_shot_desc": {
+   "context": "Original usa \"Mark of the Dead\" aqui e \"Mark the Dead\" no nome da habilidade; unificado como Marcar os mortos.",
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "a6b0d9b6f5b4391cc4c0beff4f47feb415c323935c4154ce5247bef3db5f8f9c",
+   "text": "{color_text}- Só pode ser usada com armas à distância\\n- Dano adicional contra alvos afetados por Presa do caçador ou Marcar os mortos{color:666666}\\n\\nToda caçada tem um momento final. Quando a marca está feita e a presa desacelera, o patrulheiro solta a flecha e encerra a perseguição.",
+   "translation_status": "translated"
+  },
+  "skill_execution_shot_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "903c930163ec0393a27706572ad36a21945fd76b7aa7508956435e1347a1252c",
+   "text": "Dano base{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_execution_shot_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "21bdf1e7b346ee7b675609fec0d87165cf1b0f0ad8faf2b9410d878db2c03104",
+   "text": "Dano adicional (condicional){a:right}{skill_bonus2}",
+   "translation_status": "translated"
+  },
+  "skill_execution_shot_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "d161a85dd62fd41f199085950ae761e4e699af956501793713269c977cb85cb7",
+   "text": "Disparo de alto dano. Causa {skill_bonus2} de dano adicional a alvos marcados.",
+   "translation_status": "translated"
+  },
+  "skill_exsanguinate": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "b987ddc75ff2dec03f86afd0b4d1ff578b990a7178f0c0ca1e70618d0da8cc3a",
+   "text": "Exsanguinar",
+   "translation_status": "translated"
+  },
+  "skill_exsanguinate_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "08a1eab5e89a197de19e0de1e8dc3a2c5ee13b6f5f15347644ce3b0858c654bb",
+   "text": "O Mago de sangue chama a ferida pelo nome, instigando-a a se abrir ainda mais. O sangramento piora, espalhando-se como uma ordem sussurrada por veias rompidas e carne trêmula.",
+   "translation_status": "translated"
+  },
+  "skill_exsanguinate_failure": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "86a3ccd4cd3808bd37c9d8f062eaeb83f00d6014dc8df30e10180136feafb348",
+   "text": "{color_msg_danger}Nada aconteceu.",
+   "translation_status": "translated"
+  },
+  "skill_exsanguinate_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "80a407fd9ccdd140d6ec9f1eca8e1c193e95f7c3e96233e27212bdd3e809af75",
+   "text": "Dano do sangramento{a:right}{color_value}+{skill_status_power}",
+   "translation_status": "translated"
+  },
+  "skill_exsanguinate_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "05fa4b30ae5c31f42780e4fde53b1e5736ca2c09222f0384a84a00201fd2dd3f",
+   "text": "Duração do sangramento{a:right}{color_value}+{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_exsanguinate_success": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "e12c518d51d624f4eb5d58b4de6560c20d47050b17f22962dc82e4cdf53a94eb",
+   "text": "{color_msg_danger}O sangramento se intensificou!",
+   "translation_status": "translated"
+  },
+  "skill_exsanguinate_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "cdf0d484c353a8be1d92576c98fc45862b08f302bc2bd640f98ddfef9f923d4c",
+   "text": "Aumenta o dano e prolonga a duração do Sangramento em um inimigo que está sangrando.",
+   "translation_status": "translated"
+  },
+  "skill_fade_into_nothingness": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "79dec70d51dedfa1be27a8dea9d597f6d95c46e98c92374c7b1875691d57f78b",
+   "text": "Dissolver-se no nada",
+   "translation_status": "translated"
+  },
+  "skill_fade_into_nothingness_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "dc1c54d5db97f0a3782be0e570805c21dac81dbb203fd40fea6f5a002054c641",
+   "text": "O Invocador do Vazio se dissolve em sombras etéreas, apagando a fronteira entre o mundo material e o Vazio e deixando apenas contornos esmaecidos e ecos fantasmagóricos.",
+   "translation_status": "translated"
+  },
+  "skill_fade_into_nothingness_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "cd88427f156d807905bca4547b3aaf4177d370d1346ad27854270596987b8ce5",
+   "text": "Aumenta a armadura do Invocador do Vazio.",
+   "translation_status": "translated"
+  },
+  "skill_feel_the_flow": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "1048aca1eb48ac3d9294552a21516380bac8f44ecf99107868a361fc01f8b30e",
+   "text": "Sentir o fluxo",
+   "translation_status": "translated"
+  },
+  "skill_feel_the_flow_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "35ded9322f409c8c07849f5372fe9e3df4569e8475f650d6e5831db4085dec0e",
+   "text": "A energia arcana flui pelo mago como um rio vivo. A cada respiração, a corrente se aprofunda, expandindo o reservatório de poder interior até que o próprio ar vibre de potencial.",
+   "translation_status": "translated"
+  },
+  "skill_feel_the_flow_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "db8c44ed5607764e6d21f8b7e292e5c62c02380a297856239386805803fab813",
+   "text": "Aumenta a mana máxima do mago.",
+   "translation_status": "translated"
+  },
+  "skill_fire_spark": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "913bcb87bbefd42f5af3810349103fc0ef9236856608028bfb8ffa04bfff838b",
+   "text": "Centelha de fogo",
+   "translation_status": "translated"
+  },
+  "skill_fire_spark_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "bd6a96f3dc434b9b04c4e213a6fe1f3abb0bfec45ea7a693434120a2f371e72d",
+   "text": "Um gesto do pulso conjura uma brasa abrasadora, acesa por pura fúria elemental. A centelha dispara, incendiando carne e tecido. Quem queima continua queimando muito depois que a luz se apaga.",
+   "translation_status": "translated"
+  },
+  "skill_fire_spark_stat_1": {
+   "context": "Rótulo à esquerda, valor alinhado à direita por {a:right}.",
+   "location": "Dica da habilidade Fire Spark (linha de atributo)",
+   "review_note": "Revisitada no lote 04 (contexto completo de skills): consistente, sem alteração; status mantido.",
+   "review_status": "pending",
+   "source_sha256": "59562227396ff85b57e180b512109c3077bfaa7368114fae98906a1a9be22508",
+   "terminology": [
+    "fire damage -> dano de fogo"
+   ],
+   "text": "{color_fire}Dano de fogo{a:right}{skill_damage}",
+   "translation_status": "translated"
+  },
+  "skill_fire_spark_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "570081f35a4e82b66867ede1925adb7035c9daac4f8e957e0e36956f159d3d27",
+   "text": "Chance de queimar{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_fire_spark_summary": {
+   "context": "{skill_damage} e {skill_status_chance} são valores numéricos inseridos pelo jogo (ex.: '5', '30%'). Nome da habilidade NÃO traduzido nesta amostra.",
+   "location": "Dica da habilidade Fire Spark (mago) — criação do grupo ou jogo em andamento (a confirmar)",
+   "review_note": "Revisitada no lote 04 (contexto completo de skills): consistente, sem alteração; status mantido.",
+   "review_status": "pending",
+   "source_sha256": "7ba03c70ef8f0f4e157e38bfa5f381b246e5508d8621a093185e30d95f7165dc",
+   "terminology": [
+    "caster -> conjurador",
+    "fire damage -> dano de fogo",
+    "burn -> queimar (status Burn: a definir)"
+   ],
+   "text": "Incendeia um único inimigo à frente do conjurador, causando {skill_damage} de dano de fogo, com {skill_status_chance} de chance de queimar o alvo.",
+   "translation_status": "translated"
+  },
+  "skill_fireball": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "cc173df6702cba90cfae123f149085dc44e3f6c660816c528f063c75083e5a9e",
+   "text": "Bola de fogo",
+   "translation_status": "translated"
+  },
+  "skill_fireball_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "d0c3d2c1ee63aa15f6d04c1bf0cb3f8bb6107b66bfebc95616bfcb0d5d8361b5",
+   "text": "Com um último encantamento, o mago arremessa um orbe flamejante que desabrocha em um inferno. A explosão devora o ar e a vida, deixando apenas pedra chamuscada e cinzas ao vento.",
+   "translation_status": "translated"
+  },
+  "skill_fireball_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "59562227396ff85b57e180b512109c3077bfaa7368114fae98906a1a9be22508",
+   "text": "{color_fire}Dano de fogo{a:right}{skill_damage}",
+   "translation_status": "translated"
+  },
+  "skill_fireball_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "570081f35a4e82b66867ede1925adb7035c9daac4f8e957e0e36956f159d3d27",
+   "text": "Chance de queimar{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_fireball_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "d3d345e90f5666c1e4b49e19a78666a20e63b662204c83bb2e743803c2b8ce49",
+   "text": "Arremessa uma esfera flamejante que explode no impacto, causando {skill_damage} de dano de fogo a dois inimigos ao alcance, com {skill_status_chance} de chance de queimá-los.",
+   "translation_status": "translated"
+  },
+  "skill_flame_of_conviction": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ee59442e5763426313b1ed89e5fc0741ec2f727034acc8359ff41ae9f6776e3b",
+   "text": "Chama da convicção",
+   "translation_status": "translated"
+  },
+  "skill_flame_of_conviction_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "182491b1061c56c5681be74927947a9c421e5a606be8661ef1391f5c1127ab04",
+   "text": "{color_text}- Consome todas as cargas de Fervor\\n- Causa {skill_damage} de dano de fogo por Fervor\\n- Tem {skill_status_chance} de chance de atordoar por {skill_status_duration} rodada\\n\\n{color:666666}O paladino libera uma explosão de chama santificada. A carne queima, o aço brilha e os inimigos mais fracos vacilam sob o fogo sagrado.",
+   "translation_status": "translated"
+  },
+  "skill_flame_of_conviction_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "278156f6c6444f8719dfaf2ac88fcda1164705cd94377aed7c43e4e9f87361f7",
+   "text": "{color_fire}Dano de fogo por Fervor{a:right}{skill_damage}",
+   "translation_status": "translated"
+  },
+  "skill_flame_of_conviction_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "852a2b6eca198ad650453d01e3cefdbcfb6150a3d66a6e34b0cfe8114abd5fcf",
+   "text": "Chance de atordoar{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_flame_of_conviction_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "2c4707db81a6172c156117e029521ebe31f4b5cb8ebdabacee418def5b94ae58",
+   "text": "Consome Fervor para causar dano de fogo e possivelmente atordoar o inimigo.",
+   "translation_status": "translated"
+  },
+  "skill_flow_of_life": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "a13394fad9e716a0da830d964e47dc2d9bfe9ef963000f1d475d91d9b3569d5b",
+   "text": "O fluxo da vida",
+   "translation_status": "translated"
+  },
+  "skill_flow_of_life_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "d1934b1393503cecdec0e231c0b866df2751b7b35bffe1fa45de429e007df7f7",
+   "text": "O guerreiro fica imóvel tempo suficiente para sentir o pulso do mundo. Nesse momento de silêncio, o sopro da vida percorre o corpo, endurecendo carne e espírito contra a tempestade.",
+   "translation_status": "translated"
+  },
+  "skill_flow_of_life_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "3f32cc5c0221ad6af752f91f3eaebe19d3bf24ac160e9d4b286c617b78fd7cb5",
+   "text": "Aumenta a vida máxima e as resistências elementais do guerreiro.",
+   "translation_status": "translated"
+  },
+  "skill_flurry_thrust": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "8d7643039cb527161ce3fe96673f0759e1d22ac4f39e7dfdf88a7fe8aa106ed3",
+   "text": "Rajada de estocadas",
+   "translation_status": "translated"
+  },
+  "skill_flurry_thrust_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "749ae4cdc34169140be32c831a1fd2835aafcda41cd34f1b2b7522155604bd0b",
+   "text": "{color_text}- Só pode ser usada com espadas{color:666666}\\n\\nO guerreiro avança, rápido como uma serpente. Se a sorte favorecer o golpe, a lâmina corta duas vezes antes que o inimigo possa reagir. Não é elegante nem nobre, mas encerra lutas depressa.",
+   "translation_status": "translated"
+  },
+  "skill_flurry_thrust_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "cc6e2fdff245779df512d522b4c625fdbfd9e5b014a90da41f35b398c5966e5b",
+   "text": "Dano do primeiro golpe{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_flurry_thrust_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "9b3ae92f02673d0038a910cc7a1a4e4f326ee20e6f9a89fb0e31fbab3c2c2120",
+   "text": "Dano do segundo golpe{a:right}{skill_bonus2}",
+   "translation_status": "translated"
+  },
+  "skill_flurry_thrust_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "4aa7f3fc302f5aa827b506107f5a949592b9a42515e070e7ff1db6dc6531526c",
+   "text": "Desfere dois golpes consecutivos com uma espada. O segundo golpe não ativa efeitos da arma nem acertos críticos.",
+   "translation_status": "translated"
+  },
+  "skill_hunters_prey": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "d436ca048a300b95a327174acfd9ae4c6fb8e5bae71f56d2e497c42df10e988a",
+   "text": "Presa do caçador",
+   "translation_status": "translated"
+  },
+  "skill_hunters_prey_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "3a4c200c8fa887e8661997b32bf5da9b6b6faf2a051d238b69dbdfa112e6fcc6",
+   "text": "{color:666666}O patrulheiro estuda o alvo e encontra o ponto fraco em sua defesa. Depois de marcado, cada golpe do grupo acerta onde mais dói.",
+   "translation_status": "translated"
+  },
+  "skill_hunters_prey_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ee4d7088b467a7c640ed5a72f03ab22d9203d7f8c62b562364b278377a06eadb",
+   "text": "Dano recebido{a:right}{skill_status_power}",
+   "translation_status": "translated"
+  },
+  "skill_hunters_prey_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "04df7c72be4abaa4a01693412d3e451914a6450dfd52730b53214b4324a3856f",
+   "text": "Duração{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_hunters_prey_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "99c290d15a7d5a0ef996e2c0bbb05deb3909b659476525a633908d7d79c482b2",
+   "text": "Marca um inimigo próximo por {skill_status_duration} rodadas. Todo o dano que ele recebe, de qualquer fonte, aumenta em {skill_status_power}.",
+   "translation_status": "translated"
+  },
+  "skill_ice_shard": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "f27b54c6fd877ab04c4b9483707125eede0e022d8803a3ac9baa76f7a7bd7ba1",
+   "text": "Estilhaço de gelo",
+   "translation_status": "translated"
+  },
+  "skill_ice_shard_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "94cf65dd3a7856e2d40c764147ded0eecbbe1d9d61b862523e311961f184a12c",
+   "text": "O mago conjura uma lança afiada de geada e a arremessa com precisão mortal. O frio morde mais fundo que o aço, e quem ele perfura fica congelado na imobilidade.",
+   "translation_status": "translated"
+  },
+  "skill_ice_shard_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "b743f54b99bdff26f0c48f84dd4f64f756abf6b819437b76cb8828a6d48353a1",
+   "text": "{color_ice}Dano de gelo{a:right}{skill_damage}",
+   "translation_status": "translated"
+  },
+  "skill_ice_shard_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "9f89d50cf0b0dfce609df1f221fc13093ff34beb2245cea62e0f9ca410eacc4e",
+   "text": "Chance de congelar{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_ice_shard_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ddcbf679cc2d06efb1a7237324205cc8ee44c03359c3cdb951c6378ae268f80a",
+   "text": "Lança um estilhaço de gelo encantado, causando {skill_damage} de dano de gelo, com {skill_status_chance} de chance de congelar o alvo.",
+   "translation_status": "translated"
+  },
+  "skill_ice_tower": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "381cc44131336cf866bb8bd4d2616a88a0eef57a8140497161a08f94f10ee614",
+   "text": "Torre de gelo",
+   "translation_status": "translated"
+  },
+  "skill_ice_tower_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "276de17e7cba18d01538a89aaf5e07901b6f966fc5f0315be1630a503f97d55b",
+   "text": "Uma súbita rajada de vento gélido varre o campo de batalha. Neve e gelo açoitam tudo pelo caminho, mordendo fundo e retardando quem fica preso nela.",
+   "translation_status": "translated"
+  },
+  "skill_ice_tower_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "b743f54b99bdff26f0c48f84dd4f64f756abf6b819437b76cb8828a6d48353a1",
+   "text": "{color_ice}Dano de gelo{a:right}{skill_damage}",
+   "translation_status": "translated"
+  },
+  "skill_ice_tower_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "9f89d50cf0b0dfce609df1f221fc13093ff34beb2245cea62e0f9ca410eacc4e",
+   "text": "Chance de congelar{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_ice_tower_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "e8c5c3c636e2c12f0ee1fb5dfe66a07ccdb08556d90f43caa19fc7b8e441851b",
+   "text": "Congela o chão à frente, causando {skill_damage} de dano de gelo a todos os inimigos atingidos, com {skill_status_chance} de chance de congelar.",
+   "translation_status": "translated"
+  },
+  "skill_invisibility": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "d53895c6eb7816fb44ec7f46db45019172de4793a42ccaf893ed71ec8ed00743",
+   "text": "Invisibilidade",
+   "translation_status": "translated"
+  },
+  "skill_invisibility_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "dfe4edf5a59cfcf76535ffdc2717d5ec54d052ef305ada82c2fa4fe270ccf352",
+   "text": "A magia envolve todo o grupo, borrando suas formas até que desapareçam de vista.",
+   "translation_status": "translated"
+  },
+  "skill_invisibility_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "04df7c72be4abaa4a01693412d3e451914a6450dfd52730b53214b4324a3856f",
+   "text": "Duração{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_invisibility_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "e4b40563919b33c95ddc81736ed94b9e3e98c47a46c8e90aa3ae3854ad7418ff",
+   "text": "Torna o grupo totalmente invisível, intocável por olhos ou magias hostis. Enquanto o grupo permanecer imóvel e passivo, a ilusão se mantém. No momento em que atacar ou agir diretamente, o encanto se desfaz.",
+   "translation_status": "translated"
+  },
+  "skill_judgment": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "c011634b292d658b304c275576b3d250d522e7a0b7f893eee99c1fc6b2352da9",
+   "text": "Julgamento",
+   "translation_status": "translated"
+  },
+  "skill_judgment_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "85c45509a9a9ead309bc1ced931860fe52d5e075af249e9ef0c0cc69dc451bb5",
+   "text": "{color_text}- Consome todas as cargas de Fervor\\n- Causa {skill_bonus} de dano base\\n- Ganha dano adicional para cada Fervor consumido\\n- Causa dano adicional a Mortos-vivos e Demônios\\n\\n{color:666666}O paladino invoca o julgamento justo em um único golpe esmagador. É um golpe feito não só para ferir, mas para condenar.",
+   "translation_status": "translated"
+  },
+  "skill_judgment_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "97ad616c629e58728aaa45a00cc80013679eaed5ea5442ae0c4f1d9cfe804791",
+   "text": "Dano base do ataque{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_judgment_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "2e911dcb94563c1f1136b3e2123b84829f6383ad6f90c3c8a4a021895ae36170",
+   "text": "Dano por Fervor{a:right}{skill_bonus2}",
+   "translation_status": "translated"
+  },
+  "skill_judgment_stat_3": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "6a749cae184a6021eb8011bd6c79d3dae280e10b80177a44fef893a34eaff552",
+   "text": "Dano contra mortos-vivos e demônios{a:right}{skill_bonus3}",
+   "translation_status": "translated"
+  },
+  "skill_judgment_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "cb7be9e31a623d7a0c321fcb5959454592970538240e3079f712b3fff8218ad0",
+   "text": "Consome Fervor para desferir um poderoso golpe sagrado que causa dano aumentado, especialmente contra Mortos-vivos e Demônios.",
+   "translation_status": "translated"
+  },
+  "skill_lay_on_hands": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "88159ae2537217c2efccd6ffc2f80e8148c8c5cc51656ea1485402dde4042c13",
+   "text": "Imposição de mãos",
+   "translation_status": "translated"
+  },
+  "skill_lay_on_hands_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "17f15b7a86b69485107822cf2175532fe75ac0f5a6234d6b860560e09bbe247c",
+   "text": "{color_text}- Consome até 1 / 2 / 3 / 4 / 5 de Fervor, conforme o nível da habilidade\r\n    - Restaura {skill_heal_amount} de vida por Fervor consumido\r\n\r\n    {color:666666}O paladino canaliza o Fervor sagrado para curar os feridos.",
+   "translation_status": "translated"
+  },
+  "skill_lay_on_hands_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "8ba3d622780d0ed9cd240b44bc50efbf23f99e2c0076cbd9273fe4091ba406a4",
+   "text": "Consome Fervor para curar um aliado. Níveis mais altos permitem consumir mais Fervor.",
+   "translation_status": "translated"
+  },
+  "skill_leechcraft": {
+   "context": "'Lifesteal' -> roubo de vida.",
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "c48233bad27330a9de26932a9fd3785f70e7af36ce11e3415ffb35618948a187",
+   "text": "Arte da sanguessuga",
+   "translation_status": "translated"
+  },
+  "skill_leechcraft_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "958c7986a7ab1c971a9e1cd7540b233513d243e4e9faf619d1f05b8653e62bd8",
+   "text": "Cada golpe cria um canal. Capilares finos e invisíveis ligam as feridas do inimigo ao conjurador. À medida que o sangue escapa da vítima, parte dele corre por esses caminhos roubados, costurando tecidos rasgados e acalmando a respiração do Mago de sangue.",
+   "translation_status": "translated"
+  },
+  "skill_leechcraft_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "5170181187bc608016697d7d419defd65af9f0a0c76546e6c96f5425f48647f9",
+   "text": "Vida drenada{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_leechcraft_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "a72aceed49f0bd986715968c03014b0654ea5e51923ba014ad5150c8ae0b3f7f",
+   "text": "Roubo de vida: restaura vida igual a {skill_bonus} do dano de sangue que você causa.",
+   "translation_status": "translated"
+  },
+  "skill_mark_the_dead": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "977b199b468632e70e4b7777622ddb1924151580ec88cf0de5c9e7d67bddf808",
+   "text": "Marcar os mortos",
+   "translation_status": "translated"
+  },
+  "skill_mark_the_dead_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "99dd00422e9a7b8228e18cc0a93a8336e9516e18d259cc9689b139ae13d556c8",
+   "text": "Um sigilo de sangue moribundo se grava no alvo. Cada golpe seguinte rasga mais fundo do que deveria, como se a própria marca puxasse a morte para mais perto a cada ataque.",
+   "translation_status": "translated"
+  },
+  "skill_mark_the_dead_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ee4d7088b467a7c640ed5a72f03ab22d9203d7f8c62b562364b278377a06eadb",
+   "text": "Dano recebido{a:right}{skill_status_power}",
+   "translation_status": "translated"
+  },
+  "skill_mark_the_dead_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "04df7c72be4abaa4a01693412d3e451914a6450dfd52730b53214b4324a3856f",
+   "text": "Duração{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_mark_the_dead_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "596421b09be0450c25cb3ec0da7eba019f8cdabd5e3d5efe7fd5f70540ff75dd",
+   "text": "Marca um inimigo próximo, aumentando todo o dano que ele sofre.",
+   "translation_status": "translated"
+  },
+  "skill_nightshade_mastery": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "134e13c0697655a30027ebab94f647967ec3f4179017b83e8831198d6826d4fe",
+   "text": "Maestria da beladona",
+   "translation_status": "translated"
+  },
+  "skill_nightshade_mastery_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "73ef69690504d4c4f182ccc8ad421f133134801a4eb110bd8933c0ec9fbccfde",
+   "text": "{color_text}- Só funciona com adagas e espadas\\n- Um efeito negativo pode ser aplicado por ataque\\n- Efeitos negativos possíveis: Veneno, Sangramento, Cegueira ou Queimadura\\n- A intensidade e a duração do efeito são aleatórias (1-3 rodadas){color:666666}\\n\\nUma velha arte da guilda, em que cada golpe deixa para trás algo que os olhos não veem.",
+   "translation_status": "translated"
+  },
+  "skill_nightshade_mastery_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "28d2392f3f60a6129345e01c29d5d2d0fe8b69d5118d5e8816d449e28b35c465",
+   "text": "Chance do efeito{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_nightshade_mastery_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "e8b73ec7c2a0f089a2cde68ec0c0bc9f97d0459603c0a960c793d31b7d025f8d",
+   "text": "Dano do efeito{a:right}{skill_status_power}",
+   "translation_status": "translated"
+  },
+  "skill_nightshade_mastery_stat_3": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "cefae9d1ed692c3b48c02116c2bd79f39a26103ebc14187bfd709c7bbe0edf89",
+   "text": "Duração do efeito{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_nightshade_mastery_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "dfa92f9fbd8e8ba6a3aa1ba466871203a563df507eb629117401a5560780bef0",
+   "text": "Ataques com adagas e espadas podem aplicar um efeito negativo aleatório.",
+   "translation_status": "translated"
+  },
+  "skill_null_bolt": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "0c6c58adb4e5ea1276ba5d607bcc72e9dfc9d5e573377d9fd9329ad23aeba071",
+   "text": "Lança do vazio",
+   "translation_status": "translated"
+  },
+  "skill_null_bolt_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "d470c662f70a02d48589721465b4f4858203c1181c38568d73c55c8a3f9cc7d4",
+   "text": "O Invocador do Vazio arremessa uma lança de puro nada. Ela perfura armaduras, dissipa proteções e atinge direto a essência do inimigo, deixando apenas silêncio em seu rastro.",
+   "translation_status": "translated"
+  },
+  "skill_null_bolt_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "14d317a7c9ad6608e8025dd78420c819e51f60dde89ac63598c253ce084dbec3",
+   "text": "Dano do vazio{a:right}{skill_damage}",
+   "translation_status": "translated"
+  },
+  "skill_null_bolt_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "a494a1aac4dd6c7b76567653be267db82b3a3c78dc257cf05f30ea78a575f21c",
+   "text": "Ataque do vazio à distância que ignora as defesas inimigas.",
+   "translation_status": "translated"
+  },
+  "skill_omen_of_the_veins": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "1c91d11bb7e8a6ca1e9c0e6bf461bf37cfe63926fc8728b409f6c45113b8af9d",
+   "text": "Presságio das veias",
+   "translation_status": "translated"
+  },
+  "skill_omen_of_the_veins_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "eec225a50a14bf3f42b0e5ec07d24017b45b1a2cf73c90a17f159ac86497f1b1",
+   "text": "O Mago de sangue estuda o ritmo do sangue como outros estudam as constelações. Artérias, pressão, pulso. Cada um revela onde um golpe vai desabrochar com mais violência.",
+   "translation_status": "translated"
+  },
+  "skill_omen_of_the_veins_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "eeeb210f9e93dbae5e6bc15082d257c9128444a6258e64321dcc8f449885501a",
+   "text": "Chance de crítico das magias de sangue{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_omen_of_the_veins_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "1dd0fad79496d2fb784f3f6aaf5439cc1cf809d30f449643774ae363e6642cbf",
+   "text": "Magias de sangue que causam dano ganham chance de crítico.",
+   "translation_status": "translated"
+  },
+  "skill_power_of_the_void": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "355d1d20bd20d53ada925b31f686e9dbd37748866925837c09f575a316de1e9e",
+   "text": "Poder do vazio",
+   "translation_status": "translated"
+  },
+  "skill_power_of_the_void_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "3460154be34e79062acb91b3f979677c68618ce5dc76840663e5ed5e6e5adc4a",
+   "text": "O Invocador do Vazio extrai força do abismo sem fim. Cada magia se torna um eco desse poder: cura mais fundo, golpeia com mais força e carrega a vontade do próprio vazio.",
+   "translation_status": "translated"
+  },
+  "skill_power_of_the_void_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "6d5fbe75167596b3d23be77078e8d0b642acfca68c69698dbeb26fd4aa69bb9c",
+   "text": "Potência das magias do vazio{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_power_of_the_void_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "9b3740b6e5e73c4f9fb32712df1ae598338a35b89977b611de9f2572ed185ccc",
+   "text": "Aumenta os efeitos de cura e de dano de todas as magias do vazio.",
+   "translation_status": "translated"
+  },
+  "skill_provoking_shout": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "9051541a2a4cfcdf85c4c811cbd8b1134ceac82b0d29b7ae2804d9baa42f51e4",
+   "text": "Grito provocador",
+   "translation_status": "translated"
+  },
+  "skill_provoking_shout_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "13c625f068260c2850391af1398d1207d75579af3dd7cf1fd7379eaf9dda83b5",
+   "text": "O guerreiro ruge com uma fúria que sacode o campo de batalha. Os covardes tremem, as lâminas se voltam e todos os olhares caem sobre a fonte do desafio. Por alguns instantes, o guerreiro se torna a tempestade.",
+   "translation_status": "translated"
+  },
+  "skill_provoking_shout_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "04df7c72be4abaa4a01693412d3e451914a6450dfd52730b53214b4324a3856f",
+   "text": "Duração{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_provoking_shout_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "57b522da682a1074809fe70a539280e994dd640229d190ae220a47465d8b9dcd",
+   "text": "Chance de redirecionar{a:right}{skill_status_power}",
+   "translation_status": "translated"
+  },
+  "skill_provoking_shout_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ae4b3b63c9b431af7c376400de43f20af5eb00494ad29226796a9f05fb7c27d1",
+   "text": "Solta um grito que redireciona os ataques inimigos para o guerreiro por {skill_status_duration} rodadas.",
+   "translation_status": "translated"
+  },
+  "skill_quickshot": {
+   "context": "Coincide com o ES ('Disparo rápido'); tela citada no playtest Alpha.",
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "375946c03c3fd487ad17417b0b4b7f694bfcfdf1d6fd8b686afc94b3825dfc80",
+   "text": "Disparo rápido",
+   "translation_status": "translated"
+  },
+  "skill_quickshot_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "02fe331e3241987ab3d521eb81a9fb750e78965f41a7966ab809c7e1e9b40d01",
+   "text": "{color_text}- Só pode ser usada com armas à distância{color:666666}\\n\\nO patrulheiro dispara em um movimento fluido e já busca o próximo projétil. Quando o tempo e o instinto se alinham, um segundo disparo vem antes que o inimigo se recupere.",
+   "translation_status": "translated"
+  },
+  "skill_quickshot_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "93e4924a0c273f92683d266e13a3aa4069348b59c322ecb8c5688c982944d19b",
+   "text": "Chance de disparar duas vezes{a:right}{skill_chance}",
+   "translation_status": "translated"
+  },
+  "skill_quickshot_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "97c1ed3f5ce230d862cff3b69dd5c3c6c5dfe1fe268f3a1eaef58f3fc4dce006",
+   "text": "Ataque à distância com chance de disparar duas vezes. O segundo disparo não ativa efeitos da arma nem acertos críticos.",
+   "translation_status": "translated"
+  },
+  "skill_righteous_strike": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "5b6a3bc351d1c7f9863d7e4562b2ad21882afc7bb7608c7367cd0333b04d4fb7",
+   "text": "Golpe justo",
+   "translation_status": "translated"
+  },
+  "skill_righteous_strike_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "bf35cad96485c81d51fa0e208774ef5d08b53c5ceff8c4491fdf128e4ea10730",
+   "text": "{color_text}- Não consome ação\\n- Seu próximo ataque básico causa {skill_bonus} de dano a mais\\n- Seu próximo ataque básico bem-sucedido gera 1 de Fervor adicional\\n- O efeito não se acumula\\n\\n{color:666666}O paladino reúne determinação divina antes de golpear. O próximo golpe acerta com mais força e restaura Fervor.",
+   "translation_status": "translated"
+  },
+  "skill_righteous_strike_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "beb00d0d8021bf4235b8badf7868fa33f1395e36935bd105a6ced4c8a5b6327d",
+   "text": "Bônus de dano do ataque{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_righteous_strike_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "282511684e45641340d8fb2fa10414cb34547c156b39d3d57d438a7114199605",
+   "text": "Fortalece o próximo ataque básico, aumentando seu dano e gerando Fervor extra.",
+   "translation_status": "translated"
+  },
+  "skill_riposte": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "6e1bdc294002f23d867897b239a644801a07effca16fc07c31ab55c7f41ff26d",
+   "text": "Réplica",
+   "translation_status": "translated"
+  },
+  "skill_riposte_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "adb8db5c44a0bfb81f3eb430d02e2731616d82f37e88bb70f1903e9e58611f2e",
+   "text": "{color_text}- Só pode ser usada com armas de uma mão{color:666666}\\n\\nUma postura disciplinada nascida nos salões dos duelistas. O guerreiro transforma a imobilidade em ameaça: espera, mede a distância e golpeia no instante em que o inimigo se compromete.",
+   "translation_status": "translated"
+  },
+  "skill_riposte_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "04df7c72be4abaa4a01693412d3e451914a6450dfd52730b53214b4324a3856f",
+   "text": "Duração{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_riposte_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "886f4e77e9a958e34a1e51daec7f515cbcc971ea8145c6f130be66bbd0532bc8",
+   "text": "Armadura inimiga ignorada{a:right}{skill_ignore_armor}",
+   "translation_status": "translated"
+  },
+  "skill_riposte_stat_3": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "a02f2a4bc2d4a235890fca4c4cb17e81c6b54f71cdd9e757bf656061ed4c03ce",
+   "text": "Dano do contra-ataque{a:right}{skill_status_power}",
+   "translation_status": "translated"
+  },
+  "skill_riposte_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "0256bcaaa3709e689c0e8a7c2c6356eccfb40c56776e2b6648996300b3640ab1",
+   "text": "Ataque com arma de uma mão que ignora a armadura inimiga e ativa um contra-ataque corpo a corpo nesta rodada.",
+   "translation_status": "translated"
+  },
+  "skill_sacred_bulwark": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "60703f6da33632ad8832c5af03abfdbe561b27b696de0b5a612b0a9a198f240c",
+   "text": "Baluarte sagrado",
+   "translation_status": "translated"
+  },
+  "skill_sacred_bulwark_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "ca5edc0cf3be9934d7fbf619e6fc967737b0a14e61348839e32c6e5dd3dfeb37",
+   "text": "A fé do paladino não se apaga sob o aço. A sabedoria se transforma em proteção, fazendo da própria convicção uma armadura.",
+   "translation_status": "translated"
+  },
+  "skill_sacred_bulwark_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "6110dff3aa693631d33474a6fa97b12a0642bc8d5e52b652dcbea7d0c97d5ded",
+   "text": "Sabedoria somada à Armadura{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_sacred_bulwark_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "84c2a1dede2f7587b54c42137d8dec1cee8c1cd97fee1cb8b8d06f96f8103dd7",
+   "text": "Soma passivamente à Armadura um valor igual a {skill_bonus} da Sabedoria do Paladino.",
+   "translation_status": "translated"
+  },
+  "skill_scarlet_shackles": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "e1e78976a86252367af678301b3f49cb65b9163f211e500ff0486f3ecfc7ca98",
+   "text": "Grilhões escarlates",
+   "translation_status": "translated"
+  },
+  "skill_scarlet_shackles_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "c5b35652cb70bfa11ce45ad3ba48d790cd8143f2f2e9665c394721d8aff3cd21",
+   "text": "Correntes tecidas de sangue vivo irrompem do chão, agarrando todos os inimigos próximos. Embora as amarras durem só um instante, elas mordem fundo, deixando feridas que pulsam com um sangramento lento e implacável.",
+   "translation_status": "translated"
+  },
+  "skill_scarlet_shackles_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "d35e0ae39cd6018363c1fb6e2a14c59dcbd81f30a45a9540699dbdd28418e658",
+   "text": "Dano do sangramento{a:right}{skill_status_power}",
+   "translation_status": "translated"
+  },
+  "skill_scarlet_shackles_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "16178d2c8e179d8c6eb0d68fe12b9aa1cb8ba236d9f8496f156a4aabc99eae12",
+   "text": "Duração do sangramento{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_scarlet_shackles_stat_3": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "db1412cb8d74e5378e594be09d63d23086a536245b0184030f316c85d006679d",
+   "text": "Duração da paralisia{a:right}{color_value}1",
+   "translation_status": "translated"
+  },
+  "skill_scarlet_shackles_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "0664db5c46fdbf5f678355fb9ffe073855bea97e92ef3895f1d882206d1a6348",
+   "text": "Prende todos os inimigos próximos no lugar e aplica Sangramento.",
+   "translation_status": "translated"
+  },
+  "skill_shadow_instinct": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "c788e38e835bf32f23b2572140662025bd059f164b5916c73b4ef4de246d6529",
+   "text": "Instinto das sombras",
+   "translation_status": "translated"
+  },
+  "skill_shadow_instinct_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "79c481fe07b363a16227c200ab3ee5ac7b9051a71784a89054db4cd369c3a727",
+   "text": "O ladrão aprende a sentir onde a armadura engana os olhos e onde, na verdade, não protege nada. Um golpe guiado pela sombra não testa as defesas: passa por elas.",
+   "translation_status": "translated"
+  },
+  "skill_shadow_instinct_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "587ba3b4c455cac3f1b04fbe9cad510d26ab5475a6b73cb3357c4c68c96287e1",
+   "text": "Os ataques ganham chance de crítico e ignoram parte da armadura.",
+   "translation_status": "translated"
+  },
+  "skill_shadow_lunge": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "52f54f5920029a4a0fa180e385fc87caab98bccb8ea87dba76290aa622e9d4ab",
+   "text": "Bote das sombras",
+   "translation_status": "translated"
+  },
+  "skill_shadow_lunge_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "10e49afef767952c8059fd8ad8b086d6ccefa22566df4232ea359976d27d8688",
+   "text": "{color_text}- Só pode ser usada com adagas{color:666666}\\n\\nA sombra é usada quando o inimigo já está comprometido, e o golpe é desferido onde a resistência deixou de importar.",
+   "translation_status": "translated"
+  },
+  "skill_shadow_lunge_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "5b14ab7b4f55b666c5061e35334ff178684989ba3d0707319c9c6c1259b10dfc",
+   "text": "Dano do ataque{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_shadow_lunge_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "1fdf1ccb2233bdb3f5b60289397b5a338b385b94c0eea6f006a3bf8841293eb2",
+   "text": "Dano adicional contra inimigo sangrando ou envenenado{a:right}{skill_bonus2}",
+   "translation_status": "translated"
+  },
+  "skill_shadow_lunge_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "20b110e212c184e1f0557879cb8d6a52b26e78eeae6e8676c6ab307002d11d3c",
+   "text": "Ataque com adaga que causa dano adicional a inimigos sangrando ou envenenados.",
+   "translation_status": "translated"
+  },
+  "skill_shield_bash": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "f581cb043ffa9c25f094bca0f3c6c7530b72c9a13731ed2cba288544633b5d1a",
+   "text": "Golpe de escudo",
+   "translation_status": "translated"
+  },
+  "skill_shield_bash_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "dfdbb7eb4ef08589216934d46ef716a84b81b728209c926aedf45ae4055a0ab8",
+   "text": "O guerreiro avança o escudo como um martelo, esmagando ar e ossos.",
+   "translation_status": "translated"
+  },
+  "skill_shield_bash_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "852a2b6eca198ad650453d01e3cefdbcfb6150a3d66a6e34b0cfe8114abd5fcf",
+   "text": "Chance de atordoar{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_shield_bash_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "286a15f532c3afa7d69e3fb90b0a8ccdcb05bf65b5d542aa51570ffd50f8da7f",
+   "text": "Duração do atordoamento{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_shield_bash_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "29491069df0b88af453158c5a7fbbff3f56ea2978bf209c728ec922c8aaf5943",
+   "text": "Golpeia o inimigo com o escudo, com {skill_status_chance} de chance de atordoar por {skill_status_duration} rodadas. Também concede um bônus passivo de armadura ao empunhar um escudo.",
+   "translation_status": "translated"
+  },
+  "skill_shielding_barrier": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "319a51b00dbfb21a36193b7b46ff7be78c1f650a37ae2c3b121c362494e2d8f7",
+   "text": "Barreira protetora",
+   "translation_status": "translated"
+  },
+  "skill_shielding_barrier_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "87c2d24d278871e557d7efd1159de38298b74f85cd0b6dafcfd865b336bfa9b1",
+   "text": "Energia arcana se enrola ao redor do mago, formando uma barreira de força pura. Ela curva a luz e o som, desviando golpes e amortecendo a dor.",
+   "translation_status": "translated"
+  },
+  "skill_shielding_barrier_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "789bc69d3cf029db294b626b9dc5e2aaaefc90be9e71da7bfc52d299e7e66b3e",
+   "text": "Dano absorvido{a:right}{skill_status_power}",
+   "translation_status": "translated"
+  },
+  "skill_shielding_barrier_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "04df7c72be4abaa4a01693412d3e451914a6450dfd52730b53214b4324a3856f",
+   "text": "Duração{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_shielding_barrier_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "f22967ab3776b47a95047a48ff457228c6921c8eddb2ec1aafe8b4157629d89d",
+   "text": "Envolve o conjurador em uma barreira cintilante por {skill_status_duration} rodadas, absorvendo até {skill_status_power} de dano de qualquer tipo.",
+   "translation_status": "translated"
+  },
+  "skill_skirmishers_step": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "1575215adf411f301295c4730fffbd23483019b165fb3dad252125d5b1572cbd",
+   "text": "Passo do escaramuçador",
+   "translation_status": "translated"
+  },
+  "skill_skirmishers_step_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "1c72c0ae92cfc91e5fbd556d29cf3615f9d1bfba0c053d6a27ae378b52e3d584",
+   "text": "{color_text}- Não consome ação\\n- Não se acumula consigo mesma\\n\\n{color:666666}Com uma rápida mudança de postura, o patrulheiro abre espaço e prepara o próximo disparo. O movimento desvia os ataques recebidos e, no mesmo fôlego, prepara um golpe mais forte.",
+   "translation_status": "translated"
+  },
+  "skill_skirmishers_step_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "beb00d0d8021bf4235b8badf7868fa33f1395e36935bd105a6ced4c8a5b6327d",
+   "text": "Bônus de dano do ataque{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_skirmishers_step_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "fe3d359d88262d3c3448a695dc04079bc41b6f6c40937103af4703e42d663e1e",
+   "text": "Concede ao patrulheiro esquiva adicional por {skill_status_duration} rodada e aumenta o dano do próximo ataque básico em {skill_bonus}.",
+   "translation_status": "translated"
+  },
+  "skill_skull_rattle": {
+   "context": "Nome descritivo (provisório).",
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "25f91415692dac5a34c1ca62e22bf9d7d02168aff8fe12ec1039af6e98cd5f90",
+   "text": "Racha-crânio",
+   "translation_status": "translated"
+  },
+  "skill_skull_rattle_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "b5867cacd371124620a0349d1eccc7dc5a8e7d344c0013a22ccbe808ec20e238",
+   "text": "{color_text}- Só pode ser usada com maças\\n\\n{color:666666}O guerreiro brande a maça com força de sacudir os ossos. Se o golpe acertar em cheio, a visão do inimigo escurece e seu corpo trava no lugar. Um instante depois, vem o silêncio.",
+   "translation_status": "translated"
+  },
+  "skill_skull_rattle_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "903c930163ec0393a27706572ad36a21945fd76b7aa7508956435e1347a1252c",
+   "text": "Dano base{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_skull_rattle_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "852a2b6eca198ad650453d01e3cefdbcfb6150a3d66a6e34b0cfe8114abd5fcf",
+   "text": "Chance de atordoar{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_skull_rattle_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "9fdb757efa2b1a9f0606f8cd5abbbc71cecc01d5fd9cf0f67ce7835ecd0949ce",
+   "text": "Desfere um golpe esmagador com uma maça, causando {skill_bonus} de dano, com {skill_status_chance} de chance de atordoar o alvo.",
+   "translation_status": "translated"
+  },
+  "skill_slice_and_dice": {
+   "context": "Expressão 'slice and dice' -> 'Corta e retalha' (provisório).",
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "23de25388bc95be0b6e30a68ae843618a97ca816c6e500265187324c4fef27f4",
+   "text": "Corta e retalha",
+   "translation_status": "translated"
+  },
+  "skill_slice_and_dice_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "285186eb4bb5366a0ac19740df8b273128f04acfc0331177e938c7908efe3d82",
+   "text": "{color_text}- Só pode ser usada com machados\\n\\n{color:666666}Um golpe pesado de machado feito para romper armaduras. Bruto, forte e eficaz.",
+   "translation_status": "translated"
+  },
+  "skill_slice_and_dice_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "903c930163ec0393a27706572ad36a21945fd76b7aa7508956435e1347a1252c",
+   "text": "Dano base{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_slice_and_dice_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "886f4e77e9a958e34a1e51daec7f515cbcc971ea8145c6f130be66bbd0532bc8",
+   "text": "Armadura inimiga ignorada{a:right}{skill_ignore_armor}",
+   "translation_status": "translated"
+  },
+  "skill_slice_and_dice_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "3565cc35d63ad80dcf6bf9aa9d975575b18620fcba5d20b94f91366abd8abb5b",
+   "text": "Ataque de machado que causa {skill_bonus} de dano e ignora parte da armadura inimiga.",
+   "translation_status": "translated"
+  },
+  "skill_smoke_bomb": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "80d980b15b4badb8ba69eecd7c3b584a2ff203260229fcdc4f71db09b411c911",
+   "text": "Bomba de fumaça",
+   "translation_status": "translated"
+  },
+  "skill_smoke_bomb_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "7a2bcdcb433518df2a033a35cc8464456a3cbe9bc74c9dbac1189442a13238ec",
+   "text": "{color_text}- A chance de cegar é reduzida pela Esquiva do inimigo\r\n- Ataque à distância\r\n- Atinge até dois inimigos\r\n- Cegueira reduz a precisão dos ataques corpo a corpo e à distância em 50%\r\n{color:666666}\\nUma nuvem de fumaça dá ao ladrão um momento precioso. O inimigo golpeia às cegas enquanto o ladrão se aproxima para o golpe final.",
+   "translation_status": "translated"
+  },
+  "skill_smoke_bomb_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "209e10bd702340747155701d9914fe2ad250677634af6bb9fdb5386542570ec3",
+   "text": "Chance de cegar{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_smoke_bomb_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "710ca5a1b22f141f84f1013edec41e0a965262b17e15dfa7651aa59940c3924a",
+   "text": "Duração da cegueira{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_smoke_bomb_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "05fb8132e764bd54fa1d75944d2029e73571ce0832f164de415b4ea1f3110d85",
+   "text": "Arremessa uma bomba de fumaça à distância, com chance de cegar até dois inimigos por {skill_status_duration} rodadas.",
+   "translation_status": "translated"
+  },
+  "skill_static_shock": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "eea3835c528ebe5007cd512b681f953211ecadeea270ca1c54d0e8d02a39eb91",
+   "text": "Choque estático",
+   "translation_status": "translated"
+  },
+  "skill_static_shock_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "92a9f480c415f15cc3cda8ac7dfae762db56576b2aa645e791a10fd0a905ebf1",
+   "text": "O mago libera uma explosão de energia crepitante que salta de inimigo em inimigo. Ela zumbe com o som das tempestades e o cheiro de ozônio, deixando para trás ar chamuscado e silêncio.",
+   "translation_status": "translated"
+  },
+  "skill_static_shock_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "b8288c5a1a0e323e1b344b93c17cce336ef2156f1b6b61857051f7cba757e415",
+   "text": "{color_lightning}Dano de raio{a:right}{skill_damage}",
+   "translation_status": "translated"
+  },
+  "skill_static_shock_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "2335465153251dee74e09f7d81fb3b84ffd908df00b20b5e47605ec01410e58b",
+   "text": "Libera uma descarga elétrica, causando {skill_damage} de dano de raio a dois inimigos à frente do conjurador.",
+   "translation_status": "translated"
+  },
+  "skill_stillstrike": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "8352293ad77e3f19ebbc4e965294f3cb2801a4899dbbe18b10749f830e952030",
+   "text": "Disparo paralisante",
+   "translation_status": "translated"
+  },
+  "skill_stillstrike_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "6c2b1fd1bed459533d9ada744e85546f16fe8850f54efea3f39d33cc7d4ba9d9",
+   "text": "{color_text}- Só pode ser usada com armas à distância\\n- Alvos paralisados ainda podem agir{color:666666}\\n\\nO patrulheiro dispara um tiro preciso para deter o inimigo no lugar. Se acertar bem, o alvo fica sem conseguir se mover.",
+   "translation_status": "translated"
+  },
+  "skill_stillstrike_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "3c3cbf70638600c9545ab00ca90683f9447f2aa6b77eb1d89ad7063a91a62bbd",
+   "text": "Chance de paralisar{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_stillstrike_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "54f5cb49de3e5c997169a314b30ddfdcc050c12502eb8daf7d864efc01ee4a4d",
+   "text": "Disparo à distância com {skill_status_chance} de chance de paralisar o alvo por {skill_status_duration} rodada.",
+   "translation_status": "translated"
+  },
+  "skill_storm_chain": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "bec064b7c878ebaafb3ebd034fc0a020d9c878be0d37567077e3e0976ec889fd",
+   "text": "Corrente da tempestade",
+   "translation_status": "translated"
+  },
+  "skill_storm_chain_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "023d3ed5d08cd62b2e8e9965fcfabdc09bab41837eb9cfdc67b9da26dd33cf55",
+   "text": "O mago invoca uma tempestade. Nuvens escuras se juntam e raios caem sobre os mesmos alvos repetidas vezes antes que o céu se abra.",
+   "translation_status": "translated"
+  },
+  "skill_storm_chain_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "b8288c5a1a0e323e1b344b93c17cce336ef2156f1b6b61857051f7cba757e415",
+   "text": "{color_lightning}Dano de raio{a:right}{skill_damage}",
+   "translation_status": "translated"
+  },
+  "skill_storm_chain_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "3e418efdeeb106079bb4671d5d33bca98236138e4df03254e2396c8525df649f",
+   "text": "Chance de repetir{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_storm_chain_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "c309c19057d5bb9426e171ac055659b91eba742a3c37e1cc813e7483368f32dd",
+   "text": "Raio em cadeia que atinge dois inimigos, com {skill_bonus} de chance de atingir os mesmos alvos de novo.",
+   "translation_status": "translated"
+  },
+  "skill_stun_undead": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "e9686acd94baaf94802902291a1a8dc3143391e69898bb54defbb0ade0958922",
+   "text": "Atordoar mortos-vivos",
+   "translation_status": "translated"
+  },
+  "skill_stun_undead_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "215579cc62472e2de842a83475e445c5ffce9e798b074bd47687d43f0633a9f7",
+   "text": "{color_text}- Habilidade inicial\\n- Não pode subir de nível\\n- Consome todas as cargas de Fervor\\n- Tem {skill_status_chance} de chance de atordoar por Fervor consumido\\n- O atordoamento dura 1 rodada\\n\\n{color:666666}O paladino pronuncia palavras que os mortos nunca deveriam ouvir. A força sagrada atravessa os ossos apodrecidos, deixando os mortos-vivos cambaleando em silêncio.",
+   "translation_status": "translated"
+  },
+  "skill_stun_undead_failure": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "7163f1da56c793d6695db6b53d1a1ce089ddbe788e08c1d7fcb08b2b7f53ca2b",
+   "text": "{color_msg_danger}Atordoar mortos-vivos não teve efeito.",
+   "translation_status": "translated"
+  },
+  "skill_stun_undead_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "e0bc793de671c89279d8c014af77483f0fd8d651848f223e51592ebbb3b41f53",
+   "text": "Chance de atordoar por Fervor{a:right}{skill_status_chance}",
+   "translation_status": "translated"
+  },
+  "skill_stun_undead_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "a57c90af069b64777813ae587ecfa11c0c32baf536f3f75cb9afd8563c234048",
+   "text": "Consome Fervor para tentar atordoar um único inimigo morto-vivo.",
+   "translation_status": "translated"
+  },
+  "skill_take_aim": {
+   "context": "ID 'take_aim', nome exibido 'Aimed Shot'.",
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "b16f2dfebf3296a7d049aab1b2b35b9144b4a295aabeaf4ec1e866f5b202203e",
+   "text": "Disparo mirado",
+   "translation_status": "translated"
+  },
+  "skill_take_aim_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "744cf2a6d5e25f585ab7c52ff4eb69f42d0b83827a8efd778f6d54016e5ab539",
+   "text": "{color_text}- Só pode ser usada com armas à distância{color:666666}\\n\\nO patrulheiro desacelera a respiração até o mundo se reduzir a uma única batida do coração. O alvo é escolhido e o disparo sai com uma precisão calma, feita para encerrar o momento sem desperdício.",
+   "translation_status": "translated"
+  },
+  "skill_take_aim_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "a428ce9750de6933a63558fcd94e89147d6d755d8e1c2e6da3d5b721f57b7184",
+   "text": "Dano à distância{a:right}{skill_bonus2}",
+   "translation_status": "translated"
+  },
+  "skill_take_aim_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "f14e7a5ce04b97eec974857e67bbf20927b94891dbbd128e396ba56a1034ca61",
+   "text": "Chance de crítico à distância{a:right}{skill_bonus3}",
+   "translation_status": "translated"
+  },
+  "skill_take_aim_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "f3d3174194fa0dd5c0925a6325d9a510c19d1e492ce6e5cba19124536020cd78",
+   "text": "Disparo preciso à distância com dano e chance de crítico aumentados.",
+   "translation_status": "translated"
+  },
+  "skill_unholy_convergence": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "855f5b6579c20946af417b7c1bccab92632328741c285c446d1e26e53a82744e",
+   "text": "Convergência profana",
+   "translation_status": "translated"
+  },
+  "skill_unholy_convergence_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "f23eab34ed42741e7aa5acbffa14d247ba66d7fa842573a6170c9cb92a357397",
+   "text": "O Invocador do Vazio prende o inimigo em um nó de vazio corruptor. A carne enfraquece, os golpes perdem força e até defesas encantadas começam a rachar sob a pressão do invisível.",
+   "translation_status": "translated"
+  },
+  "skill_unholy_convergence_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "04df7c72be4abaa4a01693412d3e451914a6450dfd52730b53214b4324a3856f",
+   "text": "Duração{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_unholy_convergence_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "3c7c15a08150773e0a2739120a1ce30996552d4667475eb9e96d36eb40547fb9",
+   "text": "Enfraquece um inimigo próximo, reduzindo seu dano físico e suas resistências por {skill_status_duration} rodadas.",
+   "translation_status": "translated"
+  },
+  "skill_void_mend": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "e173f661af0463811845b13cfc1213c0e19553356cd3ed3e407a13ce3c15ea8f",
+   "text": "Remendo do vazio",
+   "translation_status": "translated"
+  },
+  "skill_void_mend_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "42b3e3b1612675fc57232811f514b234f550ff350f2c90d79ba762ef9c825c3b",
+   "text": "{color_text}- Restaura {skill_heal_amount} de vida\r\n    - Nv. 2: remove Sangramento\r\n    - Nv. 3: remove Queimadura\r\n    - Nv. 4: remove Veneno\r\n    - Nv. 5: remove Atordoamento\r\n\r\n    {color:666666}O Invocador do Vazio alcança os fios invisíveis do Vazio e os tece em um abraço reconfortante que remenda a carne e expurga a corrupção.",
+   "translation_status": "translated"
+  },
+  "skill_void_mend_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "77f02f9890bbecf2b66a0b31377572d1dcbb8216ffacbccd88c9f3fa81bc1dd3",
+   "text": "Restaura a vida de um aliado e, em níveis mais altos, pode remover efeitos negativos.",
+   "translation_status": "translated"
+  },
+  "skill_void_veil": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "04e06dc7027dc80a6d9a5bd24fc25136d00932313bb270abbd6c202d504a7675",
+   "text": "Véu do vazio",
+   "translation_status": "translated"
+  },
+  "skill_void_veil_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "6651e0b3b6a1bed110b6ae623e9cd5b8c9a06012c97771648e2ea78014784b57",
+   "text": "O Invocador do Vazio tece fios de vazio em uma barreira cintilante, envolvendo um aliado em sombras que engolem a dor e silenciam a luz. O véu dura pouco tempo e bloqueia todas as formas de dano.",
+   "translation_status": "translated"
+  },
+  "skill_void_veil_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "789bc69d3cf029db294b626b9dc5e2aaaefc90be9e71da7bfc52d299e7e66b3e",
+   "text": "Dano absorvido{a:right}{skill_status_power}",
+   "translation_status": "translated"
+  },
+  "skill_void_veil_stat_2": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "f08c8be7d1511ec9f0543e5e054b8c12877f8646519d1a3c2c697e9d69232bf6",
+   "text": "Duração da barreira{a:right}{skill_status_duration}",
+   "translation_status": "translated"
+  },
+  "skill_void_veil_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "3fe8b77a977fbdd2d30e928bc3034381a361f26e550c7c4a90402bc16f2fc7a4",
+   "text": "Concede a um aliado uma barreira temporária que absorve dano.",
+   "translation_status": "translated"
+  },
+  "skill_zealous_resolve": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "8f2cf88e9d31b7dc75b99ad9d2263f66624a7138fb3b28e08776629bb6a1a348",
+   "text": "Determinação fervorosa",
+   "translation_status": "translated"
+  },
+  "skill_zealous_resolve_desc": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "23cab630c5b86da65c6edc4d4ceaaac9dbe9db53ca8e620af19ef114e3f5ae4c",
+   "text": "Cada centelha de fervor alimenta a determinação do paladino. Com a convicção ardendo mais forte, cada golpe corpo a corpo carrega mais força.",
+   "translation_status": "translated"
+  },
+  "skill_zealous_resolve_stat_1": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "94f54f8d3118db6259a64dddc7df49dbcbd4f78adea6d59e097145e72349ae36",
+   "text": "Dano corpo a corpo por Fervor{a:right}{skill_bonus}",
+   "translation_status": "translated"
+  },
+  "skill_zealous_resolve_summary": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "b517f282406e7bd8a5e757eac1401467be7960522c79e6e33e82958cc58f4498",
+   "text": "Aumenta o dano corpo a corpo para cada carga de Fervor atual.",
+   "translation_status": "translated"
+  }
+ },
+ "locale": "pt-BR",
+ "schema": "ukloc.l10n.catalog/1"
+}

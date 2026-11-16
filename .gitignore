@@ -1,0 +1,60 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+coverage.xml
+*.egg-info/
+build/
+dist/
+
+# Evidências e arquivos proprietários do jogo: não versionar
+audit/local/
+work/
+patch/
+*.exe
+*.dll
+*.pak
+*.pck
+*.ucas
+*.utoc
+*.assets
+*.bundle
+*.resource
+*.resS
+*.bin
+*.dat
+*.sav
+*.zip
+*.7z
+*.rar
+# Formatos da engine de Underkeep (recursos, índices, atlas, áudio, saves)
+*.rfile
+*.db
+*.clip
+*.dds
+*.texture.png
+*.sample.wav
+*.sample.ogg
+*.sound.mp3
+*.level
+player_profile
+save_auto
+save_quick
+save_[0-9]*
+# Projetos/snapshots de análise (Ghidra/REA) e dumps
+*.gpr
+*.rep/
+*.gzf
+ghidra_projects/
+*.dmp
+evidence_bundles/
+
+# Configurações individuais
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db

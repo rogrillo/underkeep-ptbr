@@ -1,0 +1,8 @@
+[
+ {
+  "id": "brenna_ask_heartforge_02",
+  "code": "MARKUP_MALFORMED",
+  "justification": "Defeito herdado da referência en (build 26592006): o texto original já contém um '}' sem abertura. Manter até verificar no jogo se o caractere é exibido; a tradução PT-BR deve decidir conscientemente entre preservar ou corrigir (revisão editorial pendente).",
+  "source": "Fase 1B, ukloc_cli pseudo/validate"
+ }
+]

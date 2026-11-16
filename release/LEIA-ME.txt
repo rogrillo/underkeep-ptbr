@@ -1,0 +1,77 @@
+UNDERKEEP PT-BR {VERSION}
+Tradução comunitária e não oficial do Underkeep para português brasileiro.
+
+Underkeep é um jogo da Rake in Grass. Este projeto não é afiliado, patrocinado nem
+endossado pela Rake in Grass. Apoie os desenvolvedores comprando o jogo na Steam.
+
+VERSÃO BETA: todo o texto do jogo está traduzido, mas a revisão humana completa e o
+playtest de todos os caminhos ainda estão em andamento. Podem existir erros.
+
+------------------------------------------------------------------------------
+COMPATIBILIDADE
+------------------------------------------------------------------------------
+- Jogo: Underkeep na Steam, build {BUILD}.
+  Outras versões são recusadas pelo instalador (nada é alterado).
+- Sistema testado: Windows 11 (64 bits).
+- Steam Deck / Linux: este pacote NÃO serve. Use o pacote "...-SteamDeck.zip".
+
+------------------------------------------------------------------------------
+COMO INSTALAR
+------------------------------------------------------------------------------
+1. Abra o Underkeep pela Steam pelo menos uma vez e feche o jogo.
+2. Extraia o ZIP inteiro para uma pasta qualquer (por exemplo, Downloads).
+3. Execute "Instalar-Underkeep-PTBR.exe".
+   - O Windows pode exibir um aviso do SmartScreen, porque o programa não tem
+     assinatura digital. Clique em "Mais informações" > "Executar assim mesmo"
+     somente se você baixou o pacote da página oficial do projeto e conferiu o SHA-256.
+4. Confirme a pasta do jogo (detectada automaticamente) e responda "s".
+5. Abra o jogo, vá em Opções > Idioma e escolha "Español".
+   O idioma "Español" passa a exibir o texto em português.
+
+O instalador:
+- usa os arquivos do SEU jogo para gerar a versão traduzida (nenhum arquivo do jogo
+  vem no pacote);
+- instala somente em Documentos\Underkeep\mods\base;
+- NÃO altera a pasta da Steam, o executável, os saves, a Steam Cloud nem as configurações;
+- recusa instalar se o jogo estiver aberto, se a versão for diferente ou se já
+  existir outro mod em mods\base.
+
+------------------------------------------------------------------------------
+COMO DESINSTALAR
+------------------------------------------------------------------------------
+Feche o jogo e execute "Desinstalar-Underkeep-PTBR.exe".
+Ele remove apenas a pasta criada pelo instalador, depois de conferir que ela não foi
+modificada. Para voltar ao espanhol original, basta desinstalar.
+
+IMPORTANTE - ATUALIZAÇÕES DO JOGO
+Quando a Steam atualizar o Underkeep, DESINSTALE a tradução antes de jogar e aguarde
+uma versão compatível. A tradução instalada contém uma cópia dos dados da versão
+anterior do jogo e não deve ser usada com uma versão nova.
+
+------------------------------------------------------------------------------
+OPÇÕES AVANÇADAS (prompt de comando)
+------------------------------------------------------------------------------
+  Instalar-Underkeep-PTBR.exe --verificar     só verifica, não altera nada
+  Instalar-Underkeep-PTBR.exe --status        mostra o estado da instalação
+  Instalar-Underkeep-PTBR.exe --jogo "D:\SteamLibrary\steamapps\common\Underkeep"
+
+------------------------------------------------------------------------------
+LICENÇAS E AVISO LEGAL (pasta "licencas")
+------------------------------------------------------------------------------
+- Código do instalador: licença MIT (LICENCA-CODIGO-MIT.txt).
+- Textos da tradução e documentação: CC BY-NC-SA 4.0
+  (LICENCA-TRADUCAO-CC-BY-NC-SA-4.0.txt). Essas licenças valem só para o que o
+  projeto criou e não dão nenhum direito sobre o jogo.
+- AVISO-LEGAL.txt: projeto gratuito e não oficial; é preciso ter o jogo original.
+  As licenças do Python e do PyInstaller, usados nos executáveis, também estão
+  nessa pasta.
+
+------------------------------------------------------------------------------
+PROBLEMAS E SUGESTÕES
+------------------------------------------------------------------------------
+Relate erros de tradução ou de instalação na página do projeto no GitHub (aba Issues),
+informando a versão da tradução ({VERSION}), o Windows usado e o texto/local do problema.
+Não envie saves nem arquivos do jogo.
+
+Créditos: tradução e ferramentas pela comunidade Underkeep PT-BR, com uso de IA sob
+supervisão humana; decisões editoriais e testes feitos por pessoas.

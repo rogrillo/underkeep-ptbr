@@ -1,0 +1,94 @@
+UNDERKEEP PT-BR {VERSION} — PACOTE STEAM DECK / LINUX
+Tradução comunitária e não oficial do Underkeep para português brasileiro.
+
+Underkeep é um jogo da Rake in Grass. Este projeto não é afiliado, patrocinado nem
+endossado pela Rake in Grass. Apoie os desenvolvedores comprando o jogo na Steam.
+
+VERSÃO BETA: todo o texto do jogo está traduzido, mas a revisão humana completa e o
+playtest de todos os caminhos ainda estão em andamento. Podem existir erros.
+
+------------------------------------------------------------------------------
+COMPATIBILIDADE
+------------------------------------------------------------------------------
+- Jogo: Underkeep na Steam, build {BUILD}, rodando pelo Proton.
+  Outras versões são recusadas pelo instalador (nada é alterado).
+- Testado num Steam Deck (modo Desktop): janela de instalação, tradução no jogo
+  pelo Proton e desinstalação. Outras distribuições Linux não foram testadas.
+- Se algo parecer errado, pare e use o modo terminal (abaixo) ou relate no GitHub
+  do projeto.
+- Requer o Python 3.11 ou mais novo, que já vem no SteamOS atual. Não precisa de
+  sudo, senha nem instalar programas.
+
+------------------------------------------------------------------------------
+COMO INSTALAR (modo Desktop)
+------------------------------------------------------------------------------
+1. No modo Jogo, abra o Underkeep pelo menos uma vez e feche o jogo.
+2. Vá para o modo Desktop (botão Steam > Ligar/Desligar > Mudar para o modo Desktop).
+3. Extraia o ZIP inteiro (no Dolphin: clique com o botão direito > Extrair > Extrair aqui).
+4. Entre na pasta extraída e dê dois cliques em "Instalador-Underkeep-PTBR.sh".
+   - Se aparecer a pergunta "Executar" ou "Abrir", escolha EXECUTAR.
+   - Se abrir um editor de texto: clique com o botão direito no arquivo >
+     Propriedades > Permissões > marque "É executável" e tente de novo.
+5. Escolha "Instalar a tradução", confira as pastas mostradas e confirme.
+   A geração dos arquivos leva alguns minutos.
+6. Volte ao modo Jogo, abra o Underkeep, vá em Opções > Idioma e escolha "Español".
+   O idioma "Español" passa a exibir o texto em português.
+
+O instalador:
+- usa os arquivos do SEU jogo para gerar a versão traduzida (nenhum arquivo do jogo
+  vem no pacote);
+- instala somente em Documents/Underkeep/mods/base, dentro do prefixo Proton do jogo
+  (steamapps/compatdata/2411200/pfx/drive_c/users/steamuser/Documents);
+- NÃO altera a pasta do jogo, o executável, os saves, a Steam Cloud nem as configurações;
+- recusa instalar se o jogo estiver aberto, se a versão for diferente ou se já
+  existir outro mod em mods/base;
+- se encontrar mais de uma pasta possível (por exemplo, SSD e cartão microSD),
+  pergunta qual usar em vez de escolher sozinho.
+
+------------------------------------------------------------------------------
+COMO DESINSTALAR
+------------------------------------------------------------------------------
+Feche o jogo, abra "Instalador-Underkeep-PTBR.sh" e escolha "Desinstalar a tradução".
+Ele remove apenas a pasta criada pelo instalador, depois de conferir que ela não foi
+modificada. Para voltar ao espanhol original, basta desinstalar.
+
+IMPORTANTE - ATUALIZAÇÕES DO JOGO
+Quando a Steam atualizar o Underkeep, DESINSTALE a tradução antes de jogar e aguarde
+uma versão compatível. A tradução instalada contém uma cópia dos dados da versão
+anterior do jogo e não deve ser usada com uma versão nova.
+
+------------------------------------------------------------------------------
+MODO TERMINAL (alternativa, no Konsole)
+------------------------------------------------------------------------------
+Abra o Konsole dentro da pasta extraída (no Dolphin: F4, ou botão direito >
+Abrir terminal aqui) e use:
+
+  ./Instalador-Underkeep-PTBR.sh --terminal      instalação interativa
+  ./Instalador-Underkeep-PTBR.sh --verificar     só verifica, não altera nada
+  ./Instalador-Underkeep-PTBR.sh --status        mostra o estado da instalação
+  ./Instalador-Underkeep-PTBR.sh --desinstalar   remove a tradução
+
+Se o script não tiver permissão de execução, troque "./Instalador-Underkeep-PTBR.sh"
+por "bash Instalador-Underkeep-PTBR.sh". Para indicar as pastas manualmente:
+
+  --jogo "/caminho/steamapps/common/Underkeep"
+  --documentos "/caminho/steamapps/compatdata/2411200/pfx/drive_c/users/steamuser/Documents"
+
+------------------------------------------------------------------------------
+LICENÇAS E AVISO LEGAL (pasta "licencas")
+------------------------------------------------------------------------------
+- Código do instalador: licença MIT (LICENCA-CODIGO-MIT.txt).
+- Textos da tradução e documentação: CC BY-NC-SA 4.0
+  (LICENCA-TRADUCAO-CC-BY-NC-SA-4.0.txt). Essas licenças valem só para o que o
+  projeto criou e não dão nenhum direito sobre o jogo.
+- AVISO-LEGAL.txt: projeto gratuito e não oficial; é preciso ter o jogo original.
+
+------------------------------------------------------------------------------
+PROBLEMAS E SUGESTÕES
+------------------------------------------------------------------------------
+Relate erros de tradução ou de instalação na página do projeto no GitHub (aba Issues),
+informando a versão da tradução ({VERSION}), "Steam Deck" e o texto/local do problema.
+Não envie saves nem arquivos do jogo.
+
+Créditos: tradução e ferramentas pela comunidade Underkeep PT-BR, com uso de IA sob
+supervisão humana; decisões editoriais e testes feitos por pessoas.

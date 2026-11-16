@@ -1,0 +1,42 @@
+name: Solicitação de titular de direitos / Rights holder request
+description: Para a Rake in Grass ou representantes dos titulares do Underkeep pedirem alterações ou retirada. / For rights holders to request changes or removal.
+title: "[Direitos] "
+labels: ["direitos"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado pelo contato. Este é um projeto de fãs gratuito, comunitário e não oficial. Pedidos dos titulares de direitos são tratados com prioridade.
+        Se preferir um contato privado, escreva ao mantenedor pelo perfil do GitHub.
+
+        Thank you for reaching out. This is a free, unofficial community fan project. Requests from rights holders are handled with priority.
+        If you prefer private contact, please reach the maintainer through their GitHub profile.
+  - type: input
+    id: organizacao
+    attributes:
+      label: Organização e papel / Organization and role
+      placeholder: "ex.: Rake in Grass — Community manager"
+    validations:
+      required: true
+  - type: dropdown
+    id: pedido
+    attributes:
+      label: Tipo de pedido / Request type
+      options:
+        - Retirada do conteúdo / Removal
+        - Alteração de textos, créditos ou avisos / Changes to texts, credits or notices
+        - Outro / Other
+    validations:
+      required: true
+  - type: textarea
+    id: detalhes
+    attributes:
+      label: Detalhes / Details
+      description: O que deve ser alterado ou removido e, se houver, o prazo. / What should be changed or removed, and any deadline.
+    validations:
+      required: true
+  - type: input
+    id: contato
+    attributes:
+      label: Contato preferido (opcional) / Preferred contact (optional)
+      description: Não publique dados pessoais que não queira tornar públicos. / Do not post personal data you do not want public.

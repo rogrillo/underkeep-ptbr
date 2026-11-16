@@ -1,0 +1,23 @@
+{
+ "schema": "ukloc.patch/1",
+ "name": "fase1c_a_novo_jogo",
+ "description": "Protótipo Fase 1C-A: única alteração experimental no slot es (menu principal).",
+ "pack": "base",
+ "slot": "es",
+ "expected": {
+  "game_build": "26592006",
+  "exe_sha256": "d3158ad0f94d6770deb64b32d48aeb412a3c5ef3a0b2e37a0e092a7ce66bb4a4",
+  "files": {
+   "text_text_common_es.txt.rfile": "e894440e9dca1e228891668f55335804a259e5d6ec1db7c2a2a39a6e9994c2d8",
+   "_rfile.db": "1f630d5dc9ed0cebed849f79a1c17527e210f510c3aa9abe133592b03a59f676"
+  }
+ },
+ "changes": [
+  {
+   "category": "common",
+   "id": "menu_new_game",
+   "source_text_sha256": "095ff69016ed97f9cd386d6e570f001ebe58a524f1e2c6165c91ae01706a2f60",
+   "text": "Novo Jogo"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+[project]
+name = "underkeep-ptbr-tools"
+version = "0.1.0"
+description = "Ferramentas independentes para investigacao e localizacao de Underkeep"
+requires-python = ">=3.11"
+
+[tool.setuptools]
+packages = ["ukloc", "ukloc.formats"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
