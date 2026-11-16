@@ -486,6 +486,10 @@ def _extract(deck_zip: Path, dest: Path) -> Path:
 
 def test_extracted_package_runs_full_cycle(deck_zip: Path, tmp_path: Path, l10n_root: Path) -> None:
     """O pacote extraído funciona sozinho (só a biblioteca padrão) e não grava caches na própria pasta."""
+    # O pacote roda num subprocesso com a detecção real de processos: com o Underkeep aberto nesta máquina, o
+    # instalador recusa a instalação (comportamento correto), e o teste não teria como validar o ciclo.
+    if shadow.is_game_running():
+        pytest.skip("o Underkeep está aberto nesta máquina; feche o jogo para rodar este teste")
     package = _extract(deck_zip, tmp_path / "extraido com espaço")
     game = make_fake_game(tmp_path / "jogo")
     docs = tmp_path / "Documents"

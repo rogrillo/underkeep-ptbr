@@ -22,6 +22,7 @@ l10n/pt-BR/             Catálogo da tradução (IDs, hashes, texto PT-BR, estad
 data/                   Patch de exemplo e exceções justificadas do validador
 release/                Pontos de entrada e LEIA-ME dos pacotes Windows e Steam Deck
 docs/                   Guias de jogadores e contribuidores, glossário, decisões
+assets/screenshots/     Capturas de tela do README (únicas imagens aceitas pela auditoria de publicação)
 work/, audit/local/     Saídas locais com material do jogo (ignoradas pelo Git; nunca commitar)
 build/, dist/           Artefatos de build e pacotes (ignorados pelo Git)
 ```

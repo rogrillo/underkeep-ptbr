@@ -69,6 +69,22 @@ def test_clean_repo_has_no_findings(repo: Repo) -> None:
     assert not report.blockers()
 
 
+PNG = b"\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR" + b"\x00" * 64
+
+
+def test_readme_screenshots_are_the_only_allowed_images(repo: Repo) -> None:
+    repo.commit({"assets/screenshots/menu-principal.png": PNG})
+    assert ap.audit(repo.path).findings == []
+    repo.commit({"assets/outra-pasta/menu.png": PNG, "assets/screenshots/Captura de Tela.png": PNG})
+    blocked = {f.path for f in ap.audit(repo.path).blockers()}
+    assert blocked == {"assets/outra-pasta/menu.png", "assets/screenshots/Captura de Tela.png"}
+
+
+def test_large_screenshot_is_reported() -> None:
+    found = ap.path_problems("assets/screenshots/grande.png", 3 * 2**20, PNG)
+    assert [(k, s) for k, s, _ in found] == [("grande", "medio")]
+
+
 def test_deleted_game_file_is_found_in_history(repo: Repo) -> None:
     repo.commit({"base/text_text_game_en.txt.rfile": b"\x00\x01DfT"}, "oops")
     repo.commit({"base/text_text_game_en.txt.rfile": None}, "remove")

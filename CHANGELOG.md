@@ -2,6 +2,20 @@
 
 Histórico de mudanças por versão do Underkeep PT-BR. Notas para jogadores: [RELEASE_NOTES.md](RELEASE_NOTES.md).
 
+## [Não lançado]
+
+Só documentação e ferramentas; a tradução e os pacotes da 0.1.0-beta.2 não mudaram.
+
+- README com uma galeria de 4 capturas de tela do jogo em português (`assets/screenshots/`): menu, missões, ficha do
+  personagem e itens.
+- Auditoria de publicação:
+  - aceita imagens só em `assets/screenshots/`, com até 1 MB cada;
+  - passa a enxergar todos os caminhos de arquivos com conteúdo idêntico.
+- O teste do pacote Steam Deck extraído é pulado quando o Underkeep está aberto na máquina, porque o instalador
+  recusa instalar com o jogo aberto.
+  - **Melhoria futura:** tornar esse teste independente da detecção real de processos (por exemplo, simulando a
+    detecção), sem mudar o comportamento do instalador.
+
 ## [0.1.0-beta.2] — 16/11/2026 — primeira beta pública
 
 - **Pacote Steam Deck** (`Underkeep-PTBR-v0.1.0-beta.2-SteamDeck.zip`):

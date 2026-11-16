@@ -11,9 +11,37 @@ habilidades e interface.
 > Todos os direitos sobre o Underkeep pertencem aos seus criadores. Para jogar, é preciso ter o jogo original
 > **comprado na Steam**. Nenhum arquivo do jogo é distribuído aqui. Veja o [aviso legal](AVISO_LEGAL.md).
 
-**Ir direto para:** [Download](#download) · [Instalar no Windows](#instalação-no-windows) ·
+**Ir direto para:** [Screenshots](#screenshots) · [Download](#download) · [Instalar no Windows](#instalação-no-windows) ·
 [Instalar no Steam Deck](#instalação-no-steam-deck) · [Ativar o português](#como-jogar-em-português) ·
 [Desinstalar](#desinstalar) · [Reportar erros](#reportar-erros-e-sugerir-melhorias) · [Contribuir](#como-contribuir)
+
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <a href="assets/screenshots/menu-principal.png"><img src="assets/screenshots/menu-principal.png" width="420" alt="Menu principal do Underkeep em português, com as opções Novo jogo, Carregar jogo, Como jogar, Opções, Introdução, Créditos e Sair"></a><br>
+      <sub><b>Menu principal</b> traduzido</sub>
+    </td>
+    <td align="center" width="50%">
+      <a href="assets/screenshots/missoes.png"><img src="assets/screenshots/missoes.png" width="420" alt="Diário de missões em português, com a missão Sussurros de Underkeep selecionada e o texto da narrativa"></a><br>
+      <sub><b>Missões e narrativa</b>: diário com os relatos dos personagens</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <a href="assets/screenshots/personagem.png"><img src="assets/screenshots/personagem.png" width="420" alt="Ficha do personagem em português, com atributos, ataque, defesa, resistências e a descrição do traço racial"></a><br>
+      <sub><b>Ficha do personagem</b>: atributos, resistências e traços</sub>
+    </td>
+    <td align="center" width="50%">
+      <a href="assets/screenshots/itens.png"><img src="assets/screenshots/itens.png" width="420" alt="Inventário em português com a descrição do item Brigantina de couro"></a><br>
+      <sub><b>Itens e equipamentos</b>: inventário e descrições</sub>
+    </td>
+  </tr>
+</table>
+
+<sub>Capturas de tela feitas por jogadores com a tradução instalada (build 26592006). As imagens mostram conteúdo do
+Underkeep © Rake in Grass e não são cobertas pelas licenças deste projeto.</sub>
 
 ## Status
 
