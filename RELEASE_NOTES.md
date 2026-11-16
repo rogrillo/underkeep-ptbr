@@ -1,8 +1,9 @@
 # Underkeep PT-BR v0.1.0-beta.2
 
-> **Primeira versão pública, preparada e ainda não publicada.** Mesma tradução da beta.1: 5.786 de 5.786 textos,
-> com a revisão humana completa ainda em andamento. Muda a distribuição: agora há um pacote próprio para o Steam Deck,
-> validado no aparelho. Texto da página da release: [release/GITHUB_RELEASE_v0.1.0-beta.2.md](release/GITHUB_RELEASE_v0.1.0-beta.2.md).
+> **Primeira beta pública, publicada em 16/11/2026** como *pre-release*. Mesma tradução da beta.1: 5.786 de 5.786
+> textos, com a revisão humana completa ainda em andamento. Muda a distribuição: agora há um pacote próprio para o
+> Steam Deck, validado no aparelho. Downloads na página da release `v0.1.0-beta.2`, cujo texto está em
+> [release/GITHUB_RELEASE_v0.1.0-beta.2.md](release/GITHUB_RELEASE_v0.1.0-beta.2.md).
 
 ## Novidades
 

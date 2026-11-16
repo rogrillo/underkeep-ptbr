@@ -2,7 +2,7 @@
 
 Histórico de mudanças por versão do Underkeep PT-BR. Notas para jogadores: [RELEASE_NOTES.md](RELEASE_NOTES.md).
 
-## [0.1.0-beta.2] — primeira versão pública (beta)
+## [0.1.0-beta.2] — 16/11/2026 — primeira beta pública
 
 - **Pacote Steam Deck** (`Underkeep-PTBR-v0.1.0-beta.2-SteamDeck.zip`):
   - launcher `Instalador-Underkeep-PTBR.sh` que usa o Python do SteamOS, sem `sudo` e sem instalar programas;

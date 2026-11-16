@@ -19,7 +19,7 @@ habilidades e interface.
 
 | | |
 |---|---|
-| Versão da tradução | **0.1.0-beta.2** (primeira versão pública, em preparação) |
+| Versão da tradução | **0.1.0-beta.2**, primeira beta pública, publicada em 16/11/2026 ([baixar](../../releases/tag/v0.1.0-beta.2)) |
 | Cobertura | **5.786 de 5.786** textos traduzíveis (100%) |
 | Revisão editorial | **em andamento**: a tradução está completa, mas a revisão humana e o playtest de todos os caminhos ainda não terminaram |
 | Versão do jogo | Underkeep na Steam, **build 26592006** (atualização de 13/11/2026). Outras builds são recusadas pelo instalador |

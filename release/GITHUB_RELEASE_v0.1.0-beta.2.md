@@ -1,9 +1,7 @@
 <!--
-Rascunho da página da GitHub Release. NÃO publicado.
-Título sugerido: Underkeep PT-BR v0.1.0-beta.2 — primeira versão pública (beta)
-Tag sugerida: v0.1.0-beta.2 (marcar como "pre-release")
-Links absolutos assumem o repositório público rogrillo/underkeep-ptbr.
-Assets: os dois ZIPs e os dois .sha256 de dist/ (hashes abaixo). Se os pacotes forem gerados de novo, atualize os hashes.
+Texto da GitHub Release v0.1.0-beta.2, publicada em 16/11/2026 como pre-release.
+Título: Underkeep PT-BR v0.1.0-beta.2 — Primeira Beta Pública. Tag: v0.1.0-beta.2 (commit 2bfa216).
+Assets: os dois ZIPs e os dois .sha256 (hashes abaixo). Este comentário não faz parte do texto publicado.
 -->
 
 # Underkeep PT-BR v0.1.0-beta.2
