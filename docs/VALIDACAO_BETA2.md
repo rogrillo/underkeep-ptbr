@@ -4,7 +4,8 @@ Registro consolidado em 15/11/2026, para a primeira publicação. Separa três t
 
 - **Playtest:** teste manual em hardware real, relatado pelo mantenedor (com capturas das janelas no caso do Steam
   Deck). Não há log automatizado dessas sessões.
-- **CI:** execução registrada no GitHub Actions do repositório de desenvolvimento (privado).
+- **CI:** execuções do GitHub Actions deste repositório (aba Actions) e, antes da publicação, do repositório de
+  desenvolvimento, que é privado.
 - **Automático local:** testes e testes de fumaça rodados na máquina de desenvolvimento (Windows 11).
 
 Compatibilidade comprovada **somente com a build Steam 26592006** do Underkeep. Não há garantia para builds futuras
@@ -53,8 +54,9 @@ local dos saves no Deck. Esses itens não são necessários para a publicação,
 
 | Execução | Resultado |
 |---|---|
-| GitHub Actions, workflow "Python tests", execução 43780046137, commit `4d30ee3` (16/11/2026 00:23 UTC) | **sucesso** nos três jobs: `tests (3.11)` e `tests (3.13)` no Windows, 172 aprovados e 2 pulados cada; `linux` (Ubuntu, Python 3.13), 173 aprovados e 1 pulado (o pulado exige a instalação real do jogo, ausente no CI) |
-| Suíte local (Windows 11, com o jogo instalado, só leitura) | 184 aprovados e 3 pulados (links simbólicos e `unzip` exigem Linux); validador do catálogo OK; testes de fumaça: Windows 18/18 e Steam Deck 14/14, com packs idênticos hash a hash entre as plataformas |
+| GitHub Actions deste repositório, workflow "Python tests", execução 43788732436, commit inicial `c094d98` (16/11/2026) | **sucesso** nos três jobs: `tests (3.11)` e `tests (3.13)` no Windows, 168 aprovados e 2 pulados cada; `linux` (Ubuntu, Python 3.13), 169 aprovados e 1 pulado (o pulado exige a instalação real do jogo, ausente no CI) |
+| Repositório de desenvolvimento (privado), antes da publicação | **sucesso** nos três jobs, inclusive na suíte maior, com testes de ferramentas internas não publicadas |
+| Suíte local (Windows 11, com o jogo instalado, só leitura) | 167 aprovados e 3 pulados (links simbólicos e `unzip` exigem Linux); validador do catálogo OK; testes de fumaça: Windows 18/18 e Steam Deck 14/14, com packs idênticos hash a hash entre as plataformas |
 
 O job `linux` cobre o que o Windows não consegue: links simbólicos, `/proc` sintético, extração do ZIP com `unzip`
 (permissão do launcher) e o launcher `.sh` no bash nativo. A interface gráfica real não roda no CI: ela foi validada

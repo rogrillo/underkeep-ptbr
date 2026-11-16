@@ -30,7 +30,7 @@
 | Windows 11 | instalação pelo `.exe`, detecção da Steam, verificação, tradução no jogo e desinstalação (volta ao espanhol original): **aprovadas** |
 | Steam Deck (beta.2) | janela `kdialog`, detecção automática do jogo e do prefixo Proton, verificar, status, instalar, jogar, bloqueio com o jogo aberto e desinstalar pela janela: **aprovados**, sem `sudo` e sem instalar Python |
 | Steam Deck (beta.1) | instalação pelo Python do SteamOS (terminal), tradução pelo Proton, `--status` e desinstalação: **aprovadas** |
-| CI (GitHub Actions) | Windows (Python 3.11 e 3.13) e Linux (Python 3.13): **aprovados** no commit `4d30ee3` |
+| CI (GitHub Actions) | Windows (Python 3.11 e 3.13) e Linux (Python 3.13): **aprovados** neste repositório (aba Actions) |
 
 Detalhes e tipo de evidência de cada item: [docs/VALIDACAO_BETA2.md](docs/VALIDACAO_BETA2.md).
 
