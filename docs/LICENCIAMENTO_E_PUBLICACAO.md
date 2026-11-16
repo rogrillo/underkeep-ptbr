@@ -59,7 +59,8 @@
 |---|---|---|
 | Distribuir a tradução sem autorização expressa do titular | **médio** (projetos de fãs costumam ser tolerados, mas a tolerância não é direito) | projeto gratuito e não comercial; nenhum arquivo do jogo; avisos de não afiliação; canal para titulares; compromisso público de atender a pedidos de alteração ou retirada |
 | Pedido de retirada (DMCA ou notificação do estúdio) | baixo a médio | retirar prontamente a release e o conteúdo apontado; manter cópia privada para eventual acordo |
-| Uso indevido da marca "Underkeep" | baixo | nome descritivo ("Underkeep PT-BR"), aviso de não afiliação, sem logotipos nem capturas oficiais |
+| Uso indevido da marca "Underkeep" | baixo | nome descritivo ("Underkeep PT-BR"), aviso de não afiliação, nenhum logotipo ou arte oficial isolado |
+| Capturas de tela no README (`assets/screenshots/`) | baixo | 4 capturas próprias, feitas com a tradução instalada, só para ilustrar o projeto. Uma delas mostra o menu principal com o logotipo do jogo. Crédito "© Rake in Grass" logo abaixo das imagens. Elas não são cobertas pelas licenças do projeto. Removê-las se os titulares pedirem |
 | Executáveis sem assinatura vistos como suspeitos | baixo (reputacional) | SHA-256 publicado, código-fonte aberto, build reproduzível |
 | Terceiros redistribuindo versões alteradas, inclusive com malware | baixo | baixar só da página oficial; `.sha256`; aviso no README |
 

@@ -54,6 +54,10 @@ FORBIDDEN_NAMES = (
 )
 FORBIDDEN_DIRS = ("work/", "audit/local/", "dist/", "build/", "mods/", "__pycache__/", ".venv/")
 LARGE_BLOB = 2 * 2**20
+# Única exceção para imagens: capturas de tela do README, feitas pelos próprios jogadores. Elas continuam sujeitas ao
+# limite de tamanho e não podem ficar em outras pastas.
+DOC_IMAGES = re.compile(r"^assets/screenshots/[a-z0-9-]+\.(png|jpg|jpeg|webp)$")
+DOC_IMAGE_MAX = 1 * 2**20
 ALLOWED_EMAILS = re.compile(
     r"(?i)^(noreply@anthropic\.com|[^@]+@users\.noreply\.github\.com|noreply@github\.com|"
     r"[^@]+@example\.(com|org|net)|[^@]+@localhost)$"
@@ -174,6 +178,27 @@ def commits_touching(repo: Path) -> dict[str, list[str]]:
     return result
 
 
+def blob_paths(repo: Path) -> dict[str, set[str]]:
+    """blob -> todos os caminhos em que apareceu em algum commit.
+
+    ``rev-list --objects`` mostra cada blob uma única vez; um arquivo com o mesmo conteúdo em outro caminho (por
+    exemplo, um arquivo proibido idêntico a um permitido) ficaria invisível sem esta lista.
+    """
+    try:
+        out = git(repo, "log", "--all", "--reflog", "--format=", "--raw", "--no-renames", "--no-abbrev", "-z")
+    except RuntimeError:  # repositório sem commits
+        return {}
+    tokens = out.decode("utf-8", "replace").split("\0")
+    result: dict[str, set[str]] = defaultdict(set)
+    for i, token in enumerate(tokens[:-1]):
+        meta = token.strip("\n")
+        if meta.startswith(":"):
+            fields = meta.split()
+            if len(fields) >= 4 and set(fields[3]) != {"0"}:
+                result[fields[3]].add(tokens[i + 1])
+    return result
+
+
 # --------------------------------------------------------------------------- padrões
 def mask(value: str) -> str:
     if len(value) <= 6:
@@ -228,6 +253,10 @@ def path_problems(path: str, size: int, data: bytes) -> list[tuple[str, str, str
     low = path.lower().replace("\\", "/")
     name = low.rsplit("/", 1)[-1]
     found: list[tuple[str, str, str]] = []
+    if DOC_IMAGES.match(low):
+        if size > DOC_IMAGE_MAX:
+            found.append(("grande", "medio", f"captura de tela grande: {size / 2**20:.1f} MB"))
+        return found
     if name.endswith(FORBIDDEN_SUFFIXES) or name in FORBIDDEN_NAMES:
         found.append(("proprietario", "bloqueador", f"arquivo de tipo proibido: {name}"))
     if any(low.startswith(d) or f"/{d}" in low for d in FORBIDDEN_DIRS):
@@ -314,6 +343,9 @@ def audit(repo: Path, *, game: Path | None = None, terms: Iterable[str] = (), lo
     if loose:
         for sha in loose_blobs:
             blobs[sha].add("<objeto inalcançável>")
+    for sha, paths in blob_paths(repo).items():
+        if sha in blobs:
+            blobs[sha] |= paths
     report.paths_ever = len({p for paths in blobs.values() for p in paths})
     head_blobs = set()
     try:
