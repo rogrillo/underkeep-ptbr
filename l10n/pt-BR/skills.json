@@ -153,23 +153,6 @@
    "text": "Restaura {skill_heal_amount} pontos de vida de um herói.",
    "translation_status": "translated"
   },
-  "item_staff_of_thunder": {
-   "origin": "ia:lote-04",
-   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
-   "review_status": "pending",
-   "source_sha256": "024648b84350c9d4f0a5ba42effc545db1adbd311ab7aac7b3be7479f5ac6a2e",
-   "text": "Cajado do trovão",
-   "translation_status": "translated"
-  },
-  "item_staff_of_thunder_summary": {
-   "context": "Jogo de palavras preservado (em pé / no chão).",
-   "origin": "ia:lote-04",
-   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
-   "review_status": "pending",
-   "source_sha256": "780b45ef014b1ff41fc32f3545d7eed8e0badf47db71fdb076ebdab937204381",
-   "text": "Deixa os cabelos em pé e os inimigos no chão.",
-   "translation_status": "translated"
-  },
   "skill_arcane_flight": {
    "origin": "ia:lote-04",
    "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
@@ -707,19 +690,19 @@
    "translation_status": "translated"
   },
   "skill_cloak_of_swiftness_summary": {
-   "origin": "ia:lote-04",
-   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-04.",
    "review_status": "pending",
-   "source_sha256": "5213cfb96e751c518fe2f7ea81df53a2e27ae91e7c38c263d182655cade33ee6",
-   "text": "Aumenta a esquiva, a chance de acerto à distância e a chance de crítico à distância do patrulheiro.",
+   "source_sha256": "1fed0547b3f6e4be7e02f43988aabd47bc3015a6f6bf5bc3e8359f35de43500f",
+   "text": "Aumenta a esquiva, a chance de acerto à distância, o dano desarmado e a chance de crítico à distância do patrulheiro.",
    "translation_status": "translated"
   },
   "skill_cloak_of_swiftness_thief": {
-   "origin": "ia:lote-04",
-   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-04.",
    "review_status": "pending",
-   "source_sha256": "102801bf3ac061040428cb1f78f90a9fe5dc3927c923b64ba06c175b625ba470",
-   "text": "Manto da agilidade",
+   "source_sha256": "8d0645712629730699d431964ad92c50f26d557f577e7754abfe0abda10a537b",
+   "text": "Manto das sombras",
    "translation_status": "translated"
   },
   "skill_cloak_of_swiftness_thief_desc": {
@@ -732,11 +715,11 @@
   },
   "skill_cloak_of_swiftness_thief_summary": {
    "context": "'Aim' (mira à distância) mantido com maiúscula como no original.",
-   "origin": "ia:lote-04",
-   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-04.",
    "review_status": "pending",
-   "source_sha256": "1a5b93f14ba6ccfc5e0991c33ed5baa72fbadfb9a8aebea205735caffebc927c",
-   "text": "Aumenta a Esquiva, o dano desarmado, a Mira à distância e a Chance de crítico.",
+   "source_sha256": "a900435f0c64df3ecd6a3da6dfb2ae3fe7745fe31285c3c9ee59aeb66015cb0d",
+   "text": "Aumenta a esquiva, o dano desarmado, a chance de acerto corpo a corpo e a chance de crítico corpo a corpo do ladrão.",
    "translation_status": "translated"
   },
   "skill_consecrated_ground": {

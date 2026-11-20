@@ -2960,17 +2960,11 @@
    "translation_status": "translated"
   },
   "brenna_ask_heartforge_02": {
-   "context": "Original sem '{' em 'color_price}' (erro do inglês); tag corrigida para {color_price}.",
-   "exceptions": [
-    {
-     "code": "MARKUP_MISMATCH",
-     "justification": "Original EN sem '{' em 'color_price}' (erro evidente; ES traz {color_price}). Tag corrigida para a cor da fala."
-    }
-   ],
+   "context": "Patch 1.0.6 corrigiu no original a tag 'color_price}' (sem '{'); a tradução já usava {color_price}. Exceção MARKUP_MISMATCH removida na Fase 2A.",
    "origin": "ia:lote-11",
-   "review_note": "qa-auto:lote-11 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "review_note": "qa-auto:lote-11 (l10n-validate; amostragem IA). Revisão humana pendente. Fase 2A: só o hash da referência mudou; texto PT-BR inalterado.",
    "review_status": "pending",
-   "source_sha256": "254b6eb606e25a1319dc74967217e61bda869df6125a538350e069f3bb27ffe1",
+   "source_sha256": "3c836e59c5497983ef0bfc3c8263118473c92dae7aa9245afa5c6ba4c7a4bd7b",
    "text": "{color_price}\"Dizem que os deuses antigos forjaram as montanhas ali. Cada faísca que voava da bigorna virava uma estrela.\"",
    "translation_status": "translated"
   },
@@ -18496,6 +18490,73 @@
    "review_status": "pending",
    "source_sha256": "ae81472bc65d9d75a080db5369a2912dc0de872415889fd1a4fbc111236545dd",
    "text": "O Sumo Clérigo cambaleia de surpresa. Sua aura gélida se desfaz por um momento, deixando-o vulnerável.",
+   "translation_status": "translated"
+  },
+  "map_location_aldren": {
+   "exceptions": [
+    {
+     "code": "UNTRANSLATED",
+     "justification": "Rótulo do mapa da cidade: nome próprio mantido."
+    }
+   ],
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): entrada nova traduzida por IA. Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "8e4efbd5d937056d44582dcf3ebc6eeafa2bb5d4402710982f531c2ffdcd6959",
+   "text": "Aldren",
+   "translation_status": "translated"
+  },
+  "map_location_barlo": {
+   "exceptions": [
+    {
+     "code": "UNTRANSLATED",
+     "justification": "Rótulo do mapa da cidade: nome próprio mantido."
+    }
+   ],
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): entrada nova traduzida por IA. Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "f2e7c4ac3dfe65f0509f5d99af4c7ef3d545611342fd11481ad2769dc20a04d0",
+   "text": "Barlo",
+   "translation_status": "translated"
+  },
+  "map_location_khelebar": {
+   "exceptions": [
+    {
+     "code": "UNTRANSLATED",
+     "justification": "Rótulo do mapa da cidade: nome próprio mantido."
+    }
+   ],
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): entrada nova traduzida por IA. Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "486080b44a7e1894d3544591c7bbc3291ffcd8736ba142d66f07d66ac7d7a1bc",
+   "text": "Khelebar",
+   "translation_status": "translated"
+  },
+  "map_location_ronan": {
+   "exceptions": [
+    {
+     "code": "UNTRANSLATED",
+     "justification": "Rótulo do mapa da cidade: nome próprio mantido."
+    }
+   ],
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): entrada nova traduzida por IA. Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "39440c8a4bd10c494a33d2fc97dbfe320f1d0dc33d97035688de07be1378f4a8",
+   "text": "Ronan",
+   "translation_status": "translated"
+  },
+  "map_location_tavern": {
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): entrada nova traduzida por IA. Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "255a70fd8ebfcbcfa78fd0a378c65bc516b7cbfdb6ebb78533d6890bb6190cc6",
+   "terminology": [
+    "tavern -> taverna"
+   ],
+   "text": "Taverna",
    "translation_status": "translated"
   },
   "master_lever": {

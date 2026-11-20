@@ -1,21 +1,21 @@
 {
  "expected": {
-  "exe_sha256": "d3158ad0f94d6770deb64b32d48aeb412a3c5ef3a0b2e37a0e092a7ce66bb4a4",
+  "exe_sha256": "556f696519db3a948f1ef1f37e4fdc23293c330d00d93399380dd2c3606055ba",
   "files": {
    "_rfile.db": "1f630d5dc9ed0cebed849f79a1c17527e210f510c3aa9abe133592b03a59f676",
-   "text_text_common_en.txt.rfile": "8b4b628c2f9638eb573ec2ec4d9c9a943ba31ee2c07951d8ea38331d4ed10fec",
-   "text_text_common_es.txt.rfile": "e894440e9dca1e228891668f55335804a259e5d6ec1db7c2a2a39a6e9994c2d8",
-   "text_text_game_en.txt.rfile": "82a866f1718f26b11e53a9727153bffe7c0b090621d979d7820fa06eeac93c22",
-   "text_text_game_es.txt.rfile": "1e37e4e1c3cdb766c5708e4cd64e797a29eaa7bb931c72d985713dc999cc1c78",
-   "text_text_items_en.txt.rfile": "10c4414b3b3358711bf764883ae9255d1d97bdfc2cd31c7aa7992c89f6631121",
-   "text_text_items_es.txt.rfile": "cdf22454c5971077cee830a079c0e16be40167861061829c404df642e4c48695",
-   "text_text_skills_en.txt.rfile": "dd7b1829d51b9369a6c8ee5e18ecebfe6ab602e198bd50a284c08b19775830ac",
-   "text_text_skills_es.txt.rfile": "4b8cadfd8b92da93fcc22b3f287be36419fd1400fca06aaf259efdadb658e4fe"
+   "text_text_common_en.txt.rfile": "713a35563472556ae64cd5fc48024f310536e9afca9dd5e91e8de9d5a45ac93b",
+   "text_text_common_es.txt.rfile": "a8c073d3e2a130c29936fcafa99b8f3017da82bdd56048c82a462577d6817ac0",
+   "text_text_game_en.txt.rfile": "a48e7ecf56259e4095beb85cc9ad0c06bbf1f4f3a75798a9d293f13e69666b34",
+   "text_text_game_es.txt.rfile": "f5d1980da4e46ecbdc9aa1ffc7ef790a7cbe6ef61fe81c5cdc50a59144ed8f6f",
+   "text_text_items_en.txt.rfile": "de0437c114743333f2405919064ef97813d256b9bc8e64a5931ead7419d8627f",
+   "text_text_items_es.txt.rfile": "38d42e1853c3419ccd601e1deac7c3864e84eba2d7c5d365e6692077d3891d0c",
+   "text_text_skills_en.txt.rfile": "4eb743c1ba2fc3966e833e9dba8585348635073c87f82029f52fad3ef8687db8",
+   "text_text_skills_es.txt.rfile": "ee9f69d12f492ce522ee5f8eb5e0511ad58b2fb1c13748033a6bdd3f1252d823"
   },
-  "game_build": "26592006"
+  "game_build": "26770834"
  },
  "locale": "pt-BR",
- "notes": "Hashes da build Steam 26592006. Qualquer divergência (atualização do jogo) bloqueia o build até revisão.",
+ "notes": "Hashes da build Steam 26770834. Qualquer divergência (atualização do jogo) bloqueia o build até revisão.",
  "pack": "base",
  "reference_language": "en",
  "schema": "ukloc.l10n.project/1",

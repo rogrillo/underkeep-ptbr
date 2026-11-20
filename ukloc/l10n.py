@@ -32,7 +32,7 @@ from pathlib import Path
 from typing import Any, Iterable, Mapping
 
 from . import markup
-from .shadow import Change, Patch, ShadowError
+from .shadow import ABSENT_SHA256, Change, Patch, ShadowError
 from .textdb import text_file_name
 from .validate import ERROR, WARNING, ExceptionRule, Issue, validate_catalog
 
@@ -78,6 +78,10 @@ class Entry:
         if policy == "translated":
             return self.review_status != "needs_review"
         raise CatalogError(f"política desconhecida: {policy!r}")
+
+    def is_slot_addition(self) -> bool:
+        """ID ausente no slot que deve ser acrescentado: exige exceção ``MISSING_IN_SLOT`` justificada."""
+        return any(x.get("code") == "MISSING_IN_SLOT" for x in self.exceptions)
 
     def exception_rules(self, entry_id: str) -> list[ExceptionRule]:
         return [ExceptionRule(entry_id, item["code"], item["justification"]) for item in self.exceptions]
@@ -322,8 +326,12 @@ def validate_l10n(catalog: Catalog, reference: Mapping[str, str], slot: Mapping[
             report.issues.append(Issue("UNKNOWN_ID", ERROR, entry_id, "não existe na referência"))
             continue
         if entry_id not in slot:
-            report.issues.append(Issue("MISSING_IN_SLOT", ERROR, entry_id,
-                                       "não existe no slot de destino; não pode ser aplicado"))
+            if entry.is_slot_addition():
+                report.issues.append(Issue("SLOT_ADDITION", WARNING, entry_id,
+                                           "ausente no slot de destino; será acrescentado (exceção justificada)"))
+            else:
+                report.issues.append(Issue("MISSING_IN_SLOT", ERROR, entry_id,
+                                           "não existe no slot de destino; não pode ser aplicado"))
         if text_sha256(reference[entry_id]) != entry.source_sha256:
             severity = ERROR if entry.translation_status == "translated" else WARNING
             report.issues.append(Issue("STALE_SOURCE", severity, entry_id,
@@ -334,8 +342,8 @@ def validate_l10n(catalog: Catalog, reference: Mapping[str, str], slot: Mapping[
                                   exceptions=entry.exception_rules(entry_id))
         report.issues.extend(result.issues)
         length_waived = any(x["code"] == "LENGTH_OVER_SLOT" for x in entry.exceptions)
-        if entry_id in slot and not length_waived:
-            limit = max(visible_length(slot[entry_id]), visible_length(reference[entry_id]))
+        if not length_waived:
+            limit = max(visible_length(slot.get(entry_id, "")), visible_length(reference[entry_id]))
             if visible_length(entry.text) > limit * length_tolerance + 2:
                 report.issues.append(Issue("LENGTH_OVER_SLOT", WARNING, entry_id,
                                            f"{visible_length(entry.text)} visíveis > {limit} (slot/ref)"))
@@ -370,9 +378,12 @@ def select_changes(project: Project, catalogs: Mapping[str, Catalog],
             if entry_id not in ref or text_sha256(ref[entry_id]) != entry.source_sha256:
                 raise ShadowError(f"{category}/{entry_id}: referência {project.reference_language} mudou "
                                   "(jogo atualizado?) — revise antes de gerar")
-            if entry_id not in dst:
+            if entry_id in dst:
+                changes.append(Change(category, entry_id, text_sha256(dst[entry_id]), entry.text or ""))
+            elif entry.is_slot_addition():
+                changes.append(Change(category, entry_id, ABSENT_SHA256, entry.text or "", add=True))
+            else:
                 raise ShadowError(f"{category}/{entry_id}: ausente no slot {project.target_slot}")
-            changes.append(Change(category, entry_id, text_sha256(dst[entry_id]), entry.text or ""))
             rules.extend(entry.exception_rules(entry_id))
     return Selection(changes, rules, skipped)
 

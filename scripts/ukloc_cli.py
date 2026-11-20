@@ -467,19 +467,23 @@ def cmd_l10n_build(args: argparse.Namespace) -> int:
         old = load_text_table((game / project.pack / rel).read_bytes(), category, project.target_slot)
         new = load_text_table((result.pack_dir / rel).read_bytes(), category, project.target_slot)
         changed = [k for (k, a), (_, b) in zip(old.entries, new.entries) if a != b]
+        added = new.ids()[len(old.entries):]
         diff["files"][rel] = {
             "entries_total": len(old.entries), "entries_changed": len(changed),
-            "ids_order_identical": old.ids() == new.ids(),
+            "ids_order_identical": old.ids() == new.ids()[:len(old.entries)],
+            "entries_added": added,
             "bytes_before": (game / project.pack / rel).stat().st_size,
             "bytes_after": (result.pack_dir / rel).stat().st_size,
-            "changes": [{"id": k, "slot_before": old.as_dict()[k], "pt_br": new.as_dict()[k]} for k in changed],
+            "changes": [{"id": k, "slot_before": old.as_dict()[k], "pt_br": new.as_dict()[k]} for k in changed]
+            + [{"id": k, "slot_before": None, "pt_br": new.as_dict()[k], "added": True} for k in added],
         }
     diff_path = out.with_name(out.name + "_diff.json")
     dump_json(diff_path, diff)
     print(f"Pack-sombra '{args.name}' em {result.root} (política {args.policy}, NÃO instalado)")
     for rel, info in diff["files"].items():
         print(f"  {rel}: {info['entries_changed']}/{info['entries_total']} entradas alteradas, "
-              f"ordem de IDs idêntica={info['ids_order_identical']}")
+              f"ordem dos IDs originais idêntica={info['ids_order_identical']}, "
+              f"acrescentadas={len(info['entries_added'])}")
     print(f"  ignoradas pela política: { {k: len(v) for k, v in selection.skipped.items()} }")
     print(f"  diferenças: {diff_path}")
     return 0

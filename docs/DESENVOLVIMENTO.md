@@ -103,6 +103,33 @@ As traduções ficam em `l10n/pt-BR/<categoria>.json`. Cada entrada tem:
 
 O pack gerado é verificado e instalado com os comandos `shadow-*` acima (`--shadow work\shadow\<nome>`).
 
+**IDs que faltam no slot `es`.** Uma atualização pode trazer textos novos só no inglês. O jogo resolve os textos por
+chave e, quando a chave falta no idioma ativo, mostra o inglês. Para traduzir uma entrada dessas, registre nela a exceção
+`MISSING_IN_SLOT`, com justificativa. Assim:
+- o validador troca o erro pelo aviso `SLOT_ADDITION`;
+- o pack-sombra acrescenta o ID ao **fim** da tabela `es`;
+- os IDs originais mantêm ordem e valores;
+- o ID precisa existir na referência `en` e não pode existir em outra categoria do `es`, porque o jogo funde as tabelas
+  e rejeita IDs repetidos.
+
+Sem a exceção, a entrada continua bloqueada.
+
+### Quando o jogo for atualizado
+
+1. Confira a build em `steamapps/appmanifest_2411200.acf` e o SHA-256 do `underkeep.exe`.
+2. Rode `roundtrip` e `gate-unchanged`. Se algum formato mudar, pare e investigue antes de qualquer outra etapa.
+3. Extraia a build nova em uma pasta própria e compare com a extração da build anterior. O relatório traz só IDs,
+   contagens e hashes e fica em `audit/local/`:
+
+   ```powershell
+   .\.venv\Scripts\python.exe scripts\ukloc_cli.py extract --out work\<build> --analysis audit\local\<build>.json
+   .\.venv\Scripts\python.exe scripts\compare_builds.py --old work\<anterior> --new work\<build> --report audit\local\comparacao.json
+   ```
+
+4. Traduza as entradas novas e revise as alteradas. Atualize `source_sha256` só depois de revisar o texto.
+5. Atualize `project.json` com os hashes dos arquivos instalados, nunca apenas o número da build.
+6. Rode `l10n-validate`, a suíte e os testes de fumaça dos dois pacotes.
+
 ## Instalador do jogador e release
 
 O instalador (`ukloc/installer.py` + `ukloc/steam.py`) reaproveita o pipeline acima:

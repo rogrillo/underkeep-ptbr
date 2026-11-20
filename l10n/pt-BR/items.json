@@ -5196,6 +5196,58 @@
    "text": "Aumenta as resistências elementais por 3 rodadas.",
    "translation_status": "translated"
   },
+  "item_respec_potion": {
+   "exceptions": [
+    {
+     "code": "MISSING_IN_SLOT",
+     "justification": "Entrada nova do patch 1.0.6 presente no en e ausente no slot es; acrescentada ao fim da tabela es (o jogo resolve por chave; sem ela, cai no inglês)."
+    }
+   ],
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): entrada nova traduzida por IA. Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "0f479f9f4bcd0d69aaf10bc18b9d5c37f83bc059af11b224a4e8c80536d8fd69",
+   "terminology": [
+    "Potion of Forgetfulness -> Poção do esquecimento"
+   ],
+   "text": "Poção do esquecimento",
+   "translation_status": "translated"
+  },
+  "item_respec_potion_desc": {
+   "exceptions": [
+    {
+     "code": "MISSING_IN_SLOT",
+     "justification": "Entrada nova do patch 1.0.6 presente no en e ausente no slot es; acrescentada ao fim da tabela es (o jogo resolve por chave; sem ela, cai no inglês)."
+    }
+   ],
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): entrada nova traduzida por IA. Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "2251c8846dcf249fc2d96c21079c9ceaaaed9ec42dcb63583c22f9a6758702bb",
+   "text": "Esqueça tudo o que aprendeu. Não se preocupe: você vai poder cometer os mesmos erros outra vez.",
+   "translation_status": "translated"
+  },
+  "item_respec_potion_feat": {
+   "exceptions": [
+    {
+     "code": "MISSING_IN_SLOT",
+     "justification": "Entrada nova do patch 1.0.6 presente no en e ausente no slot es; acrescentada ao fim da tabela es (o jogo resolve por chave; sem ela, cai no inglês)."
+    },
+    {
+     "code": "LENGTH_OVER_SLOT",
+     "justification": "Sem texto no slot es; limite vem só do en (31). Linhas _feat equivalentes já têm ~48 visíveis (ex.: item_blood_hatchet_feat). Conferir no playtest."
+    }
+   ],
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): entrada nova traduzida por IA. Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "56ba05b469f6a2b9f80cd760492d727470ee9b51492488f5bc634fb3661825d3",
+   "terminology": [
+    "Skill Point -> ponto de habilidade"
+   ],
+   "text": "Devolve todos os pontos de habilidade gastos.",
+   "translation_status": "translated"
+  },
   "item_ring_beastbane": {
    "origin": "ia:lote-06",
    "review_note": "qa-auto:lote-06 (l10n-validate; amostragem IA). Revisão humana pendente.",
@@ -6373,6 +6425,23 @@
    "review_status": "pending",
    "source_sha256": "df482c4ea50be87c9ed0724c19631ef0ae8631ea73a38d0f3114159b26566288",
    "text": "Astrônomos discutiram por décadas se os entalhes correspondiam aos céus. Nenhum chegou à mesma conclusão.",
+   "translation_status": "translated"
+  },
+  "item_staff_of_thunder": {
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente. Fase 2A: movida de skills/item_staff_of_thunder para items/item_staff_of_thunder (patch 1.0.6; texto en idêntico).",
+   "review_status": "pending",
+   "source_sha256": "024648b84350c9d4f0a5ba42effc545db1adbd311ab7aac7b3be7479f5ac6a2e",
+   "text": "Cajado do trovão",
+   "translation_status": "translated"
+  },
+  "item_staff_of_thunder_desc": {
+   "context": "Jogo de palavras preservado (em pé / no chão).",
+   "origin": "ia:lote-04",
+   "review_note": "qa-auto:lote-04 (l10n-validate; amostragem IA). Revisão humana pendente. Fase 2A: movida de skills/item_staff_of_thunder_summary para items/item_staff_of_thunder_desc (patch 1.0.6; texto en idêntico).",
+   "review_status": "pending",
+   "source_sha256": "780b45ef014b1ff41fc32f3545d7eed8e0badf47db71fdb076ebdab937204381",
+   "text": "Deixa os cabelos em pé e os inimigos no chão.",
    "translation_status": "translated"
   },
   "item_stormcleaver": {

@@ -4,7 +4,37 @@ Histórico de mudanças por versão do Underkeep PT-BR. Notas para jogadores: [R
 
 ## [Não lançado]
 
-Só documentação e ferramentas; a tradução e os pacotes da 0.1.0-beta.2 não mudaram.
+### Em preparação: adaptação ao Underkeep 1.0.6 (candidata 0.1.0-beta.3)
+
+Ainda não lançada. A Beta 2 continua sendo a versão publicada e só funciona no Underkeep 1.0.5 (build 26592006).
+
+- **Homologação** ([docs/VALIDACAO_BETA3.md](docs/VALIDACAO_BETA3.md)):
+  - o mantenedor confirmou instalação e jogo no Underkeep 1.0.6 no Windows e no Steam Deck, e o bloqueio em uma build
+    antiga;
+  - testes de fumaça dos pacotes finais aprovados: Windows 18/18 e Steam Deck 14/14;
+  - o documento lista o que o playtest não comprovou explicitamente.
+- **`VERSAO.txt` dos pacotes** separa o que foi testado no playtest da beta.3 e o que vem de playtests anteriores.
+- **Galeria do README:** captura nova do menu principal no Underkeep 1.0.6, sem metadados; as legendas dizem a versão
+  de cada imagem.
+
+- **Nota para jogadores da Beta 2** ([docs/ATUALIZACAO_1.0.6.md](docs/ATUALIZACAO_1.0.6.md)): desinstale a Beta 2
+  antes de jogar a 1.0.6. O README e as notas da Beta 2 avisam disso.
+- **Catálogo** atualizado para a build 26770834:
+  - 10 entradas novas: duas páginas do "Como jogar", a Poção do esquecimento e os nomes no mapa da cidade;
+  - 18 entradas retraduzidas porque o original mudou: atributos, classes, criação do herói, críticos e
+    Manto das sombras;
+  - o Cajado do trovão foi movido de `skills` para `items`, como no jogo;
+  - total: 5.796 de 5.796 textos traduzíveis. As entradas novas e alteradas aguardam revisão humana.
+- **Pack-sombra:** pode acrescentar ao slot `es` textos que o jogo novo só traz em inglês. Isso exige a exceção
+  `MISSING_IN_SLOT` justificada na entrada. Os IDs originais não mudam de ordem nem de valor. Detalhes em
+  `docs/DECISOES.md` (ADR-002).
+- **`scripts/compare_builds.py`:** compara a localização de duas builds e o catálogo. O relatório traz só IDs,
+  contagens e hashes.
+- **Testes novos:** acréscimos ao slot e atualização a partir de uma Beta anterior (jogo atualizado, instalador antigo
+  recusando, instalador novo substituindo, jogo aberto, mods de terceiros).
+- Glossário, guia de desenvolvimento (procedimento para atualizações do jogo) e modelos de issue atualizados.
+
+### Documentação e ferramentas publicadas após a Beta 2
 
 - README com uma galeria de 4 capturas de tela do jogo em português (`assets/screenshots/`): menu, missões, ficha do
   personagem e itens.

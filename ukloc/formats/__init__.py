@@ -1,4 +1,4 @@
-"""Formatos binários observados na engine de Underkeep (build Steam 26592006)."""
+"""Formatos binários observados na engine de Underkeep (builds Steam 26592006 e 26770834)."""
 
 
 class FormatError(ValueError):

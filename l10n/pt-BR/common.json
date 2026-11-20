@@ -1505,11 +1505,11 @@
    "translation_status": "translated"
   },
   "hero_class_bloodmage_desc": {
-   "origin": "ia:lote-03",
-   "review_note": "qa-auto:lote-03 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-03.",
    "review_status": "pending",
-   "source_sha256": "bc57d119443565c6fcccd74831c3d4feb6efa9fc263ae3cb0e35abc315a6c39f",
-   "text": "{italic}{color_text_darker}O Mago de sangue extrai força da morte e do sangue. O poder nunca é de graça, e toda magia cobra um preço.\r\n\r\n{regular}{color_text}Magos de sangue precisam de ossos para lançar suas magias. Sem restos mortais, pagam com o próprio sangue.\r\n\r\nSua magia gira em torno de dano de sangue e ferramentas de execução: marcar alvos, abrir feridas que sangram e liberar magias de sangue devastadoras.\r\n\r\n{color_text}Atributo principal:{color_white} Constituição\r\n",
+   "source_sha256": "9a2e10113fafb9ef12884c097776b8e6d0f31e7af2465a469167a547b7e65bcf",
+   "text": "{italic}{color_text_darker}O Mago de sangue extrai força da morte e do sangue. O poder nunca é de graça, e toda magia cobra um preço.\r\n\r\n{regular}{color_text}Magos de sangue precisam de ossos para lançar suas magias. Sem restos mortais, pagam com o próprio sangue.\r\n\r\nSua magia gira em torno de dano de sangue e ferramentas de execução: marcar alvos, abrir feridas que sangram e liberar magias de sangue devastadoras.\r\n\r\n{color_text}Atributo principal:{color_white} Constituição\r\n{color_text}Embora a Constituição seja seu atributo principal, Magos de sangue também devem considerar a Sabedoria se pretendem usar equipamentos mágicos.\r\n",
    "translation_status": "translated"
   },
   "hero_class_paladin": {
@@ -1521,11 +1521,11 @@
    "translation_status": "translated"
   },
   "hero_class_paladin_desc": {
-   "origin": "ia:lote-03",
-   "review_note": "qa-auto:lote-03 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-03.",
    "review_status": "pending",
-   "source_sha256": "f28aebf9f2a80889a1cec68509e414b2088f0a09348b86cba08fca722a444976",
-   "text": "{italic}{color_text_darker}Um guerreiro da fé, temperado pela batalha. Vestido de armadura e guiado por uma fé inabalável, protege os fracos e traz o julgamento justo sobre os profanos.\r\n\r\n{regular}{color_text}Paladinos são especialistas em defesa, cura e retribuição sagrada. Resistem na linha de frente, protegendo os aliados enquanto restauram suas forças, e são especialmente eficazes contra Mortos-vivos e inimigos demoníacos.\r\nAtaques básicos bem-sucedidos geram Fervor, até o máximo de 5. O Fervor é gasto para fortalecer habilidades e se dissipa aos poucos fora de combate.\r\n\r\n{color_text}Atributo principal:{color_white} Força\r\n{color_text}Bônus:{color_white} +1 Sabedoria\r\n",
+   "source_sha256": "c3c682679f86194bcca46f0bcd5408ea507ffbef16d41a737229c53064d86c5d",
+   "text": "{italic}{color_text_darker}Um guerreiro da fé, temperado pela batalha. Vestido de armadura e guiado por uma fé inabalável, protege os fracos e traz o julgamento justo sobre os profanos.\r\n\r\n{regular}{color_text}Paladinos são especialistas em defesa, cura e retribuição sagrada. Resistem na linha de frente, protegendo os aliados enquanto restauram suas forças, e são especialmente eficazes contra Mortos-vivos e inimigos demoníacos.\r\nAtaques básicos bem-sucedidos geram Fervor, até o máximo de 5. O Fervor é gasto para fortalecer habilidades e se dissipa aos poucos fora de combate.\r\n\r\n{color_text}Atributo principal:{color_white} Força\r\n{color_text}Bônus:{color_white} +1 Sabedoria\r\n{color_text}Embora a Força seja seu atributo principal, Paladinos também devem considerar a Sabedoria e a Destreza para ter acesso a uma variedade maior de equipamentos.\r\n",
    "translation_status": "translated"
   },
   "hero_class_thief": {
@@ -1537,11 +1537,11 @@
    "translation_status": "translated"
   },
   "hero_class_thief_desc": {
-   "origin": "ia:lote-03",
-   "review_note": "qa-auto:lote-03 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-03.",
    "review_status": "pending",
-   "source_sha256": "cbbf7721034e3aeaeaa3a052a1c7ef47e60df12cb352aebdd4f6ff7316274956",
-   "text": "{italic}{color_text_darker}O Ladrão é um combatente rápido e ágil que confia na esquiva em vez da armadura. Pode lutar na linha de frente, usando adagas e lâminas leves para desferir golpes precisos e devastadores.\r\n\r\n{regular}{color_text}Ladrões são especialistas em chance de crítico, recursos de esquiva, golpes que causam sangramento e dano adicional contra alvos já enfraquecidos. Destacam-se no combate com espadas e adagas.\r\n\r\n{color_text}Atributo principal:{color_white} Destreza\r\n",
+   "source_sha256": "a3d232a376014150764c177c53f8454a95e2331c7e15b8fa7e75b7a39762adcd",
+   "text": "{italic}{color_text_darker}O Ladrão é um combatente rápido e ágil que confia na esquiva em vez da armadura. Pode lutar na linha de frente, usando adagas e lâminas leves para desferir golpes precisos e devastadores.\r\n\r\n{regular}{color_text}Ladrões são especialistas em chance de crítico, recursos de esquiva, golpes que causam sangramento e dano adicional contra alvos já enfraquecidos. Destacam-se no combate com espadas e adagas.\r\n\r\n{color_text}Atributo principal:{color_white} Destreza\r\n{color_text}Embora a Destreza seja seu atributo principal, Ladrões também devem considerar a Força se pretendem usar armas e armaduras mais pesadas.\r\n",
    "translation_status": "translated"
   },
   "hero_class_voidcaller": {
@@ -1818,6 +1818,41 @@
     "Revival Statue -> Estátua da Ressurreição"
    ],
    "text": "{regular_dark}{a:center}\r\nDICAS GERAIS\r\n{sprite:hud_info_panel_separator}\r\n\r\n- Pegue itens clicando neles com o botão direito ou arrastando-os para o inventário.\r\n\r\n- Você também pode pegar todos os itens de uma vez com um atalho de teclado (Y por padrão).\r\n\r\n- Para arremessar um item, solte-o sobre o centro da tela.\r\n\r\n- Campeões caídos podem ser ressuscitados na Estátua da Ressurreição mediante pagamento.\r\n\r\n- Salve com frequência.\r\n\r\n    ",
+   "translation_status": "translated"
+  },
+  "how_to_play_page_7": {
+   "exceptions": [
+    {
+     "code": "MISSING_IN_SLOT",
+     "justification": "Entrada nova do patch 1.0.6 presente no en e ausente no slot es; acrescentada ao fim da tabela es (o jogo resolve por chave; sem ela, cai no inglês)."
+    }
+   ],
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): entrada nova traduzida por IA. Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "e39ae99b0f4761e1631d8b36c62e2a0dd83bbed348988bc61e1fd2358700ec91",
+   "terminology": [
+    "scale with (Strength/Dexterity) -> se basear em / baseada em"
+   ],
+   "text": "{regular_dark}{a:center}\r\n    ATRIBUTOS E EQUIPAMENTOS\r\n    {sprite:hud_info_panel_separator}\r\n\r\n    - Um valor de atributo 5 é considerado mediano; 10 é excepcional.\r\n\r\n    - Os atributos base não aumentam ao subir de nível.\r\n\r\n    - Armas, armaduras e acessórios podem exigir Força, Destreza ou Sabedoria mínimas.\r\n\r\n    - Cada arma se baseia em Força ou em Destreza, independentemente dos requisitos para equipá-la.\r\n\r\n    - A Constituição melhora a sobrevivência, mas não afeta os requisitos de equipamento.\r\n\r\n    - Equipamentos e outros bônus podem aumentar seus atributos.\r\n\r\n",
+   "translation_status": "translated"
+  },
+  "how_to_play_page_8": {
+   "exceptions": [
+    {
+     "code": "MISSING_IN_SLOT",
+     "justification": "Entrada nova do patch 1.0.6 presente no en e ausente no slot es; acrescentada ao fim da tabela es (o jogo resolve por chave; sem ela, cai no inglês)."
+    }
+   ],
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): entrada nova traduzida por IA. Revisão humana pendente.",
+   "review_status": "pending",
+   "source_sha256": "8772ef33724403d801456885e1e3ce535b9b65f6f76dfb250930dce7c2707d44",
+   "terminology": [
+    "Armor Piercing -> Perfuração de armadura",
+    "Sharpness -> Afiação"
+   ],
+   "text": "{regular_dark}{a:center}\r\n    MECÂNICAS DE COMBATE\r\n    {sprite:hud_info_panel_separator}\r\n\r\n    - Chance base de acerto corpo a corpo: 100% menos a Esquiva do inimigo.\r\n\r\n    - A Armadura reduz o dano físico, mas não afeta a chance de acerto.\r\n\r\n    - A Perfuração de armadura reduz a Armadura inimiga antes do cálculo do dano.\r\n\r\n    - A Afiação adiciona dano extra somente quando o ataque penetra a Armadura.\r\n\r\n    - Acertos críticos causam dano extra, mas alguns inimigos são imunes.\r\n\r\n",
    "translation_status": "translated"
   },
   "item_category_armor": {
@@ -2183,11 +2218,11 @@
    "translation_status": "translated"
   },
   "item_info_part_critical_chance": {
-   "origin": "ia:lote-03",
-   "review_note": "qa-auto:lote-03 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-03.",
    "review_status": "pending",
-   "source_sha256": "0726c178113130118566993a83b000fd7d1dcecdde87c78fadc931a6062e4443",
-   "text": "{color_text}{a:left}Chance de crítico{a:right}%1",
+   "source_sha256": "a676acfbac29da588e6e6214900fdad3ec90e3844977b02ccd895b982ae7c907",
+   "text": "{color_text}{a:left}Chance de crítico corpo a corpo{a:right}%1",
    "translation_status": "translated"
   },
   "item_info_part_damage1": {
@@ -4304,11 +4339,11 @@
    "translation_status": "translated"
   },
   "party_creator_short_info": {
-   "origin": "ia:lote-03",
-   "review_note": "qa-auto:lote-03 (l10n-validate; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-03.",
    "review_status": "pending",
-   "source_sha256": "d4f8ee7bdaea39c018e3f4f05e56554a28add7de284aed9469d462cabe40eeff",
-   "text": "O herói é definido pela Classe e pela Raça.\r\n\r\n{color_white}Classe{color_text} determina a função do personagem no grupo e define seu atributo principal.\r\n\r\n{color_white}Raça{color_text} define forças e limitações naturais. Cada raça tem faixas de atributos próprias, que refletem sua identidade.\r\n\r\n{color_text}Os atributos iniciais influenciam suas opções, mas o sucesso não depende de uma rolagem perfeita.\r\n",
+   "source_sha256": "8f6f3a9c15df1c828c957b20e375bca2b3c7bdea4ebab683731967cc833d3507",
+   "text": "Cada herói é definido pela Classe e pela Raça.\r\n\r\n{color_white}Classe{color_text} determina a função e o atributo principal do herói.\r\n\r\n{color_white}Raça{color_text} determina forças naturais, limitações e faixas de atributos.\r\n\r\n{color_white}Importante:{color_text} os atributos base não aumentam ao subir de nível. Armas, armaduras e acessórios podem exigir Força, Destreza ou Sabedoria mínimas, mesmo fora do atributo principal da classe.\r\n\r\nAtributos secundários baixos podem limitar suas opções de equipamento mais tarde.\r\n",
    "translation_status": "translated"
   },
   "party_creator_start_game": {
@@ -4948,11 +4983,11 @@
    "translation_status": "translated"
   },
   "stats_armor_desc": {
-   "origin": "ia:lote-02",
-   "review_note": "qa-auto:lote-02 (l10n-validate sem erros/avisos; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-02.",
    "review_status": "pending",
-   "source_sha256": "73577c13cbbaa7437a7df6ff5d86ef446f5e479c3937efd36897563c241a3a67",
-   "text": "{color_white}Armadura{color_text}\\n\r\n{italic}{color_text_darker}Sua primeira e última linha de defesa.{regular}\\n\\n{color_text}Armadura pesada não torna ninguém invencível, mas cada ponto ajuda a amortecer os golpes e manter você de pé.\\n\\nEsta é a regra que importa:\\n\r\nmais Armadura = menos PV perdidos\r\n",
+   "source_sha256": "0d9d7091a8f08c0206166de5a32660b69640114bf422e183cfd10b5a5e75d9c4",
+   "text": "{color_white}Armadura{color_text}\\n\r\n{italic}{color_text_darker}Sua primeira e última linha de defesa.{regular}\\n\\n{color_text}Reduz o dano físico recebido. Quanto mais Armadura, maior a proteção.\\n\\nA Armadura reduz o dano, mas não afeta a chance de ser atingido.\r\n",
    "translation_status": "translated"
   },
   "stats_blood_resist": {
@@ -4988,11 +5023,11 @@
    "translation_status": "translated"
   },
   "stats_critical_desc": {
-   "origin": "ia:lote-02",
-   "review_note": "qa-auto:lote-02 (l10n-validate sem erros/avisos; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-02.",
    "review_status": "pending",
-   "source_sha256": "a41db94760697cc77e0152acdf4904997b08cf0ed328f85761721f1e6c3a7fa9",
-   "text": "{color_white}Chance de crítico{color_text}\\n\r\n{italic}{color_text_darker}Com que frequência você acerta como um herói lendário, e não como um qualquer. Dano x 1,75{regular}\\n\\n{color_text}Chance de crítico = Destreza / 10\r\n",
+   "source_sha256": "839c87651ed0cce66aaa5c1f3480d839ffb2cf9fa08bc6a984be1df064e5b3fc",
+   "text": "{color_white}Chance de crítico{color_text}\\n\r\n{italic}{color_text_darker}Com que frequência você acerta como um herói lendário, e não como um qualquer.{regular}\\n\\n{color_text}Ataques corpo a corpo bem-sucedidos têm chance de causar 175% de dano. Alguns inimigos são imunes a dano crítico.\\n\\nChance de crítico = Destreza / 10 + bônus\r\n",
    "translation_status": "translated"
   },
   "stats_dex": {
@@ -5004,11 +5039,11 @@
    "translation_status": "translated"
   },
   "stats_dex_desc": {
-   "origin": "ia:lote-02",
-   "review_note": "qa-auto:lote-02 (l10n-validate sem erros/avisos; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-02.",
    "review_status": "pending",
-   "source_sha256": "dc8162f23cea38a11bd35025de21a475b6c62c2a4d8bd710560f0952488ef73e",
-   "text": "{color_white}Destreza{color_text}\\n\r\n{italic}{color_text_darker}A arte de não tropeçar nos próprios pés e fingir que estava tudo nos planos.{regular}\\n\\n{color_text}Melhora a precisão e o dano à distância, a esquiva e os acertos críticos.\\n\\nChance de acerto à distância = Destreza x 10 - esquiva do inimigo\\n\r\nEsquiva = Destreza x 2\\n\r\nChance de crítico = Destreza / 10\\n\r\nChance de crítico à distância = Destreza / 7\r\n",
+   "source_sha256": "2e624773c58d463a7f5ee62c6493c837e015ceb509d22328250cef6f5111258b",
+   "text": "{color_white}Destreza{color_text}\\n\r\n{italic}{color_text_darker}A arte de não tropeçar nos próprios pés e fingir que estava tudo nos planos.{regular}\\n\\n{color_text}Melhora a precisão à distância, o dano das armas baseadas em Destreza, a esquiva e os acertos críticos.\\n\\nCertas armas, armaduras e acessórios exigem uma Destreza mínima.\\n\\nChance de acerto à distância = Destreza x 9 - esquiva do inimigo\\n\r\nEsquiva = Destreza x 2\\n\r\nChance de crítico = Destreza / 10\\n\r\nChance de crítico à distância = Destreza / 7\r\n",
    "translation_status": "translated"
   },
   "stats_end": {
@@ -5021,11 +5056,11 @@
    "translation_status": "translated"
   },
   "stats_end_desc": {
-   "origin": "ia:lote-02",
-   "review_note": "qa-auto:lote-02 (l10n-validate sem erros/avisos; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-02.",
    "review_status": "pending",
-   "source_sha256": "e581319a6d3ad2be276ba28bb9ac5429b0461e2149bdc51cbb03d82f44f4ebed",
-   "text": "{color_white}Constituição{color_text}\\n\r\n{italic}{color_text_darker}Sua capacidade de aguentar. O atributo que decide se a exaustão vence ou se você ainda segue em frente.{regular}\\n\\n{color_text}Influencia o ganho de PV, a regeneração de vigor e a resistência a muitos efeitos negativos.\r\n",
+   "source_sha256": "bd77d5c94d51a19e38e1d7f32cfc049bc35d169045c72c213406bc47bd449945",
+   "text": "{italic}{color_text_darker}Sua capacidade de aguentar. O atributo que decide se a exaustão vence ou se você ainda segue em frente.{regular}\\n\\n{color_text}Aumenta a vida e o vigor ganhos por nível, a recuperação de vigor ao descansar e a resistência a magia de sangue, e ajuda a reduzir a duração do envenenamento e de outros efeitos negativos.\\n\\nDiferente dos outros atributos, a Constituição não afeta os requisitos de equipamento.\r\n",
    "translation_status": "translated"
   },
   "stats_evasion": {
@@ -5037,11 +5072,11 @@
    "translation_status": "translated"
   },
   "stats_evasion_desc": {
-   "origin": "ia:lote-02",
-   "review_note": "qa-auto:lote-02 (l10n-validate sem erros/avisos; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-02.",
    "review_status": "pending",
-   "source_sha256": "720086431543bb3fe43073c3472f0021215ab442c2c7b07b6f7b3a63bd5981aa",
-   "text": "{color_white}Esquiva{color_text}\\n\r\n{italic}{color_text_darker}Sua capacidade de evitar golpes. Quanto maior, mais seus inimigos acertam o vazio enquanto você só ri!{regular}\\n\\n{color_text}Esquiva base = Destreza x 2%\\n\r\nO limite máximo é 60%.\r\n",
+   "source_sha256": "a9e58d707feb0c6271c904735d6b86bf4a585e4c3c0f16327f607a7b96b41b40",
+   "text": "{color_white}Esquiva{color_text}\\n\r\n{italic}{color_text_darker}Sua capacidade de evitar golpes. Quanto maior, mais seus inimigos acertam o vazio enquanto você só ri!{regular}\\n\\n{color_text}Reduz a chance de ser atingido por ataques corpo a corpo e à distância. Não protege contra magias.\\n\\nEsquiva base = Destreza x 2%\\n\r\nEsquiva máxima = 60%\r\n",
    "translation_status": "translated"
   },
   "stats_exp": {
@@ -5118,11 +5153,11 @@
    "translation_status": "translated"
   },
   "stats_level_desc": {
-   "origin": "ia:lote-02",
-   "review_note": "qa-auto:lote-02 (l10n-validate sem erros/avisos; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-02.",
    "review_status": "pending",
-   "source_sha256": "11b506335512175c02266e424855d2908c7fbad0940a0057e211486ddc852fcd",
-   "text": "{color_white}Nível{color_text}\\n\r\n{italic}{color_text_darker}Cada passo adiante deixa você mais forte.{regular}\\n\\n{color_text}Cada nível concede um novo ponto de habilidade, além de PV, mana / vigor e dano base extras.\r\n",
+   "source_sha256": "5d824564fe22c4c8dce8a2ca908af43e527cfdcb0186bfefd66ac0b3965e3be0",
+   "text": "{color_white}Nível{color_text}\\n\r\n{italic}{color_text_darker}Cada passo adiante deixa você mais forte.{regular}\\n\\n{color_text}Cada nível concede 1 ponto de habilidade, +1 de dano base e aumenta sua vida e sua mana ou seu vigor.\\n\\nOs atributos base não aumentam ao subir de nível. Equipamentos e outros bônus podem elevá-los.\r\n",
    "translation_status": "translated"
   },
   "stats_lightning_resist": {
@@ -5196,11 +5231,11 @@
    "translation_status": "translated"
   },
   "stats_ranged_critical_desc": {
-   "origin": "ia:lote-02",
-   "review_note": "qa-auto:lote-02 (l10n-validate sem erros/avisos; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-02.",
    "review_status": "pending",
-   "source_sha256": "c6f703aa6aced893a5cfcf4d4b20907918fffe987125954229a8583bfc6d24da",
-   "text": "{color_white}Chance de crítico à distância{color_text}\\n\r\n{italic}{color_text_darker}Aquele disparo perfeito que faz os inimigos repensarem suas escolhas de vida. Dano x 1,75{regular}\\n\\n{color_text}Chance de crítico à distância = Destreza / 7\r\n",
+   "source_sha256": "3c28be666fb1b6192957b8d64ccbc7261e2f15742116b932c28319f40609f1fa",
+   "text": "{color_white}Chance de crítico à distância{color_text}\\n\r\n{italic}{color_text_darker}Aquele disparo perfeito que faz os inimigos repensarem suas escolhas de vida.{regular}\\n\\n{color_text}Ataques à distância bem-sucedidos têm chance de causar 175% de dano. Alguns inimigos são imunes a dano crítico.\\n\\nChance de crítico à distância = Destreza / 7 + bônus\r\n",
    "translation_status": "translated"
   },
   "stats_section_defense": {
@@ -6676,11 +6711,11 @@
    "translation_status": "translated"
   },
   "stats_str_desc": {
-   "origin": "ia:lote-02",
-   "review_note": "qa-auto:lote-02 (l10n-validate sem erros/avisos; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-02.",
    "review_status": "pending",
-   "source_sha256": "1cef4b5d24a8d199c25842d09ca6d9759d630fa8b556d69ed82a7aadadfdcf5b",
-   "text": "{color_white}Força{color_text}\\n\r\n{italic}{color_text_darker}Seu poder físico bruto. Também é o atributo que decide quem abre os potes de conserva.{regular}\\n\\n{color_text}Influencia o dano corpo a corpo, o ganho de PV e quais armas ou armaduras você pode equipar.\r\n",
+   "source_sha256": "2c2df16f09ca1300bcd2344f69f1d639da0e64c9324e36388a7ee71b3e4e4d99",
+   "text": "{color_white}Força{color_text}\\n\r\n{italic}{color_text_darker}Seu poder físico bruto. Também é o atributo que decide quem abre os potes de conserva.{regular}\\n\\n{color_text}Aumenta o dano das armas corpo a corpo baseadas em Força e contribui para a vida ganha por nível.\\n\\nMuitas armas e peças de armadura exigem uma Força mínima. Algumas armas se baseiam em Destreza, mas ainda exigem Força para serem equipadas.\r\n",
    "translation_status": "translated"
   },
   "stats_total_damage": {
@@ -6693,11 +6728,11 @@
   },
   "stats_total_damage_desc": {
    "context": "Sharpness -> Afiação (provisório; propriedade de arma).",
-   "origin": "ia:lote-02",
-   "review_note": "qa-auto:lote-02 (l10n-validate sem erros/avisos; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-02.",
    "review_status": "pending",
-   "source_sha256": "c004dd8948bec31e7b9891e5e1896a385dc6521b30274430147ee6d12b15a354",
-   "text": "{color_white}Dano físico{color_text}\\n\r\n{italic}{color_text_darker}Quanto maior, mais os inimigos se arrependem de cruzar seu caminho!{regular}\\n\\n{color_text}Dano físico = Dano base - Armadura + Afiação\\n\r\nDano base = Força / 2 + Dano da arma + Bônus\r\n",
+   "source_sha256": "abab8ff79c8f55694eb973cba074bc920d139d000503dde6a194bcc9ed8b44b9",
+   "text": "{color_white}Dano físico{color_text}\\n\r\n{italic}{color_text_darker}Quanto maior, mais os inimigos se arrependem de cruzar seu caminho!{regular}\\n\\n{color_text}Cada arma se baseia em Força ou em Destreza. O dano base também depende do dano da arma, do nível e de outros bônus.\\n\\nA Perfuração de armadura reduz a Armadura do inimigo antes do cálculo do dano.\\n\r\nA Afiação adiciona dano extra somente se o ataque penetrar a Armadura.\\n\\nChance base de acerto corpo a corpo = 100% - Esquiva do inimigo\r\n",
    "translation_status": "translated"
   },
   "stats_wis": {
@@ -6709,11 +6744,11 @@
    "translation_status": "translated"
   },
   "stats_wis_desc": {
-   "origin": "ia:lote-02",
-   "review_note": "qa-auto:lote-02 (l10n-validate sem erros/avisos; amostragem IA). Revisão humana pendente.",
+   "origin": "ia:fase-2a",
+   "review_note": "Fase 2A (patch 1.0.6): original alterado; retradução por IA. Revisão humana pendente. Origem anterior: ia:lote-02.",
    "review_status": "pending",
-   "source_sha256": "5ad457b18e880dd5e5fdb7edd39f980a914a6f38986574e74661edcb17b2a176",
-   "text": "{color_white}Sabedoria{color_text}\\n\r\n{italic}{color_text_darker}A voz interior que diz \"talvez seja melhor não lamber esse cristal brilhante.\"{regular}\\n\\n{color_text}Aumenta a mana ganha por nível e a resistência natural contra magia elemental.\\n\\nGanho de mana = 2 + (Sabedoria x 1)\\n\r\nResistência elemental = Sabedoria x 2\r\n",
+   "source_sha256": "6054fe1677dfd2e1927b3343b4a730a3544943cfa324efaa282fd045a80331b2",
+   "text": "{color_white}Sabedoria{color_text}\\n\r\n{italic}{color_text_darker}A voz interior que diz \"talvez seja melhor não lamber esse cristal brilhante.\"{regular}\\n\\n{color_text}Aumenta a mana ganha por nível e a mana recuperada ao descansar. Melhora as resistências elementais e a veneno.\\n\\nMuitas armas e acessórios mágicos exigem Sabedoria.\\n\\nGanho de mana = 2 + (Sabedoria x 1)\\n\r\nResistência elemental = Sabedoria x 2\r\n",
    "translation_status": "translated"
   },
   "stats_zeals": {
