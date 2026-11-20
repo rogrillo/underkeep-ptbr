@@ -24,5 +24,6 @@
   - o manifesto registra `add: true`.
 - Evidência: o jogo já tolera conjuntos de chaves diferentes entre idiomas, por exemplo 98 IDs só no `es` em `game` e
   22 só no `en` em `common` (Fase 1B).
-- Pendente: confirmar no playtest que os textos acrescentados aparecem em PT-BR.
-- Status: implementado na branch `update/underkeep-1.0.6`; aguarda playtest.
+- Playtest: o mantenedor confirmou no jogo as páginas 7 e 8 do "Como jogar" e os textos da Poção do esquecimento
+  (nome, descrição e efeito) em português, vistos numa loja. Ver `docs/VALIDACAO_BETA3.md`.
+- Status: implementado na branch `update/underkeep-1.0.6` e confirmado em playtest.

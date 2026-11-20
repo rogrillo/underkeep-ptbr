@@ -28,7 +28,11 @@ Ainda não lançada. A Beta 2 continua sendo a versão publicada e só funciona 
   - o mantenedor confirmou instalação e jogo no Underkeep 1.0.6 no Windows e no Steam Deck, e o bloqueio em uma build
     antiga;
   - testes de fumaça dos pacotes finais aprovados: Windows 18/18 e Steam Deck 14/14;
-  - o documento lista o que o playtest não comprovou explicitamente.
+  - playtest adicional: páginas 7 e 8 do "Como jogar" e textos da Poção do esquecimento (vistos numa loja) em
+    português, o que confirma os cinco textos acrescentados ao slot espanhol;
+  - CI do PR #2 aprovado no commit `6a5f935`: Linux 221 aprovados e 1 pulado; Windows (Python 3.11 e 3.13) 220
+    aprovados e 2 pulados cada;
+  - o documento lista o que o playtest não comprovou explicitamente, como o uso da poção.
 - **`VERSAO.txt` dos pacotes** separa o que foi testado no playtest da beta.3 e o que vem de playtests anteriores.
 - **Galeria do README:** captura nova do menu principal no Underkeep 1.0.6, sem metadados; as legendas dizem a versão
   de cada imagem.

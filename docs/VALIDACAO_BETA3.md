@@ -1,11 +1,12 @@
 # Validação da v0.1.0-beta.3 (candidata)
 
-Registro consolidado em 19/11/2026. A versão **ainda não foi publicada**. Os tipos de evidência:
+Registro consolidado em 19/11/2026 e atualizado com os playtests adicionais e o CI do Pull Request #2. A versão
+**ainda não foi publicada**. Os tipos de evidência:
 
 - **Playtest:** teste manual em hardware real, relatado pelo mantenedor. Não há log automatizado das sessões.
 - **Automático local:** testes `pytest` e testes de fumaça na máquina de desenvolvimento (Windows 11), com o jogo
   instalado e só lido, e pastas Documentos sintéticas.
-- **CI:** GitHub Actions. Só roda depois do envio das mudanças ao GitHub; ainda não executado para esta versão.
+- **CI:** GitHub Actions do Pull Request #2 (seção 3).
 
 A versão visa **somente a build Steam 26770834** (Underkeep 1.0.6). O instalador recusa outras builds.
 
@@ -20,6 +21,21 @@ A versão visa **somente a build Steam 26770834** (Underkeep 1.0.6). O instalado
 Os playtests usaram os pacotes candidatos da Fase 2A. Os pacotes finais contêm os **mesmos executáveis, catálogos e
 código do instalador**, conferidos arquivo a arquivo. Só o `VERSAO.txt` mudou, para registrar estes playtests.
 
+### Playtests adicionais: textos acrescentados ao slot espanhol
+
+| Verificação | Relato | Evidência |
+|---|---|---|
+| Página 7 do "Como jogar" | texto em português confirmado dentro do jogo | playtest |
+| Página 8 do "Como jogar" | texto em português confirmado dentro do jogo | playtest |
+| Poção do esquecimento | item encontrado em uma loja, com nome, descrição e efeito em português exibidos corretamente | playtest |
+
+Essas verificações confirmam que as **cinco entradas acrescentadas** ao slot espanhol aparecem em português:
+- as duas páginas do "Como jogar";
+- nome, descrição e efeito da poção.
+
+O relato não informa em qual plataforma elas foram feitas, nem se foram repetidas nas duas. O **uso** da poção e a
+devolução dos pontos de habilidade não foram relatados (seção 5).
+
 ## 2. Testes de fumaça (automático local, pacotes finais)
 
 | Pacote | Resultado |
@@ -31,12 +47,15 @@ código do instalador**, conferidos arquivo a arquivo. Só o `VERSAO.txt` mudou,
 
 | Execução | Resultado |
 |---|---|
-| Suíte `pytest` deste repositório (Windows 11, Python 3.13) | **189 aprovados, 3 pulados, 0 falhas.** Os pulados exigem links simbólicos ou `unzip` do Linux |
+| Suíte `pytest` local (Windows 11, Python 3.13), após a consolidação do repositório | **219 aprovados, 3 pulados, 0 falhas.** Os pulados exigem links simbólicos ou `unzip` do Linux |
 | Atualização a partir da Beta 2 (`tests/test_update_from_beta2.py`, jogo e Documentos sintéticos) | aprovado: o pack antigo é detectado como desatualizado; o instalador antigo recusa a build nova; o novo remove a Beta 2 e instala; tudo é bloqueado com o jogo aberto; mods de terceiros são preservados |
 | Acréscimo de textos ausentes no slot espanhol (`tests/test_slot_additions.py`) | aprovado |
 | Validador do catálogo (`l10n-validate`) | OK: 5.796 entradas; só os 5 avisos `SLOT_ADDITION` esperados |
 | Leitura e regravação dos arquivos do jogo 1.0.6 | 107/107 `.rfile` e 22/22 `.db` idênticos byte a byte |
-| CI (GitHub Actions) | **ainda não executado** para esta versão |
+| CI (GitHub Actions), [execução 44650215914](https://github.com/rogrillo/underkeep-ptbr/actions/runs/44650215914), commit `6a5f935` (PR #2) | **aprovado** nos três jobs: `linux` 221 aprovados e 1 pulado; `tests (3.11)` e `tests (3.13)` no Windows, 220 aprovados e 2 pulados cada |
+
+O resultado do CI vale para o commit `6a5f93534fdfc8659d2b5da945ce28d26d52b0e2`. Qualquer commit novo, inclusive só
+de documentação, precisa de uma nova execução aprovada antes do merge.
 
 ## 4. Revisão editorial pendente
 
@@ -50,13 +69,12 @@ código do instalador**, conferidos arquivo a arquivo. Só o `VERSAO.txt` mudou,
 
 ## 5. Não comprovado explicitamente pelo playtest
 
-O relato do mantenedor confirma instalação e jogo nas duas plataformas. Ele **não detalha** estes pontos, que
-continuam sem comprovação no jogo:
+Os relatos do mantenedor confirmam instalação e jogo nas duas plataformas e a exibição dos cinco textos acrescentados
+(seção 1). Eles **não detalham** estes pontos, que continuam sem comprovação no jogo:
 
-- Exibição em português dos **5 textos acrescentados** ao slot espanhol: páginas 7 e 8 do "Como jogar" e nome,
-  descrição e efeito da Poção do esquecimento. Sem o acréscimo, eles apareceriam em inglês.
-- O efeito da Poção do esquecimento, os rótulos do mapa da cidade e o tooltip de Constituição, que ficou sem título
-  como no original em inglês.
+- Em qual plataforma foram vistos as páginas 7 e 8 e os textos da poção, e se isso foi repetido na outra.
+- O **uso** da Poção do esquecimento: devolução dos pontos de habilidade e demais efeitos.
+- Os rótulos do mapa da cidade e o tooltip de Constituição, que ficou sem título como no original em inglês.
 - Se os textos que cresceram cabem na tela: criação do herói, descrições de classe e tooltips de atributo.
 - **Desinstalação no Underkeep 1.0.6.** Foi comprovada no playtest da beta.2 e nos testes automáticos; o código não
   mudou.
