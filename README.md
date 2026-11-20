@@ -11,6 +11,11 @@ habilidades e interface.
 > Todos os direitos sobre o Underkeep pertencem aos seus criadores. Para jogar, é preciso ter o jogo original
 > **comprado na Steam**. Nenhum arquivo do jogo é distribuído aqui. Veja o [aviso legal](AVISO_LEGAL.md).
 
+> [!IMPORTANT]
+> **Underkeep 1.0.6 (19/11/2026):** a Beta 2 foi feita para a versão 1.0.5 do jogo e **não é compatível com a
+> atualização 1.0.6**. Se ela estiver instalada, **desinstale-a antes de jogar**. Uma nova versão está em
+> preparação. Detalhes em [docs/ATUALIZACAO_1.0.6.md](docs/ATUALIZACAO_1.0.6.md).
+
 **Ir direto para:** [Screenshots](#screenshots) · [Download](#download) · [Instalar no Windows](#instalação-no-windows) ·
 [Instalar no Steam Deck](#instalação-no-steam-deck) · [Ativar o português](#como-jogar-em-português) ·
 [Desinstalar](#desinstalar) · [Reportar erros](#reportar-erros-e-sugerir-melhorias) · [Contribuir](#como-contribuir)
@@ -50,7 +55,7 @@ Underkeep © Rake in Grass e não são cobertas pelas licenças deste projeto.</
 | Versão da tradução | **0.1.0-beta.2**, primeira beta pública, publicada em 16/11/2026 ([baixar](../../releases/tag/v0.1.0-beta.2)) |
 | Cobertura | **5.786 de 5.786** textos traduzíveis (100%) |
 | Revisão editorial | **em andamento**: a tradução está completa, mas a revisão humana e o playtest de todos os caminhos ainda não terminaram |
-| Versão do jogo | Underkeep na Steam, **build 26592006** (atualização de 13/11/2026). Outras builds são recusadas pelo instalador |
+| Versão do jogo | Underkeep na Steam, **build 26592006** (versão 1.0.5, atualização de 13/11/2026). Outras builds são recusadas pelo instalador. A 1.0.6 (build 26770834) ainda não é suportada: veja [a nota de atualização](docs/ATUALIZACAO_1.0.6.md) |
 
 | Categoria | Textos | Cobertura |
 |---|---|---|
