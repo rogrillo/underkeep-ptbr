@@ -1,3 +1,75 @@
+# Underkeep PT-BR v0.1.0-beta.3
+
+> **Publicada em 19/11/2026** como *pre-release*:
+> [página da release v0.1.0-beta.3](https://github.com/rogrillo/underkeep-ptbr/releases/tag/v0.1.0-beta.3), cujo texto
+> está em [release/GITHUB_RELEASE_v0.1.0-beta.3.md](release/GITHUB_RELEASE_v0.1.0-beta.3.md).
+> Compatível com o **Underkeep 1.0.6** (Steam build `26770834`).
+
+## Novidades
+
+- **Compatibilidade com o Underkeep 1.0.6**, build `26770834`. O instalador reconhece a build nova e continua recusando
+  versões incompatíveis sem alterar nada.
+- **5.796 de 5.796** entradas traduzíveis identificadas e traduzidas:
+  - diálogos e narrativa: 3.536;
+  - interface: 1.104;
+  - itens: 843;
+  - habilidades: 313.
+- **Textos novos da 1.0.6:**
+  - Poção do esquecimento;
+  - páginas 7 e 8 do "Como jogar" (atributos e equipamentos, mecânicas de combate);
+  - nomes no mapa da cidade;
+  - Cajado do trovão com nome e descrição.
+- **Textos alterados pelo patch** foram retraduzidos: atributos, classes, criação do herói, críticos e a habilidade do
+  Ladrão, agora **Manto das sombras**.
+- **Atualização a partir da Beta 2:** o instalador encontra a versão anterior e oferece removê-la antes de instalar a
+  nova.
+- **Pipeline e processo de atualização:**
+  - comparação automática entre builds do jogo;
+  - novos testes de atualização e de segurança;
+  - auditoria de publicação reforçada.
+
+## Resultados dos testes
+
+| Plataforma ou verificação | Resultado |
+|---|---|
+| Windows | instalação e jogo traduzido no Underkeep 1.0.6 testados pelo mantenedor |
+| Steam Deck | instalação e jogo traduzido no Underkeep 1.0.6 testados pelo mantenedor |
+| Build antiga | instalação bloqueada corretamente |
+| Textos acrescentados ao slot espanhol | páginas 7 e 8 do "Como jogar" e textos da Poção do esquecimento confirmados em português no jogo |
+| Testes automatizados | aprovados localmente e no CI (Windows e Linux) |
+| Testes de fumaça dos dois pacotes | aprovados localmente (Windows 18/18, Steam Deck 14/14) |
+
+O uso da poção, a desinstalação no 1.0.6 e outros pontos ainda sem comprovação em jogo estão listados em
+[docs/VALIDACAO_BETA3.md](docs/VALIDACAO_BETA3.md).
+
+## Compatibilidade
+
+| | |
+|---|---|
+| Jogo | Underkeep **1.0.6**, Steam build **26770834**. Outras versões são recusadas |
+| Windows 11 (64 bits) | testado: instalação e jogo |
+| Steam Deck (SteamOS, Proton) | testado: instalação e jogo |
+| Windows 10, outras distribuições Linux | não testados |
+
+## Atualizar a partir da Beta 2
+
+1. Feche o jogo.
+2. Desinstale a Beta 2, ou deixe o instalador da Beta 3 removê-la quando ele perguntar.
+3. Instale a Beta 3 e escolha **Español** nas opções de idioma.
+
+Detalhes em [docs/ATUALIZACAO_1.0.6.md](docs/ATUALIZACAO_1.0.6.md).
+
+## Limitações conhecidas
+
+- **Revisão humana em andamento**, inclusive dos textos novos e alterados da 1.0.6. Correções virão conforme os
+  playtests e o retorno da comunidade.
+- A tradução ocupa o lugar do **espanhol**.
+- As falas novas do corvo da taverna são só áudio em inglês; não há texto para traduzir.
+- Projeto comunitário, gratuito e não oficial, feito com assistência de IA e supervisão humana, sem afiliação com a
+  Rake in Grass.
+
+---
+
 # Underkeep PT-BR v0.1.0-beta.2
 
 > **Primeira beta pública, publicada em 16/11/2026** como *pre-release*. Mesma tradução da beta.1: 5.786 de 5.786

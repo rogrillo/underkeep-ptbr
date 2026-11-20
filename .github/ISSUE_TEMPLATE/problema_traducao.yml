@@ -42,4 +42,4 @@ body:
     id: versao
     attributes:
       label: Versão da tradução
-      placeholder: "ex.: 0.1.0-beta.2"
+      placeholder: "ex.: 0.1.0-beta.3"

@@ -24,7 +24,7 @@ Na aba **Issues → New issue**, escolha um modelo:
 | Bug técnico | falha ao instalar, desinstalar ou carregar o jogo |
 | Sugestão de melhoria | ideias para o projeto, documentação ou ferramentas |
 
-Antes, procure se já existe uma issue parecida. Informe sempre a versão da tradução (por exemplo, `0.1.0-beta.2`) e a plataforma (Windows ou Steam Deck).
+Antes, procure se já existe uma issue parecida. Informe sempre a versão da tradução (por exemplo, `0.1.0-beta.3`) e a plataforma (Windows ou Steam Deck).
 
 ## Propor uma mudança de tradução
 
