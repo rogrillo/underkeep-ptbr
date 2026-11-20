@@ -175,6 +175,7 @@ Contribuições de revisão, sugestões de tradução e testes são muito bem-vi
   editoriais e terminologia.
 
 Documentação técnica (ferramentas, pack-sombra, geração de releases): [docs/DESENVOLVIMENTO.md](docs/DESENVOLVIMENTO.md).
+Fluxo de trabalho e VS Code: [docs/FLUXO_DE_TRABALHO.md](docs/FLUXO_DE_TRABALHO.md).
 Mapa de toda a documentação: [docs/README.md](docs/README.md).
 
 ## Créditos

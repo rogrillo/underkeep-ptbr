@@ -58,3 +58,13 @@ evidence_bundles/
 *.log
 .DS_Store
 Thumbs.db
+
+# Desenvolvimento exclusivamente local (repositório único: nada disto é publicado). A auditoria de publicação
+# bloqueia esses caminhos mesmo se forem adicionados à força; o .gitignore é só a primeira barreira.
+.local/
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+# Configurações pessoais de editor
+.vscode/
+*.code-workspace

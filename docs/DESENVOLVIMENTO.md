@@ -23,9 +23,26 @@ data/                   Patch de exemplo e exceções justificadas do validador
 release/                Pontos de entrada e LEIA-ME dos pacotes Windows e Steam Deck
 docs/                   Guias de jogadores e contribuidores, glossário, decisões
 assets/screenshots/     Capturas de tela do README (únicas imagens aceitas pela auditoria de publicação)
-work/, audit/local/     Saídas locais com material do jogo (ignoradas pelo Git; nunca commitar)
+work/, audit/local/     Saídas locais padrão (ignoradas pelo Git; prefira UKLOC_LOCAL_DIR, abaixo)
 build/, dist/           Artefatos de build e pacotes (ignorados pelo Git)
+.local/                 Anotações e rascunhos do mantenedor (ignorado e bloqueado pela auditoria)
 ```
+
+Este repositório é a **única fonte** do código, dos testes, dos catálogos e da documentação. Fluxo de trabalho,
+VS Code e commits: [FLUXO_DE_TRABALHO.md](FLUXO_DE_TRABALHO.md).
+
+### Pasta local fora do repositório (`UKLOC_LOCAL_DIR`)
+
+Extrações, packs-sombra e inventários contêm material do jogo. Para mantê-los **fisicamente fora** do repositório,
+sem depender só do `.gitignore`, defina uma pasta local:
+
+```powershell
+$env:UKLOC_LOCAL_DIR = "D:\underkeep-ptbr-local"   # qualquer pasta fora do repositório
+```
+
+Com a variável definida, `ukloc_cli.py` e `audit_inventory.py` gravam em `<UKLOC_LOCAL_DIR>\work` e
+`<UKLOC_LOCAL_DIR>\audit`. Uma pasta dentro do repositório é recusada. Sem a variável, as saídas vão para `work/` e
+`audit/local/`, ambos ignorados.
 
 ## Ambiente (PowerShell)
 
@@ -116,19 +133,28 @@ Sem a exceção, a entrada continua bloqueada.
 
 ### Quando o jogo for atualizado
 
+Guarde, na pasta local, a extração e o inventário da build suportada: eles são a base da próxima comparação.
+
 1. Confira a build em `steamapps/appmanifest_2411200.acf` e o SHA-256 do `underkeep.exe`.
-2. Rode `roundtrip` e `gate-unchanged`. Se algum formato mudar, pare e investigue antes de qualquer outra etapa.
-3. Extraia a build nova em uma pasta própria e compare com a extração da build anterior. O relatório traz só IDs,
-   contagens e hashes e fica em `audit/local/`:
+2. Gere o inventário da build nova e compare com o da anterior. Ele traz só caminhos, tamanhos e hashes:
 
    ```powershell
-   .\.venv\Scripts\python.exe scripts\ukloc_cli.py extract --out work\<build> --analysis audit\local\<build>.json
-   .\.venv\Scripts\python.exe scripts\compare_builds.py --old work\<anterior> --new work\<build> --report audit\local\comparacao.json
+   .\.venv\Scripts\python.exe scripts\audit_inventory.py --game-root "<pasta do Underkeep>" --output "$env:UKLOC_LOCAL_DIR\audit\inventory_<build>.json"
    ```
 
-4. Traduza as entradas novas e revise as alteradas. Atualize `source_sha256` só depois de revisar o texto.
-5. Atualize `project.json` com os hashes dos arquivos instalados, nunca apenas o número da build.
-6. Rode `l10n-validate`, a suíte e os testes de fumaça dos dois pacotes.
+3. Rode `roundtrip` e `gate-unchanged`. Se algum formato mudar, pare e investigue antes de qualquer outra etapa.
+4. Extraia a build nova em uma pasta própria e compare com a extração da build anterior. O relatório traz só IDs,
+   contagens e hashes:
+
+   ```powershell
+   $L = $env:UKLOC_LOCAL_DIR
+   .\.venv\Scripts\python.exe scripts\ukloc_cli.py extract --out "$L\work\<build>" --analysis "$L\audit\<build>.json"
+   .\.venv\Scripts\python.exe scripts\compare_builds.py --old "$L\work\<anterior>" --new "$L\work\<build>" --report "$L\audit\comparacao.json"
+   ```
+
+5. Traduza as entradas novas e revise as alteradas. Atualize `source_sha256` só depois de revisar o texto.
+6. Atualize `project.json` com os hashes dos arquivos instalados, nunca apenas o número da build.
+7. Rode `l10n-validate`, a suíte e os testes de fumaça dos dois pacotes.
 
 ## Instalador do jogador e release
 
@@ -202,14 +228,21 @@ objetos inalcançáveis) e, com `--arvore`, os arquivos ainda não commitados. E
 - credenciais;
 - e-mails e caminhos pessoais, inclusive o nome de usuário e o da máquina;
 - e-mails de autor e committer;
+- material interno em qualquer pasta: `CLAUDE.md`, relatórios `FASE_*.md`, `.local/`, entre outros;
+- metadados nas capturas de tela: o PNG só pode ter `IHDR`, `PLTE`, `IDAT` e `IEND`; JPEG e WebP não podem ter
+  EXIF, XMP, IPTC nem comentários;
 - com `--jogo`, trechos idênticos ao texto original do jogo, comparados localmente, sem imprimir o texto.
+
+Antes de cada commit, rode com `--arvore` (arquivos novos e alterados, inclusive os não rastreados) e
+`--objetos-soltos` (o que já foi preparado com `git add`):
 
 ```powershell
 .\.venv\Scripts\python.exe scripts\audit_publication.py --jogo "<pasta do Underkeep>" --objetos-soltos --arvore
 ```
 
 Saída 1 significa que há bloqueadores. O teste `test_project_history_has_no_blockers` roda a mesma auditoria, sem o
-jogo, a cada execução da suíte.
+jogo, a cada execução da suíte, inclusive no CI (Windows e Linux). Não use `--diretorio .` na raiz do repositório:
+esse modo serve para pastas sem Git e acusaria `.venv/`, `dist/` e `.local/`, que nunca são publicados.
 
 ### Publicar uma versão
 
@@ -220,10 +253,7 @@ jogo, a cada execução da suíte.
 5. Baixe os arquivos da página da release e confira com `sha256sum -c`.
 
 O hash do ZIP Windows muda a cada build (PyInstaller). O do Steam Deck é reproduzível para a mesma árvore e o mesmo
-fim de linha no checkout: os catálogos são copiados byte a byte.
+fim de linha no checkout: os catálogos são copiados byte a byte. Para gerar o pacote final com os mesmos executáveis
+já testados no playtest, coloque-os em `build/release/exe/` e use `build_release.py --skip-exe`.
 
-Quando o jogo for atualizado:
-1. Rode `extract`.
-2. Compare os `STALE_SOURCE` no `l10n-validate`.
-3. Revise as entradas afetadas.
-4. Atualize os hashes de `project.json`. É uma decisão manual, nunca automática.
+Quando o jogo for atualizado, siga [Quando o jogo for atualizado](#quando-o-jogo-for-atualizado).

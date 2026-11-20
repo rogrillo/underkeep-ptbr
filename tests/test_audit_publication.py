@@ -6,6 +6,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import zlib
 
 import pytest
 
@@ -69,7 +70,19 @@ def test_clean_repo_has_no_findings(repo: Repo) -> None:
     assert not report.blockers()
 
 
-PNG = b"\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR" + b"\x00" * 64
+def png_chunk(kind: bytes, data: bytes) -> bytes:
+    return len(data).to_bytes(4, "big") + kind + data + zlib.crc32(kind + data).to_bytes(4, "big")
+
+
+def make_png(*extra: tuple[bytes, bytes]) -> bytes:
+    """PNG válido de 1x1 (RGB); ``extra`` insere chunks auxiliares antes do IDAT."""
+    ihdr = png_chunk(b"IHDR", (1).to_bytes(4, "big") * 2 + bytes([8, 2, 0, 0, 0]))
+    idat = png_chunk(b"IDAT", zlib.compress(b"\x00\x00\x00\x00"))
+    return (ap.PNG_SIGNATURE + ihdr + b"".join(png_chunk(k, d) for k, d in extra) + idat
+            + png_chunk(b"IEND", b""))
+
+
+PNG = make_png()
 
 
 def test_readme_screenshots_are_the_only_allowed_images(repo: Repo) -> None:
@@ -83,6 +96,70 @@ def test_readme_screenshots_are_the_only_allowed_images(repo: Repo) -> None:
 def test_large_screenshot_is_reported() -> None:
     found = ap.path_problems("assets/screenshots/grande.png", 3 * 2**20, PNG)
     assert [(k, s) for k, s, _ in found] == [("grande", "medio")]
+
+
+@pytest.mark.parametrize("chunk", [
+    (b"iTXt", b"XML:com.adobe.xmp\x00\x00\x00\x00\x00<x:xmpmeta/>"),
+    (b"tEXt", b"Author\x00" + FAKE_USER.encode()),
+    (b"eXIf", b"MM\x00*"),
+    (b"pHYs", b"\x00\x00\x0e\xc4\x00\x00\x0e\xc4\x01"),
+])
+def test_screenshot_metadata_blocks(chunk: tuple[bytes, bytes]) -> None:
+    data = make_png(chunk)
+    found = ap.path_problems("assets/screenshots/menu.png", len(data), data)
+    assert [(k, s) for k, s, _ in found] == [("metadado", "bloqueador")]
+    assert chunk[0].decode() in found[0][2]
+
+
+@pytest.mark.parametrize("name, data", [
+    ("quebrada.png", PNG[:-6]),
+    ("falsa.png", b"GIF89a" + b"\x00" * 20),
+    ("foto.jpg", b"\xff\xd8\xff\xe1\x00\x08Exif\x00\x00\xff\xda\x00\x02"),
+    ("foto.jpeg", b"\xff\xd8\xff\xfe\x00\x06nome\xff\xda\x00\x02"),
+    ("foto.webp", b"RIFF\x1a\x00\x00\x00WEBPEXIF\x04\x00\x00\x00MM\x00*"),
+])
+def test_invalid_or_tagged_images_are_blocked(name: str, data: bytes) -> None:
+    found = ap.path_problems(f"assets/screenshots/{name}", len(data), data)
+    assert ("metadado", "bloqueador") in [(k, s) for k, s, _ in found]
+
+
+def test_clean_jpeg_and_webp_pass() -> None:
+    jpeg = b"\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00\xff\xda\x00\x02"
+    webp = b"RIFF\x12\x00\x00\x00WEBPVP8L\x05\x00\x00\x00\x2f\x00\x00\x00\x00\x00"
+    for name, data in (("ok.jpg", jpeg), ("ok.webp", webp)):
+        assert ap.path_problems(f"assets/screenshots/{name}", len(data), data) == []
+
+
+@pytest.mark.parametrize("path", [
+    "CLAUDE.md", "docs/FASE_3A_INSTRUCOES.md", "docs/FASES.md", "docs/PUBLICACAO.md", "outra/claude.md",
+    "docs/CONTATO_RAKE_IN_GRASS.md", ".local/notas.txt", "publico/CHANGELOG.md",
+])
+def test_internal_material_is_blocked_anywhere(path: str) -> None:
+    found = ap.path_problems(path, 10, b"interno\n")
+    assert any(s == "bloqueador" for _, s, _ in found), found
+
+
+def test_internal_file_new_in_working_tree_is_blocked(repo: Repo) -> None:
+    (repo.path / "docs").mkdir()
+    (repo.path / "docs" / "FASE_9Z_RELATORIO.md").write_text("relatório interno\n", encoding="utf-8")
+    report = ap.audit(repo.path, tree=True)
+    assert {f.path for f in report.blockers()} == {"docs/FASE_9Z_RELATORIO.md"}
+
+
+def test_staged_content_is_audited_with_its_real_path(repo: Repo) -> None:
+    """Pré-commit: o que está no índice é auditado pelo caminho real, não como objeto sem caminho."""
+    shots = repo.path / "assets" / "screenshots"
+    shots.mkdir(parents=True)
+    (shots / "menu.png").write_bytes(PNG)
+    repo.git("add", "assets/screenshots/menu.png")
+    assert ap.audit(repo.path, loose=True).blockers() == []  # captura limpa preparada: aceita
+    (shots / "menu.png").write_bytes(make_png((b"iTXt", b"XML:com.adobe.xmp\x00\x00\x00\x00\x00<x/>")))
+    (repo.path / "CLAUDE.md").write_text("instruções locais\n", encoding="utf-8")
+    repo.git("add", "assets/screenshots/menu.png")
+    repo.git("add", "-f", "CLAUDE.md")  # adição forçada: o .gitignore não protegeria
+    blocked = {(f.path, f.kind) for f in ap.audit(repo.path, loose=True).blockers()}
+    assert ("assets/screenshots/menu.png", "metadado") in blocked
+    assert ("CLAUDE.md", "interno") in blocked
 
 
 def test_deleted_game_file_is_found_in_history(repo: Repo) -> None:

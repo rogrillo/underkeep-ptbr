@@ -4,6 +4,22 @@ Histórico de mudanças por versão do Underkeep PT-BR. Notas para jogadores: [R
 
 ## [Não lançado]
 
+### Repositório único
+
+Este repositório passa a ser a única fonte do projeto. Não há mais exportação a partir de outro repositório.
+
+- **[docs/FLUXO_DE_TRABALHO.md](docs/FLUXO_DE_TRABALHO.md):** fluxo de branch, revisão, commits, CI e release, e guia do
+  VS Code.
+- **`UKLOC_LOCAL_DIR`:** extrações, packs-sombra e inventários podem ficar numa pasta fora do repositório. Uma pasta
+  dentro dele é recusada.
+- **Auditoria de publicação:**
+  - bloqueia material interno em qualquer pasta (`CLAUDE.md`, relatórios `FASE_*.md`, `.local/`, entre outros);
+  - bloqueia metadados em capturas de tela: PNG só com `IHDR`/`PLTE`/`IDAT`/`IEND`; JPEG e WebP sem EXIF, XMP, IPTC ou
+    comentários.
+- **`scripts/audit_inventory.py`:** inventário só com metadados da instalação, usado para comparar builds quando o jogo
+  é atualizado.
+- **`.gitignore`:** ignora `.local/`, `CLAUDE.md`, `.claude/` e configurações pessoais do VS Code.
+
 ### Em preparação: adaptação ao Underkeep 1.0.6 (candidata 0.1.0-beta.3)
 
 Ainda não lançada. A Beta 2 continua sendo a versão publicada e só funciona no Underkeep 1.0.5 (build 26592006).

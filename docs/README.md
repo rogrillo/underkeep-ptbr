@@ -22,6 +22,7 @@
 | [GUIA_DE_LOCALIZACAO.md](GUIA_DE_LOCALIZACAO.md) | regras editoriais (tratamento, gênero, nomes, marcação) |
 | [GLOSSARIO.md](GLOSSARIO.md) | terminologia consolidada |
 | [DESENVOLVIMENTO.md](DESENVOLVIMENTO.md) | ferramentas Python, pack-sombra, testes, geração e publicação dos pacotes |
+| [FLUXO_DE_TRABALHO.md](FLUXO_DE_TRABALHO.md) | repositório único, branches, revisão, commits, CI e uso do VS Code |
 | [DECISOES.md](DECISOES.md) | registro de decisões técnicas |
 | [DISTRIBUICAO.md](DISTRIBUICAO.md) e [LICENCIAMENTO_E_PUBLICACAO.md](LICENCIAMENTO_E_PUBLICACAO.md) | regras de distribuição, licenças e riscos |
 | [../CHANGELOG.md](../CHANGELOG.md) | histórico de mudanças por versão |

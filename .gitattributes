@@ -1,2 +1,5 @@
 # Scripts executados no Linux/Steam Deck precisam de LF mesmo com core.autocrlf=true no Windows.
 *.sh text eol=lf
+# Catálogos copiados byte a byte para os pacotes: LF em qualquer sistema, para o ZIP do Steam Deck ser reproduzível
+# a partir de um checkout no Windows (core.autocrlf=true) ou no Linux.
+l10n/pt-BR/*.json text eol=lf

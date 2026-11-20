@@ -1,21 +1,48 @@
 """Catálogo de localização: JSON determinístico, IDs estáveis e hashes por entrada.
 
 Os catálogos extraídos contêm texto original do jogo e só podem ser gravados em
-diretórios ignorados pelo Git (``work/``, ``audit/local/``). Ver
-:func:`ensure_untracked_output`.
+diretórios ignorados pelo Git (``work/``, ``audit/local/``) ou, de preferência, numa pasta local
+FORA do repositório, indicada pela variável de ambiente ``UKLOC_LOCAL_DIR``. Ver
+:func:`ensure_untracked_output` e :func:`local_roots`.
 """
 from __future__ import annotations
 
 from dataclasses import dataclass, field
 from hashlib import sha256
 import json
+import os
 from pathlib import Path
-from typing import Any
+from typing import Any, Mapping
 
 from .textdb import TextTable
 
 SCHEMA = "ukloc.catalog/1"
 ALLOWED_OUTPUT_ROOTS = ("work", "audit/local")
+LOCAL_DIR_ENV = "UKLOC_LOCAL_DIR"
+
+
+def external_local_dir(project_root: Path, environ: Mapping[str, str] | None = None) -> Path | None:
+    """Pasta local externa (``UKLOC_LOCAL_DIR``), ou ``None`` se a variável não estiver definida.
+
+    Ela guarda extrações, packs-sombra e evidências com material do jogo fisicamente fora do repositório,
+    para que nada dependa só do ``.gitignore``. Recusa caminhos dentro do repositório.
+    """
+    raw = (os.environ if environ is None else environ).get(LOCAL_DIR_ENV, "").strip()
+    if not raw:
+        return None
+    path = Path(raw).expanduser().resolve()
+    project = project_root.resolve()
+    if path == project or project in path.parents:
+        raise ValueError(f"{LOCAL_DIR_ENV} deve ficar fora do repositório: {path}")
+    return path
+
+
+def local_roots(project_root: Path, environ: Mapping[str, str] | None = None) -> tuple[Path, Path]:
+    """``(work, audit)``: na pasta externa, se configurada; senão ``work/`` e ``audit/local/`` do projeto."""
+    external = external_local_dir(project_root, environ)
+    if external is not None:
+        return external / "work", external / "audit"
+    return project_root / "work", project_root / "audit" / "local"
 
 
 def text_hash(text: str) -> str:
@@ -103,16 +130,21 @@ def catalog_from_json(text: str) -> Catalog:
                    data.get("source_sha256"), entries)
 
 
-def ensure_untracked_output(path: Path, project_root: Path, game_root: Path | None = None) -> Path:
-    """Garante que a saída fique em ``work/`` ou ``audit/local/`` e fora do jogo."""
+def ensure_untracked_output(path: Path, project_root: Path, game_root: Path | None = None,
+                            environ: Mapping[str, str] | None = None) -> Path:
+    """Garante que a saída fique em ``work/``, ``audit/local/`` ou na pasta ``UKLOC_LOCAL_DIR``, e fora do jogo."""
     resolved = path.resolve()
     if game_root is not None:
         game = game_root.resolve()
         if resolved == game or game in resolved.parents:
             raise ValueError("a saída não pode ficar dentro da instalação do jogo")
     allowed = [(project_root / root).resolve() for root in ALLOWED_OUTPUT_ROOTS]
+    external = external_local_dir(project_root, environ)
+    if external is not None:
+        allowed.append(external)
     if not any(resolved == root or root in resolved.parents for root in allowed):
-        raise ValueError(f"saída deve ficar em {', '.join(ALLOWED_OUTPUT_ROOTS)}: {path}")
+        where = ", ".join(ALLOWED_OUTPUT_ROOTS) + (f" ou {external}" if external else "")
+        raise ValueError(f"saída deve ficar em {where}: {path}")
     return resolved
 
 
