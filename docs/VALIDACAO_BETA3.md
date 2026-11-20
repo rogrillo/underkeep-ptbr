@@ -1,7 +1,13 @@
-# Validação da v0.1.0-beta.3 (candidata)
+# Validação da v0.1.0-beta.3
 
-Registro consolidado em 19/11/2026 e atualizado com os playtests adicionais e o CI do Pull Request #2. A versão
-**ainda não foi publicada**. Os tipos de evidência:
+Registro consolidado em 19/11/2026 e atualizado com os playtests adicionais e o CI do Pull Request #2. A versão foi
+**publicada em 19/11/2026** como *pre-release*
+([página da release](https://github.com/rogrillo/underkeep-ptbr/releases/tag/v0.1.0-beta.3)), com os mesmos pacotes
+validados aqui:
+- `Underkeep-PTBR-v0.1.0-beta.3-Windows.zip`, SHA-256 `dfe59db9…f2ad`;
+- `Underkeep-PTBR-v0.1.0-beta.3-SteamDeck.zip`, SHA-256 `723340ca…65f1`.
+
+Os tipos de evidência:
 
 - **Playtest:** teste manual em hardware real, relatado pelo mantenedor. Não há log automatizado das sessões.
 - **Automático local:** testes `pytest` e testes de fumaça na máquina de desenvolvimento (Windows 11), com o jogo

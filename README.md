@@ -12,9 +12,14 @@ habilidades e interface.
 > **comprado na Steam**. Nenhum arquivo do jogo é distribuído aqui. Veja o [aviso legal](AVISO_LEGAL.md).
 
 > [!IMPORTANT]
-> **Underkeep 1.0.6 (19/11/2026):** a Beta 2 foi feita para a versão 1.0.5 do jogo e **não é compatível com a
-> atualização 1.0.6**. Se ela estiver instalada, **desinstale-a antes de jogar**. Uma nova versão está em
-> preparação. Detalhes em [docs/ATUALIZACAO_1.0.6.md](docs/ATUALIZACAO_1.0.6.md).
+> **Underkeep 1.0.6:** use a **[Beta 3](https://github.com/rogrillo/underkeep-ptbr/releases/tag/v0.1.0-beta.3)**,
+> feita para a build 26770834. A Beta 2 só funciona na build 26592006 (Underkeep 1.0.5). Se você usa a Beta 2:
+> 1. feche o jogo;
+> 2. desinstale a Beta 2 antes de jogar a 1.0.6;
+> 3. instale a Beta 3. O instalador da Beta 3 também oferece remover a Beta 2.
+>
+> Os instaladores continuam recusando builds incompatíveis. Detalhes em
+> [docs/ATUALIZACAO_1.0.6.md](docs/ATUALIZACAO_1.0.6.md).
 
 **Ir direto para:** [Screenshots](#screenshots) · [Download](#download) · [Instalar no Windows](#instalação-no-windows) ·
 [Instalar no Steam Deck](#instalação-no-steam-deck) · [Ativar o português](#como-jogar-em-português) ·
@@ -53,18 +58,19 @@ Rake in Grass e não são cobertas pelas licenças deste projeto.</sub>
 
 | | |
 |---|---|
-| Versão da tradução | **0.1.0-beta.2**, primeira beta pública, publicada em 16/11/2026 ([baixar](../../releases/tag/v0.1.0-beta.2)) |
-| Cobertura | **5.786 de 5.786** textos traduzíveis (100%) |
-| Próxima versão | **0.1.0-beta.3**, para o Underkeep 1.0.6 (build 26770834), **em preparação e ainda não publicada**. 5.796 de 5.796 textos traduzíveis; instalação e jogo já testados pelo mantenedor no Windows e no Steam Deck |
+| Versão da tradução | **0.1.0-beta.3**, publicada em 19/11/2026 como *pre-release* ([baixar](https://github.com/rogrillo/underkeep-ptbr/releases/tag/v0.1.0-beta.3)) |
+| Versão do jogo | **Underkeep 1.0.6**, Steam build **26770834**. Outras builds são recusadas pelo instalador |
+| Cobertura | **5.796 de 5.796** entradas traduzíveis identificadas (100%) |
 | Revisão editorial | **em andamento**: a tradução está completa, mas a revisão humana e o playtest de todos os caminhos ainda não terminaram |
-| Versão do jogo | Underkeep na Steam, **build 26592006** (versão 1.0.5, atualização de 13/11/2026). Outras builds são recusadas pelo instalador. A 1.0.6 (build 26770834) ainda não é suportada: veja [a nota de atualização](docs/ATUALIZACAO_1.0.6.md) |
+| Plataformas | Windows e Steam Deck: instalação e jogo testados pelo mantenedor ([detalhes](#plataformas)) |
 
-| Categoria | Textos | Cobertura |
-|---|---|---|
-| Diálogos e narrativa | 3.531 | 100% |
-| Interface | 1.102 | 100% do traduzível |
-| Itens | 838 | 100% do traduzível |
-| Habilidades | 315 | 100% |
+| Categoria | Entradas |
+|---|---:|
+| Diálogos e narrativa | 3.536 |
+| Interface | 1.104 |
+| Itens | 843 |
+| Habilidades | 313 |
+| **Total** | **5.796** |
 
 "Cobertura completa" significa que todo texto do jogo tem tradução. Isso não quer dizer que todo texto já foi revisado
 e testado em jogo. Erros de tradução, quebras de layout e inconsistências ainda podem aparecer: sua ajuda para
@@ -74,24 +80,27 @@ encontrá-los é bem-vinda.
 
 | Plataforma | Situação |
 |---|---|
-| Windows 11 (64 bits) | **Testado:** instalador `.exe`, tradução jogada e desinstalação com retorno ao espanhol original |
-| Steam Deck / SteamOS (Proton) | **Testado na beta.2:** janela de instalação no modo Desktop (`kdialog`), detecção automática do jogo e do prefixo Proton, tradução jogada, bloqueio com o jogo aberto e desinstalação. Sem `sudo` e sem instalar Python |
+| Windows 11 (64 bits) | **Testado na beta.3:** instalação pelo `.exe` e tradução jogada no Underkeep 1.0.6. **Testado na beta.2:** desinstalação com retorno ao espanhol original (o código não mudou desde então) |
+| Steam Deck / SteamOS (Proton) | **Testado na beta.3:** instalação e tradução jogada no Underkeep 1.0.6. **Testado na beta.2:** janela de instalação no modo Desktop (`kdialog`), detecção automática do jogo e do prefixo Proton, bloqueio com o jogo aberto e desinstalação. Sem `sudo` e sem instalar Python |
 | Windows 10 | Não testado (deve funcionar como no Windows 11) |
 | Outras distribuições Linux | Não testado |
 
-Resultados detalhados: [docs/VALIDACAO_BETA2.md](docs/VALIDACAO_BETA2.md).
+Resultados detalhados: [docs/VALIDACAO_BETA3.md](docs/VALIDACAO_BETA3.md). Histórico da Beta 2:
+[docs/VALIDACAO_BETA2.md](docs/VALIDACAO_BETA2.md).
 
 ## Download
 
-Os pacotes ficam na página de **[Releases](../../releases)** deste repositório. Se você nunca usou o GitHub: clique em
-**Releases**, no lado direito da página, abra a versão mais recente e, em **Assets**, baixe o ZIP da sua plataforma.
+Baixe na página da **[versão 0.1.0-beta.3](https://github.com/rogrillo/underkeep-ptbr/releases/tag/v0.1.0-beta.3)**,
+em **Assets**, o ZIP da sua plataforma. Todas as versões ficam em **[Releases](../../releases)**.
 
-| Pacote | Para quem |
-|---|---|
-| `Underkeep-PTBR-v0.1.0-beta.2-Windows.zip` | Windows (não precisa de Python) |
-| `Underkeep-PTBR-v0.1.0-beta.2-SteamDeck.zip` | Steam Deck no modo Desktop (usa o Python que já vem no SteamOS) |
+| Pacote | Para quem | SHA-256 |
+|---|---|---|
+| `Underkeep-PTBR-v0.1.0-beta.3-Windows.zip` | Windows (não precisa de Python) | `dfe59db9a208763fceb5a3c7f5052821c72d343b09ad131d745462906580f2ad` |
+| `Underkeep-PTBR-v0.1.0-beta.3-SteamDeck.zip` | Steam Deck no modo Desktop (usa o Python que já vem no SteamOS) | `723340caf5af850cf0ce227957dfc9404787590c0bddba85e65e7d5eb4bc65f1` |
 
-Cada pacote vem com um arquivo `.sha256` para você conferir o download. Nenhum deles contém arquivos do jogo: a
+Cada pacote vem com um arquivo `.sha256` para você conferir o download: no Windows,
+`Get-FileHash .\Underkeep-PTBR-v0.1.0-beta.3-Windows.zip -Algorithm SHA256`; no Steam Deck,
+`sha256sum -c Underkeep-PTBR-v0.1.0-beta.3-SteamDeck.zip.sha256`. Nenhum deles contém arquivos do jogo: a
 tradução é gerada no seu computador, a partir da sua própria instalação. Baixe somente da página oficial do projeto.
 
 ## Instalação no Windows

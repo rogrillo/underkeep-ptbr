@@ -1,6 +1,8 @@
 # Steam Deck / SteamOS — instalação, funcionamento e playtest
 
-> **Situação (15/11/2026)**
+> **Situação (19/11/2026)**
+> - **beta.3 (Underkeep 1.0.6): instalação e jogo traduzido aprovados no Steam Deck** (playtest do mantenedor; ver
+>   [VALIDACAO_BETA3.md](VALIDACAO_BETA3.md)).
 > - **beta.2, pacote `…-SteamDeck.zip` com janela de instalação: aprovada no Steam Deck** (playtest do mantenedor).
 >   A janela abriu pelo `kdialog` do modo Desktop, com o menu das quatro operações e acentuação correta. O
 >   instalador encontrou o jogo e o prefixo Proton sozinho. Verificação, status, instalação, jogo traduzido,

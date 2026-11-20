@@ -2,6 +2,9 @@
 
 Nota para quem usa a **Underkeep PT-BR v0.1.0-beta.2**.
 
+> **A Beta 3, compatível com o Underkeep 1.0.6, já está disponível:**
+> [Underkeep PT-BR v0.1.0-beta.3](https://github.com/rogrillo/underkeep-ptbr/releases/tag/v0.1.0-beta.3).
+
 ## O que aconteceu
 
 Em 19/11/2026 o Underkeep recebeu a atualização **1.0.6 (Character Respec)**, build Steam **26770834**. A Beta 2 da
@@ -30,12 +33,20 @@ Steam Deck. Se o jogo mudou desde a instalação, aparece o aviso "O jogo mudou 
 ## Se você ainda não tinha instalado
 
 O instalador da Beta 2 **recusa** a build 26770834 e não altera nada. A mensagem será "versão do jogo não suportada".
-Isso é esperado.
+Isso é esperado: use a Beta 3.
 
-## Próxima versão
+## Beta 3 para o Underkeep 1.0.6
 
-Uma versão da tradução para a 1.0.6 está em preparação. Ela só será publicada depois dos testes no Windows e no
-Steam Deck. Acompanhe a página de releases do projeto. Até lá, jogue a 1.0.6 em um dos idiomas oficiais.
+A **[v0.1.0-beta.3](https://github.com/rogrillo/underkeep-ptbr/releases/tag/v0.1.0-beta.3)** foi publicada em
+19/11/2026 para a build 26770834. Instalação e jogo foram testados no Windows e no Steam Deck.
 
-Quando a nova versão sair, basta executar o instalador dela. Se a Beta 2 ainda estiver instalada, o instalador
-oferece removê-la antes de instalar a nova.
+1. Feche o jogo.
+2. Baixe o ZIP da sua plataforma na página da release e confira o SHA-256.
+3. Execute o instalador da Beta 3:
+   - Windows: `Instalar-Underkeep-PTBR.exe`;
+   - Steam Deck: `Instalador-Underkeep-PTBR.sh`.
+
+   Se a Beta 2 ainda estiver instalada, o instalador oferece removê-la antes de instalar a nova.
+4. No jogo, escolha **Español** nas opções de idioma.
+
+O instalador da Beta 3, como o da Beta 2, recusa builds diferentes da que ele suporta.

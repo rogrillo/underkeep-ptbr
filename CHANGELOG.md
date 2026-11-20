@@ -4,6 +4,15 @@ Histórico de mudanças por versão do Underkeep PT-BR. Notas para jogadores: [R
 
 ## [Não lançado]
 
+- Documentação atualizada para a Beta 3 publicada: README (status, download, plataformas, aviso de compatibilidade),
+  notas de versão, nota de atualização da 1.0.6, guia de instalação e validação da Beta 3.
+- Texto publicado da GitHub Release da Beta 3 registrado em `release/GITHUB_RELEASE_v0.1.0-beta.3.md`.
+
+## [0.1.0-beta.3] — 19/11/2026
+
+Compatível com o **Underkeep 1.0.6** (Steam build 26770834). Publicada como *pre-release*:
+[página da release](https://github.com/rogrillo/underkeep-ptbr/releases/tag/v0.1.0-beta.3).
+
 ### Repositório único
 
 Este repositório passa a ser a única fonte do projeto. Não há mais exportação a partir de outro repositório.
@@ -20,9 +29,9 @@ Este repositório passa a ser a única fonte do projeto. Não há mais exportaç
   é atualizado.
 - **`.gitignore`:** ignora `.local/`, `CLAUDE.md`, `.claude/` e configurações pessoais do VS Code.
 
-### Em preparação: adaptação ao Underkeep 1.0.6 (candidata 0.1.0-beta.3)
+### Adaptação ao Underkeep 1.0.6
 
-Ainda não lançada. A Beta 2 continua sendo a versão publicada e só funciona no Underkeep 1.0.5 (build 26592006).
+A Beta 2 continua disponível, mas só funciona no Underkeep 1.0.5 (build 26592006).
 
 - **Homologação** ([docs/VALIDACAO_BETA3.md](docs/VALIDACAO_BETA3.md)):
   - o mantenedor confirmou instalação e jogo no Underkeep 1.0.6 no Windows e no Steam Deck, e o bloqueio em uma build
@@ -36,7 +45,6 @@ Ainda não lançada. A Beta 2 continua sendo a versão publicada e só funciona 
 - **`VERSAO.txt` dos pacotes** separa o que foi testado no playtest da beta.3 e o que vem de playtests anteriores.
 - **Galeria do README:** captura nova do menu principal no Underkeep 1.0.6, sem metadados; as legendas dizem a versão
   de cada imagem.
-
 - **Nota para jogadores da Beta 2** ([docs/ATUALIZACAO_1.0.6.md](docs/ATUALIZACAO_1.0.6.md)): desinstale a Beta 2
   antes de jogar a 1.0.6. O README e as notas da Beta 2 avisam disso.
 - **Catálogo** atualizado para a build 26770834:
@@ -54,7 +62,7 @@ Ainda não lançada. A Beta 2 continua sendo a versão publicada e só funciona 
   recusando, instalador novo substituindo, jogo aberto, mods de terceiros).
 - Glossário, guia de desenvolvimento (procedimento para atualizações do jogo) e modelos de issue atualizados.
 
-### Documentação e ferramentas publicadas após a Beta 2
+### Documentação e ferramentas publicadas entre a Beta 2 e a Beta 3
 
 - README com uma galeria de 4 capturas de tela do jogo em português (`assets/screenshots/`): menu, missões, ficha do
   personagem e itens.

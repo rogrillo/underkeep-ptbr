@@ -1,16 +1,16 @@
 # Instalação e desinstalação — Underkeep PT-BR
 
-Guia para jogadores no **Windows 10/11 (64 bits)**. O ciclo completo (instalação, jogo traduzido e desinstalação com
-retorno ao espanhol) foi validado no Windows 11; o Windows 10 não foi testado. Para o **Steam Deck**, use o pacote
-`…-SteamDeck.zip` e o guia [STEAM_DECK.md](STEAM_DECK.md), também validado no aparelho. Resultados:
-[VALIDACAO_BETA2.md](VALIDACAO_BETA2.md).
+Guia para jogadores no **Windows 10/11 (64 bits)**. No Windows 11, a Beta 3 teve instalação e jogo traduzido testados
+no Underkeep 1.0.6; a desinstalação com retorno ao espanhol foi validada na Beta 2. O Windows 10 não foi testado. Para o
+**Steam Deck**, use o pacote `…-SteamDeck.zip` e o guia [STEAM_DECK.md](STEAM_DECK.md), também testado no aparelho.
+Resultados: [VALIDACAO_BETA3.md](VALIDACAO_BETA3.md); histórico da Beta 2: [VALIDACAO_BETA2.md](VALIDACAO_BETA2.md).
 
 ## Antes de começar
 
 - Tenha o Underkeep instalado pela Steam, na build suportada pela versão da tradução (veja `VERSAO.txt` no ZIP).
 - Abra o jogo **uma vez** e feche-o. Isso cria a pasta `Documentos\Underkeep`.
 - Deixe ~800 MB livres no disco da pasta Documentos e no disco da pasta temporária do Windows.
-- Confira o download: no PowerShell, `Get-FileHash .\Underkeep-PTBR-v0.1.0-beta.2-Windows.zip -Algorithm SHA256` deve
+- Confira o download: no PowerShell, `Get-FileHash .\Underkeep-PTBR-v0.1.0-beta.3-Windows.zip -Algorithm SHA256` deve
   mostrar o mesmo valor do arquivo `.sha256` publicado junto com a release.
 
 ## Instalar
@@ -52,7 +52,9 @@ Underkeep na Steam, desinstale a tradução antes de jogar** e aguarde uma vers�
 versões diferentes do jogo, e o comando `--status` avisa quando o jogo mudou desde a instalação.
 
 **Underkeep 1.0.6 (19/11/2026):** a Beta 2 não é compatível com a versão 1.0.6 do jogo. Se ela estiver instalada,
-desinstale-a antes de jogar. Detalhes em [ATUALIZACAO_1.0.6.md](ATUALIZACAO_1.0.6.md).
+desinstale-a antes de jogar e instale a
+[Beta 3](https://github.com/rogrillo/underkeep-ptbr/releases/tag/v0.1.0-beta.3), feita para a 1.0.6. Detalhes em
+[ATUALIZACAO_1.0.6.md](ATUALIZACAO_1.0.6.md).
 
 ## Opções avançadas
 
