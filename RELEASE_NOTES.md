@@ -5,6 +5,10 @@
 > Steam Deck, validado no aparelho. Downloads na página da release `v0.1.0-beta.2`, cujo texto está em
 > [release/GITHUB_RELEASE_v0.1.0-beta.2.md](release/GITHUB_RELEASE_v0.1.0-beta.2.md).
 
+> [!IMPORTANT]
+> **Compatibilidade:** a Beta 2 funciona só com a build 26592006 (Underkeep 1.0.5). Ela não é compatível com a
+> atualização 1.0.6 (build 26770834, 19/11/2026). Veja [docs/ATUALIZACAO_1.0.6.md](docs/ATUALIZACAO_1.0.6.md).
+
 ## Novidades
 
 - **Pacote Steam Deck** (`Underkeep-PTBR-v0.1.0-beta.2-SteamDeck.zip`, cerca de 0,5 MB):

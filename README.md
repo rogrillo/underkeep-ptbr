@@ -11,6 +11,11 @@ habilidades e interface.
 > Todos os direitos sobre o Underkeep pertencem aos seus criadores. Para jogar, é preciso ter o jogo original
 > **comprado na Steam**. Nenhum arquivo do jogo é distribuído aqui. Veja o [aviso legal](AVISO_LEGAL.md).
 
+> [!IMPORTANT]
+> **Underkeep 1.0.6 (19/11/2026):** a Beta 2 foi feita para a versão 1.0.5 do jogo e **não é compatível com a
+> atualização 1.0.6**. Se ela estiver instalada, **desinstale-a antes de jogar**. Uma nova versão está em
+> preparação. Detalhes em [docs/ATUALIZACAO_1.0.6.md](docs/ATUALIZACAO_1.0.6.md).
+
 **Ir direto para:** [Screenshots](#screenshots) · [Download](#download) · [Instalar no Windows](#instalação-no-windows) ·
 [Instalar no Steam Deck](#instalação-no-steam-deck) · [Ativar o português](#como-jogar-em-português) ·
 [Desinstalar](#desinstalar) · [Reportar erros](#reportar-erros-e-sugerir-melhorias) · [Contribuir](#como-contribuir)
@@ -20,8 +25,8 @@ habilidades e interface.
 <table>
   <tr>
     <td align="center" width="50%">
-      <a href="assets/screenshots/menu-principal.png"><img src="assets/screenshots/menu-principal.png" width="420" alt="Menu principal do Underkeep em português, com as opções Novo jogo, Carregar jogo, Como jogar, Opções, Introdução, Créditos e Sair"></a><br>
-      <sub><b>Menu principal</b> traduzido</sub>
+      <a href="assets/screenshots/menu-principal.png"><img src="assets/screenshots/menu-principal.png" width="420" alt="Menu principal do Underkeep 1.0.6 em português, com as opções Novo jogo, Carregar jogo, Como jogar, Opções, Introdução, Créditos e Sair"></a><br>
+      <sub><b>Menu principal</b> traduzido (Underkeep 1.0.6)</sub>
     </td>
     <td align="center" width="50%">
       <a href="assets/screenshots/missoes.png"><img src="assets/screenshots/missoes.png" width="420" alt="Diário de missões em português, com a missão Sussurros de Underkeep selecionada e o texto da narrativa"></a><br>
@@ -40,8 +45,9 @@ habilidades e interface.
   </tr>
 </table>
 
-<sub>Capturas de tela feitas por jogadores com a tradução instalada (build 26592006). As imagens mostram conteúdo do
-Underkeep © Rake in Grass e não são cobertas pelas licenças deste projeto.</sub>
+<sub>Capturas de tela feitas por jogadores com a tradução instalada. O menu principal mostra o Underkeep 1.0.6 (build
+26770834); as outras três foram feitas na versão 1.0.5 (build 26592006). As imagens mostram conteúdo do Underkeep ©
+Rake in Grass e não são cobertas pelas licenças deste projeto.</sub>
 
 ## Status
 
@@ -49,8 +55,9 @@ Underkeep © Rake in Grass e não são cobertas pelas licenças deste projeto.</
 |---|---|
 | Versão da tradução | **0.1.0-beta.2**, primeira beta pública, publicada em 16/11/2026 ([baixar](../../releases/tag/v0.1.0-beta.2)) |
 | Cobertura | **5.786 de 5.786** textos traduzíveis (100%) |
+| Próxima versão | **0.1.0-beta.3**, para o Underkeep 1.0.6 (build 26770834), **em preparação e ainda não publicada**. 5.796 de 5.796 textos traduzíveis; instalação e jogo já testados pelo mantenedor no Windows e no Steam Deck |
 | Revisão editorial | **em andamento**: a tradução está completa, mas a revisão humana e o playtest de todos os caminhos ainda não terminaram |
-| Versão do jogo | Underkeep na Steam, **build 26592006** (atualização de 13/11/2026). Outras builds são recusadas pelo instalador |
+| Versão do jogo | Underkeep na Steam, **build 26592006** (versão 1.0.5, atualização de 13/11/2026). Outras builds são recusadas pelo instalador. A 1.0.6 (build 26770834) ainda não é suportada: veja [a nota de atualização](docs/ATUALIZACAO_1.0.6.md) |
 
 | Categoria | Textos | Cobertura |
 |---|---|---|
@@ -168,6 +175,7 @@ Contribuições de revisão, sugestões de tradução e testes são muito bem-vi
   editoriais e terminologia.
 
 Documentação técnica (ferramentas, pack-sombra, geração de releases): [docs/DESENVOLVIMENTO.md](docs/DESENVOLVIMENTO.md).
+Fluxo de trabalho e VS Code: [docs/FLUXO_DE_TRABALHO.md](docs/FLUXO_DE_TRABALHO.md).
 Mapa de toda a documentação: [docs/README.md](docs/README.md).
 
 ## Créditos

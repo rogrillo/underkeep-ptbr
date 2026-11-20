@@ -1,6 +1,6 @@
 """Container ``\\xFFDef`` (bancos de recursos ``_*.db`` de cada pack).
 
-Layout observado (22/22 ``.db`` da build 26592006, round-trip byte a byte)::
+Layout observado (22/22 ``.db`` das builds 26592006 e 26770834, round-trip byte a byte)::
 
     0   magic        FF 44 65 66
     4   u8           versão (=1)

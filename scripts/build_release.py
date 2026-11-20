@@ -242,7 +242,9 @@ def assemble(exes: dict[str, Path]) -> Path:
     readme = (PROJECT_ROOT / "release" / "LEIA-ME.txt").read_text(encoding="utf-8")
     readme = readme.replace("{VERSION}", VERSION).replace("{BUILD}", str(project.expected_build))
     (stage / "LEIA-ME.txt").write_bytes(crlf(readme).encode("utf-8-sig"))
-    version = version_info(["Windows 11 x64: instalação pelo .exe, jogo traduzido e desinstalação (playtest)"],
+    version = version_info(["Windows 11 x64: instalação pelo .exe e jogo traduzido no Underkeep 1.0.6 "
+                            "(playtest da beta.3)",
+                            "Windows 11 x64: desinstalação (playtest da beta.2)"],
                            ["Windows 10"])
     (stage / "VERSAO.txt").write_bytes(crlf(
         f"Underkeep PT-BR {VERSION}\nBuild Steam suportada: {project.expected_build}\n\n"
@@ -285,7 +287,9 @@ def assemble_deck() -> Path:
     readme = (DECK_SOURCES / "LEIA-ME.txt").read_text(encoding="utf-8")
     readme = readme.replace("{VERSION}", VERSION).replace("{BUILD}", str(project.expected_build))
     (stage / "LEIA-ME.txt").write_bytes(lf(readme).encode("utf-8"))
-    info = version_info(["Steam Deck / SteamOS, modo Desktop: janela kdialog, instalação, jogo traduzido pelo "
+    info = version_info(["Steam Deck / SteamOS: instalação e jogo traduzido pelo Proton no Underkeep 1.0.6 "
+                         "(playtest da beta.3)",
+                         "Steam Deck / SteamOS, modo Desktop: janela kdialog, instalação, jogo traduzido pelo "
                          "Proton e desinstalação (playtest da beta.2)",
                          "Steam Deck pelo terminal com o Python do SteamOS (playtest da beta.1)"],
                         ["zenity em outros ambientes gráficos", "outras distribuições Linux"])

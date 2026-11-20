@@ -51,6 +51,9 @@ A tradução instalada contém uma cópia dos dados do jogo da versão para a qu
 Underkeep na Steam, desinstale a tradução antes de jogar** e aguarde uma versão compatível. O instalador recusa
 versões diferentes do jogo, e o comando `--status` avisa quando o jogo mudou desde a instalação.
 
+**Underkeep 1.0.6 (19/11/2026):** a Beta 2 não é compatível com a versão 1.0.6 do jogo. Se ela estiver instalada,
+desinstale-a antes de jogar. Detalhes em [ATUALIZACAO_1.0.6.md](ATUALIZACAO_1.0.6.md).
+
 ## Opções avançadas
 
 Execute pelo Prompt de Comando ou PowerShell, dentro da pasta extraída:

@@ -24,7 +24,9 @@ Catálogo PT-BR (Fase 1C-B, l10n/pt-BR/, sem texto original):
   l10n-build        catálogo -> pack-sombra em work/shadow/<nome> + relatório de diferenças
   l10n-promote      promoção em lote (QA) de um lote para reviewed/approved, com nota rastreável
 
-Todas as saídas ficam em work/ ou audit/local/ (ignorados pelo Git). A única exceção é
+Todas as saídas ficam em work/ e audit/local/ (ignorados pelo Git) ou, se a variável de ambiente
+UKLOC_LOCAL_DIR estiver definida, em <UKLOC_LOCAL_DIR>/work e <UKLOC_LOCAL_DIR>/audit, fora do
+repositório (recomendado: extrações e packs contêm material do jogo). A única exceção é
 shadow-install/shadow-uninstall com --execute, que gravam/removem apenas
 Documentos/Underkeep/mods/<pack> (nunca a pasta da Steam) e exigem aprovação explícita.
 """
@@ -43,7 +45,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from ukloc.catalog import (  # noqa: E402
-    bytes_hash, catalog_from_json, catalog_from_table, catalog_to_json, ensure_untracked_output,
+    bytes_hash, catalog_from_json, catalog_from_table, catalog_to_json, ensure_untracked_output, local_roots,
     table_from_catalog, write_bytes_atomic, write_text_atomic,
 )
 from ukloc.fonts import game_supported_codepoints  # noqa: E402
@@ -60,6 +62,10 @@ from ukloc.textdb import (  # noqa: E402
 from ukloc.validate import load_exceptions, validate_catalog  # noqa: E402
 
 DEFAULT_GAME = Path(r"C:\Program Files (x86)\Steam\steamapps\common\Underkeep")
+try:
+    WORK_ROOT, AUDIT_ROOT = local_roots(PROJECT_ROOT)
+except ValueError as _exc:  # UKLOC_LOCAL_DIR dentro do repositório
+    sys.exit(f"ERRO: {_exc}")
 
 
 # --------------------------------------------------------------------------- utilidades
@@ -297,7 +303,7 @@ DEFAULT_PATCH = PROJECT_ROOT / "data" / "patches" / "fase1c_a_novo_jogo.json"
 def cmd_shadow_build(args: argparse.Namespace) -> int:
     game = args.game_root
     patch = shadow.load_patch(args.patch)
-    out = out_path(args.out or PROJECT_ROOT / "work" / "shadow" / patch.name, game)
+    out = out_path(args.out or WORK_ROOT / "shadow" / patch.name, game)
     tables, _ = load_tables(game)
     reference = {cat: t.as_dict() for (cat, lang), t in tables.items() if lang == "en"}
     result = shadow.build_shadow(game, patch, out, build=game_build(game), reference=reference,
@@ -457,7 +463,7 @@ def cmd_l10n_build(args: argparse.Namespace) -> int:
             return 2
     selection = l10n.select_changes(project, catalogs, reference, slot, args.policy)
     patch = l10n.make_patch(project, args.name, selection.changes)
-    out = out_path(PROJECT_ROOT / "work" / "shadow" / args.name, game)
+    out = out_path(WORK_ROOT / "shadow" / args.name, game)
     result = shadow.build_shadow(game, patch, out, build=game_build(game), reference=reference, glyphs=glyphs,
                                  exceptions=selection.exceptions)
     # Relatório de diferenças (local, contém texto original): só os recursos alterados.
@@ -467,19 +473,23 @@ def cmd_l10n_build(args: argparse.Namespace) -> int:
         old = load_text_table((game / project.pack / rel).read_bytes(), category, project.target_slot)
         new = load_text_table((result.pack_dir / rel).read_bytes(), category, project.target_slot)
         changed = [k for (k, a), (_, b) in zip(old.entries, new.entries) if a != b]
+        added = new.ids()[len(old.entries):]
         diff["files"][rel] = {
             "entries_total": len(old.entries), "entries_changed": len(changed),
-            "ids_order_identical": old.ids() == new.ids(),
+            "ids_order_identical": old.ids() == new.ids()[:len(old.entries)],
+            "entries_added": added,
             "bytes_before": (game / project.pack / rel).stat().st_size,
             "bytes_after": (result.pack_dir / rel).stat().st_size,
-            "changes": [{"id": k, "slot_before": old.as_dict()[k], "pt_br": new.as_dict()[k]} for k in changed],
+            "changes": [{"id": k, "slot_before": old.as_dict()[k], "pt_br": new.as_dict()[k]} for k in changed]
+            + [{"id": k, "slot_before": None, "pt_br": new.as_dict()[k], "added": True} for k in added],
         }
     diff_path = out.with_name(out.name + "_diff.json")
     dump_json(diff_path, diff)
     print(f"Pack-sombra '{args.name}' em {result.root} (política {args.policy}, NÃO instalado)")
     for rel, info in diff["files"].items():
         print(f"  {rel}: {info['entries_changed']}/{info['entries_total']} entradas alteradas, "
-              f"ordem de IDs idêntica={info['ids_order_identical']}")
+              f"ordem dos IDs originais idêntica={info['ids_order_identical']}, "
+              f"acrescentadas={len(info['entries_added'])}")
     print(f"  ignoradas pela política: { {k: len(v) for k, v in selection.skipped.items()} }")
     print(f"  diferenças: {diff_path}")
     return 0
@@ -493,16 +503,16 @@ def main(argv: list[str] | None = None) -> int:
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("roundtrip")
     p = sub.add_parser("extract")
-    p.add_argument("--out", type=Path, default=PROJECT_ROOT / "work" / "extract")
-    p.add_argument("--analysis", type=Path, default=PROJECT_ROOT / "audit" / "local" / "lang_analysis.json")
+    p.add_argument("--out", type=Path, default=WORK_ROOT / "extract")
+    p.add_argument("--analysis", type=Path, default=AUDIT_ROOT / "lang_analysis.json")
     sub.add_parser("gate-unchanged")
     p = sub.add_parser("build")
     p.add_argument("--catalog", type=Path, required=True)
     p.add_argument("--language", help="renomeia o slot (ex.: es)")
-    p.add_argument("--out-dir", type=Path, default=PROJECT_ROOT / "work" / "build")
+    p.add_argument("--out-dir", type=Path, default=WORK_ROOT / "build")
     p = sub.add_parser("pseudo")
     p.add_argument("--slot", default="es")
-    p.add_argument("--out-dir", type=Path, default=PROJECT_ROOT / "work" / "pseudo")
+    p.add_argument("--out-dir", type=Path, default=WORK_ROOT / "pseudo")
     p.add_argument("--exceptions", type=Path, help="padrão: data/validation_exceptions.json")
     p = sub.add_parser("validate")
     p.add_argument("--catalog", type=Path, required=True)
@@ -510,11 +520,11 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--exceptions", type=Path, help="padrão: data/validation_exceptions.json")
     p.add_argument("--report", type=Path)
     p = sub.add_parser("inspect-db")
-    p.add_argument("--report", type=Path, default=PROJECT_ROOT / "audit" / "local" / "def_inspect.json")
-    default_shadow = PROJECT_ROOT / "work" / "shadow" / "fase1c_a_novo_jogo"
+    p.add_argument("--report", type=Path, default=AUDIT_ROOT / "def_inspect.json")
+    default_shadow = WORK_ROOT / "shadow" / "fase1c_a_novo_jogo"
     p = sub.add_parser("shadow-build")
     p.add_argument("--patch", type=Path, default=DEFAULT_PATCH)
-    p.add_argument("--out", type=Path, help="padrão: work/shadow/<nome do patch>")
+    p.add_argument("--out", type=Path, help="padrão: work/shadow/<nome do patch> (ou em UKLOC_LOCAL_DIR)")
     p = sub.add_parser("shadow-verify")
     p.add_argument("--shadow", type=Path, default=default_shadow)
     p = sub.add_parser("shadow-install")
@@ -534,10 +544,10 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("ids", nargs="+")
     p = sub.add_parser("l10n-validate")
     p.add_argument("--root", type=Path, default=DEFAULT_L10N)
-    p.add_argument("--report", type=Path, default=PROJECT_ROOT / "audit" / "local" / "l10n_validate.json")
+    p.add_argument("--report", type=Path, default=AUDIT_ROOT / "l10n_validate.json")
     p = sub.add_parser("l10n-sheet")
     p.add_argument("--root", type=Path, default=DEFAULT_L10N)
-    p.add_argument("--out", type=Path, default=PROJECT_ROOT / "work" / "l10n" / "planilha_revisao.md")
+    p.add_argument("--out", type=Path, default=WORK_ROOT / "l10n" / "planilha_revisao.md")
     p = sub.add_parser("l10n-promote")
     p.add_argument("--root", type=Path, default=DEFAULT_L10N)
     p.add_argument("--origin", required=True, help="origem/lote, ex.: ia:lote-01")

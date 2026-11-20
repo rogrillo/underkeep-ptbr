@@ -53,7 +53,8 @@ py -3 -m venv .venv
 .\.venv\Scripts\python.exe -m pytest -q
 ```
 
-Detalhes técnicos: [docs/DESENVOLVIMENTO.md](docs/DESENVOLVIMENTO.md).
+Detalhes técnicos: [docs/DESENVOLVIMENTO.md](docs/DESENVOLVIMENTO.md). Fluxo de branches, revisão, CI e VS Code:
+[docs/FLUXO_DE_TRABALHO.md](docs/FLUXO_DE_TRABALHO.md).
 
 ## Pull requests
 

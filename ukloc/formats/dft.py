@@ -1,6 +1,6 @@
 """Container ``\\xFFDfT`` (arquivos ``*.rfile``, ``player_profile`` e saves).
 
-Layout observado (107/107 ``.rfile`` da build 26592006)::
+Layout observado (107/107 ``.rfile`` das builds 26592006 e 26770834)::
 
     0   magic   FF 44 66 54
     4   u32 LE  versão (=1)

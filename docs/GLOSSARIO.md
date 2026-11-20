@@ -352,3 +352,16 @@ Lady Puffella, Sir Moldsworth, Arachneira, Maxi Nunik.
 | THE END / Thanks for playing | FIM / Obrigado por jogar | Encerramento |
 | Enigmas das lápides | cinzas, adaga/lâmina, pena (corvo/anjo), moeda | Respostas preservadas; rima adaptada |
 
+
+## Adições da Fase 2A — patch 1.0.6 (provisórios)
+
+| Original (EN) | PT-BR | Observação |
+|---|---|---|
+| scale with Strength / Dexterity (armas) | baseada(s) em Força / Destreza; "se baseia em" | Evita o anglicismo "escalar com" |
+| Base attributes / Base stats | atributos base | Não aumentam ao subir de nível |
+| Potion of Forgetfulness (respec) | Poção do esquecimento | Devolve os pontos de habilidade gastos |
+| Refunds (pontos) | devolve | "Devolve todos os pontos de habilidade gastos." |
+| Cloak of Shadows (habilidade do Ladrão) | Manto das sombras | Igual ao item `item_cloak_of_shadows`; o Patrulheiro segue com "Manto da agilidade" |
+| Melee / Ranged critical hit chance | Chance de crítico corpo a corpo / à distância | Linhas de atributo do item |
+| Armor Piercing | Perfuração de armadura | Já usado em `item_info_part_damage4` |
+| Tavern (rótulo do mapa) | Taverna | Demais rótulos do mapa são nomes próprios (Aldren, Barlo, Ronan, Khelebar) |

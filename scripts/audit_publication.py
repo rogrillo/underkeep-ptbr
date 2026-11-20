@@ -52,7 +52,16 @@ FORBIDDEN_NAMES = (
     "save_1", "save_2", "save_3", "steam_appid.txt", "localconfig.vdf", "loginusers.vdf", "config.vdf",
     ".env", "id_rsa", "id_ed25519", "credentials", ".netrc", ".pypirc",
 )
-FORBIDDEN_DIRS = ("work/", "audit/local/", "dist/", "build/", "mods/", "__pycache__/", ".venv/")
+FORBIDDEN_DIRS = ("work/", "audit/local/", "dist/", "build/", "mods/", "__pycache__/", ".venv/", ".local/", "publico/")
+# Material interno de desenvolvimento (instruções do assistente, relatórios de fase, rascunhos privados). No repositório
+# único ele fica em .local/ (ignorado), mas o bloqueio não depende do .gitignore: vale para qualquer pasta.
+INTERNAL_FILES = re.compile(
+    r"(^|/)(claude\.md|fase_[^/]*\.md|fases\.md|audit_template\.md|contato_rake_in_grass\.md|publicacao\.md)$")
+# Capturas de tela: só os chunks indispensáveis do PNG. Qualquer outro (tEXt, iTXt/XMP, eXIf, tIME, pHYs, sRGB...) pode
+# carregar metadados e é recusado; a captura deve ser regravada sem eles.
+PNG_ALLOWED_CHUNKS = {b"IHDR", b"PLTE", b"IDAT", b"IEND"}
+PNG_SIGNATURE = bytes([0x89]) + b"PNG" + bytes([0x0D, 0x0A, 0x1A, 0x0A])
+JPEG_SOI = bytes([0xFF, 0xD8])
 LARGE_BLOB = 2 * 2**20
 # Única exceção para imagens: capturas de tela do README, feitas pelos próprios jogadores. Elas continuam sujeitas ao
 # limite de tamanho e não podem ficar em outras pastas.
@@ -200,6 +209,20 @@ def blob_paths(repo: Path) -> dict[str, set[str]]:
 
 
 # --------------------------------------------------------------------------- padrões
+def index_paths(repo: Path) -> dict[str, set[str]]:
+    """blob -> caminhos em que ele está preparado no índice (``git ls-files --stage``)."""
+    result: dict[str, set[str]] = defaultdict(set)
+    try:
+        out = git(repo, "ls-files", "--stage", "-z")
+    except RuntimeError:
+        return {}
+    for record in out.decode("utf-8", "replace").split("\0"):
+        if "\t" in record:
+            meta, path = record.split("\t", 1)
+            result[meta.split()[1]].add(path)
+    return result
+
+
 def mask(value: str) -> str:
     if len(value) <= 6:
         return value[0] + "***" if value else "***"
@@ -253,9 +276,12 @@ def path_problems(path: str, size: int, data: bytes) -> list[tuple[str, str, str
     low = path.lower().replace("\\", "/")
     name = low.rsplit("/", 1)[-1]
     found: list[tuple[str, str, str]] = []
+    if INTERNAL_FILES.search(low):
+        found.append(("interno", "bloqueador", f"documento interno de desenvolvimento: {name}"))
     if DOC_IMAGES.match(low):
         if size > DOC_IMAGE_MAX:
             found.append(("grande", "medio", f"captura de tela grande: {size / 2**20:.1f} MB"))
+        found += [("metadado", "bloqueador", detail) for detail in image_metadata_problems(name, data)]
         return found
     if name.endswith(FORBIDDEN_SUFFIXES) or name in FORBIDDEN_NAMES:
         found.append(("proprietario", "bloqueador", f"arquivo de tipo proibido: {name}"))
@@ -266,6 +292,46 @@ def path_problems(path: str, size: int, data: bytes) -> list[tuple[str, str, str
     elif size > LARGE_BLOB:
         found.append(("grande", "medio", f"blob grande: {size / 2**20:.1f} MB"))
     return found
+
+
+def image_metadata_problems(name: str, data: bytes) -> list[str]:
+    """Metadados (ou estrutura inválida) em capturas de tela PNG, JPEG ou WebP."""
+    if name.endswith(".png"):
+        if not data.startswith(PNG_SIGNATURE):
+            return ["PNG inválido (assinatura ausente)"]
+        pos, chunks = 8, []
+        while pos + 8 <= len(data):
+            length = int.from_bytes(data[pos:pos + 4], "big")
+            chunks.append(data[pos + 4:pos + 8])
+            pos += 12 + length
+        if not chunks or chunks[0] != b"IHDR" or chunks[-1] != b"IEND" or pos != len(data):
+            return ["PNG inválido ou truncado"]
+        extra = sorted({c.decode("latin-1") for c in chunks} - {c.decode() for c in PNG_ALLOWED_CHUNKS})
+        return [f"metadados no PNG (chunks {', '.join(extra)}): regrave só com IHDR/PLTE/IDAT/IEND"] if extra else []
+    if name.endswith((".jpg", ".jpeg")):
+        if not data.startswith(JPEG_SOI):
+            return ["JPEG inválido"]
+        pos, markers = 2, set()
+        while pos + 4 <= len(data) and data[pos] == 0xFF:
+            marker = data[pos + 1]
+            if marker == 0xDA:  # início da imagem comprimida: acabaram os cabeçalhos
+                break
+            if 0xE1 <= marker <= 0xEF or marker == 0xFE:
+                markers.add("COM" if marker == 0xFE else f"APP{marker - 0xE0}")
+            pos += 2 + int.from_bytes(data[pos + 2:pos + 4], "big")
+        return [f"metadados no JPEG ({', '.join(sorted(markers))}: EXIF/XMP/IPTC/comentário)"] if markers else []
+    if name.endswith(".webp"):
+        if data[:4] != b"RIFF" or data[8:12] != b"WEBP":
+            return ["WebP inválido"]
+        pos, found = 12, set()
+        while pos + 8 <= len(data):
+            kind = data[pos:pos + 4]
+            size = int.from_bytes(data[pos + 4:pos + 8], "little")
+            if kind in (b"EXIF", b"XMP "):
+                found.add(kind.decode().strip())
+            pos += 8 + size + (size & 1)  # chunks RIFF têm tamanho par
+        return [f"metadados no WebP ({', '.join(sorted(found))})"] if found else []
+    return []
 
 
 # --------------------------------------------------------------------------- texto original
@@ -341,8 +407,11 @@ def audit(repo: Path, *, game: Path | None = None, terms: Iterable[str] = (), lo
     loose_blobs = {sha for sha, kind in objects.items() if kind == "blob"} - set(blobs)
     report.unreachable = len(loose_blobs)
     if loose:
+        # O que está preparado no índice (git add) ainda não pertence a nenhum commit, mas tem caminho: auditar com
+        # ele, para valerem as mesmas regras de caminho (capturas, material interno). O resto fica sem caminho.
+        staged = index_paths(repo)
         for sha in loose_blobs:
-            blobs[sha].add("<objeto inalcançável>")
+            blobs[sha] |= staged.get(sha) or {"<objeto inalcançável>"}
     for sha, paths in blob_paths(repo).items():
         if sha in blobs:
             blobs[sha] |= paths

@@ -12,7 +12,7 @@ body:
     attributes:
       label: Versão do jogo
       description: Build da Steam (Propriedades > Atualizações) ou data da última atualização.
-      placeholder: "ex.: build 26592006"
+      placeholder: "ex.: build 26770834"
     validations:
       required: true
   - type: input

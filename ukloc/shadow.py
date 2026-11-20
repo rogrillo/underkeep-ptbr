@@ -34,7 +34,7 @@ import sys
 from typing import Callable, Iterable
 
 from .formats import FormatError
-from .textdb import TextTable, build_text_table_bytes, load_text_table, text_file_name
+from .textdb import TextTable, build_text_table_bytes, find_text_tables, load_text_table, text_file_name
 from .validate import ExceptionRule, Issue, validate_catalog
 
 PATCH_SCHEMA = "ukloc.patch/1"
@@ -54,10 +54,21 @@ class ShadowError(Exception):
 # --------------------------------------------------------------------------- patch
 @dataclass(frozen=True)
 class Change:
+    """Alteração de uma entrada do slot.
+
+    ``add=False`` (padrão): substitui o texto de um ID que já existe no slot; ``source_text_sha256`` é o
+    hash do texto atual do slot. ``add=True`` (Fase 2A): acrescenta ao fim da tabela um ID que existe na
+    referência mas falta no slot; ``source_text_sha256`` deve ser :data:`ABSENT_SHA256` (hash do texto
+    vazio), registrando que o slot não tinha valor.
+    """
     category: str
     id: str
     source_text_sha256: str
     text: str
+    add: bool = False
+
+
+ABSENT_SHA256 = sha256(b"").hexdigest()
 
 
 @dataclass(frozen=True)
@@ -98,8 +109,13 @@ def parse_patch(data: object) -> Patch:
     for raw in raw_changes:
         if not isinstance(raw, dict):
             raise ShadowError("patch: alteração deve ser objeto")
+        add = raw.get("add", False)
+        if not isinstance(add, bool):
+            raise ShadowError("patch: campo 'add' deve ser booleano")
         change = Change(_require_str(raw, "category"), _require_str(raw, "id"),
-                        _require_str(raw, "source_text_sha256"), _require_str(raw, "text"))
+                        _require_str(raw, "source_text_sha256"), _require_str(raw, "text"), add)
+        if add and change.source_text_sha256 != ABSENT_SHA256:
+            raise ShadowError(f"patch: acréscimo {change.id} exige source_text_sha256 do texto vazio")
         if (change.category, change.id) in seen:
             raise ShadowError(f"patch: alteração repetida para {change.id}")
         seen.add((change.category, change.id))
@@ -188,12 +204,29 @@ def apply_changes(original: bytes, category: str, slot: str, changes: Iterable[C
                   reference: dict[str, str] | None = None,
                   glyphs: frozenset[int] | None = None,
                   exceptions: Iterable[ExceptionRule] = ()) -> ChangedTable:
-    """Aplica alterações a uma tabela de texto, preservando ordem/IDs e verificando invariantes."""
+    """Aplica alterações a uma tabela de texto, preservando ordem/IDs e verificando invariantes.
+
+    Substituições mantêm posição e conjunto de IDs. Acréscimos (``Change.add``) só são aceitos para IDs
+    ausentes no slot e presentes na referência (quando informada); entram ao fim da tabela, na ordem do
+    patch, e todos os IDs originais continuam na mesma ordem.
+    """
     table = load_text_table(original, category, slot)
     index = {key: i for i, (key, _) in enumerate(table.entries)}
     entries = list(table.entries)
     changed: list[str] = []
-    for change in changes:
+    added: list[str] = []
+    changes = list(changes)
+    for change in (c for c in changes if c.add):
+        if change.id in index or change.id in added:
+            raise ShadowError(f"acréscimo de {change.id!r}, mas o ID já existe em {category}_{slot}")
+        if change.source_text_sha256 != ABSENT_SHA256:
+            raise ShadowError(f"acréscimo de {change.id!r} sem o hash de ausência")
+        if reference is not None and change.id not in reference:
+            raise ShadowError(f"acréscimo de {change.id!r}, que não existe na referência")
+        if not change.id.strip():
+            raise ShadowError("acréscimo com ID vazio")
+        added.append(change.id)
+    for change in (c for c in changes if not c.add):
         if change.id not in index:
             raise ShadowError(f"ID {change.id!r} não existe em {category}_{slot}")
         position = index[change.id]
@@ -201,12 +234,15 @@ def apply_changes(original: bytes, category: str, slot: str, changes: Iterable[C
             raise ShadowError(f"texto de origem de {change.id!r} mudou (hash diferente): abortando")
         entries[position] = (change.id, change.text)
         changed.append(change.id)
+    texts = {c.id: c.text for c in changes if c.add}
+    entries.extend((entry_id, texts[entry_id]) for entry_id in added)
+    changed.extend(added)
     new_table = TextTable(category, slot, table.version, entries)
     data = build_text_table_bytes(new_table)
     back = load_text_table(data, category, slot)  # round-trip do resultado
     if back.entries != entries:
         raise ShadowError("tabela reconstruída difere do esperado")
-    if back.ids() != table.ids():
+    if back.ids() != table.ids() + added:
         raise ShadowError("ordem/conjunto de IDs alterado")
     untouched = set(table.ids()) - set(changed)
     old, new = table.as_dict(), back.as_dict()
@@ -264,6 +300,17 @@ def build_shadow(game_root: Path, patch: Patch, out_root: Path, *, build: str | 
         by_category.setdefault(change.category, []).append(change)
     changed_tables: dict[str, ChangedTable] = {}
     rules = list(exceptions)
+    additions = {(c.category, c.id) for c in patch.changes if c.add}
+    if additions:
+        # O jogo funde as tabelas do idioma e rejeita IDs repetidos entre categorias.
+        slot_ids: dict[str, set[str]] = {}
+        for (category, lang), path in find_text_tables(source.pack_dir).items():
+            if lang == patch.slot:
+                slot_ids[category] = set(load_text_table(path.read_bytes(), category, lang).ids())
+        for category, entry_id in sorted(additions):
+            clash = sorted(other for other, ids in slot_ids.items() if other != category and entry_id in ids)
+            if clash:
+                raise ShadowError(f"acréscimo de {entry_id!r} em {category} repetiria o ID já existente em {clash}")
     for category, changes in sorted(by_category.items()):
         name = text_file_name(category, patch.slot)
         ref = (reference or {}).get(category)
@@ -295,7 +342,7 @@ def build_shadow(game_root: Path, patch: Patch, out_root: Path, *, build: str | 
             "shadow_files": shadow_files,
             "patched_files": sorted(changed_tables),
             "changes": [{"category": c.category, "id": c.id, "source_text_sha256": c.source_text_sha256,
-                         "new_text": c.text, "new_text_sha256": text_sha256(c.text)}
+                         "new_text": c.text, "new_text_sha256": text_sha256(c.text), **({"add": True} if c.add else {})}
                         for c in patch.changes],
         }
         manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=1, sort_keys=True) + "\n",

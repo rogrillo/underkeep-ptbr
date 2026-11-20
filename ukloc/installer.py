@@ -35,7 +35,7 @@ from .fonts import game_supported_codepoints
 from .formats import FormatError
 from .textdb import find_text_tables, load_text_table
 
-VERSION = "0.1.0-beta.2"
+VERSION = "0.1.0-beta.3"
 PATCH_NAME = f"underkeep-ptbr-{VERSION}"
 POLICY = "translated"  # revisão humana completa ainda em andamento (ver README)
 SAFETY_MARGIN = 64 * 1024 * 1024
